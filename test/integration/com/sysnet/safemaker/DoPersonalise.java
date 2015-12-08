@@ -97,7 +97,7 @@ import com.sysnet.pageobjects.PersonalisePage;
 		        FileUtils.copyFile(scrFile, new java.io.File("ComplianceProject/Screenshots"));
 //		        Assertions pers = new Assertions(driver, clientProps);
 //		        pers.assertTitle("Personalise");
-		        Thread.sleep(2000);
+		        Thread.sleep(3000);
 		        LogoutPage lop = new LogoutPage(driver, clientProps);
 		        lop.userLogout();
 		        // driver.switchTo().alert().accept();

@@ -20,8 +20,8 @@ public class LogoutPage {
 	public LogoutPage(WebDriver driver, Properties props) {
 		
 		this.driver=driver;
-		this.logoutlocator = By.xpath(props.getProperty("logout.link.css"));
-		this.logoutmenulocator = By.xpath(props.getProperty("logout.menu.css"));
+		this.logoutlocator = By.xpath(props.getProperty("logout.link.xpath"));
+		this.logoutmenulocator = By.xpath(props.getProperty("logout.menu.xpath"));
 	}
 
 	public  WebDriver userLogout(){
