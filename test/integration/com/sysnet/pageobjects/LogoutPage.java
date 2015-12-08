@@ -13,20 +13,22 @@ public class LogoutPage {
 
 	private WebDriver driver;
 	private By logoutlocator;
+	private By logoutmenulocator;
 
 
 	
 	public LogoutPage(WebDriver driver, Properties props) {
 		
 		this.driver=driver;
-		this.logoutlocator = By.xpath(".//*[@id='nav-dropdown__user']/ul/li[2]/a");
+		this.logoutlocator = By.xpath(props.getProperty("logout.link.css"));
+		this.logoutmenulocator = By.xpath(props.getProperty("logout.menu.css"));
 	}
 
 	public  WebDriver userLogout(){
-		WebElement menu = driver.findElement(By.xpath(".//*[@id='nav-dropdown__user']/a"));
+		WebElement menu = driver.findElement(logoutmenulocator);
 		Actions builder = new Actions(driver);
 		builder.moveToElement(menu).build().perform();
-		WebDriverWait wait = new WebDriverWait(driver, 5);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.presenceOfElementLocated(logoutlocator)); 
 		driver.findElement(logoutlocator).click();
 		return driver;

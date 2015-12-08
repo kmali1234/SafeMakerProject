@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.junit.After;
@@ -15,6 +16,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import sun.util.logging.resources.logging;
 
 import com.sysnet.helper.Assertions;
 import com.sysnet.helper.SeleniumHelper;
@@ -40,14 +43,16 @@ import com.sysnet.pageobjects.PersonalisePage;
 			private Sheet merchantFile;
 			private int count;
 			private Row midRow;
+			private String expUsername;
 		
+			private final Logger log = Logger.getLogger(DoLogin.class.getClass());
 			
 			@Before
 			public void SetUp() throws Exception
 			{
 				
 				
-				propertyfilepath="test/integration/sysnetuslocators.properties";
+				propertyfilepath="test/integration/aibms.properties";
 				clientProps = new Properties();
 				FileInputStream locatorStream = new FileInputStream(propertyfilepath);
 				clientProps.load(locatorStream);
@@ -75,14 +80,16 @@ import com.sysnet.pageobjects.PersonalisePage;
 					midRow = merchantFile.getRow(i);
 					username = midRow.getCell(0).toString();
 					password = "Sysnet12";
-					
+					expUsername = "test"+username;
 					
 				
 				Thread.sleep(500);	
 				LoginPage lp = new LoginPage(driver, clientProps);
 				lp.LoginUser(username, password);
+				log.info(username+" logged in sucessufully");
 				PersonalisePage pp = new PersonalisePage(driver, clientProps);
-				pp.personaliseMerchant(username);
+				pp.personaliseMerchant(expUsername);
+				log.info(expUsername+" personalised sucessfully");
 				
 				// take the screenshot at the end of every test
 		        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -90,10 +97,10 @@ import com.sysnet.pageobjects.PersonalisePage;
 		        FileUtils.copyFile(scrFile, new java.io.File("ComplianceProject/Screenshots"));
 //		        Assertions pers = new Assertions(driver, clientProps);
 //		        pers.assertTitle("Personalise");
-		        Thread.sleep(500);
-		        LogoutPage logout = new LogoutPage(driver, clientProps);
-		        logout.userLogout();
-		         driver.switchTo().alert().accept();
+		        Thread.sleep(2000);
+		        LogoutPage lop = new LogoutPage(driver, clientProps);
+		        lop.userLogout();
+		        // driver.switchTo().alert().accept();
 		        
 		        
 				}

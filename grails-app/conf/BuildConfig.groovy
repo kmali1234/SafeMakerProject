@@ -48,7 +48,7 @@ grails.project.dependency.resolution = {
 			excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs'
 		}
 		
-		test('org.ini4j:ini4j:0.5.2'){
+		test('org.apache.logging.log4j:log4j-jcl:2.4.1'){
 			excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs'
 		}
 		
