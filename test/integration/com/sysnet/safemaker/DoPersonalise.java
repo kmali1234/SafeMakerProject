@@ -16,6 +16,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.sysnet.helper.Assertions;
 import com.sysnet.helper.SeleniumHelper;
 import com.sysnet.pageobjects.LoginPage;
 import com.sysnet.pageobjects.LogoutPage;

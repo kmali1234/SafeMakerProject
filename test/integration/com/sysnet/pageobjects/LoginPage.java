@@ -1,6 +1,7 @@
 package com.sysnet.pageobjects;
 
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -15,10 +16,12 @@ public class LoginPage {
 	private String url;
 	
 	private final Logger log =Logger.getLogger(LoginPage.class.getClass());
+	private Properties locators;
 	
 	
 	public LoginPage(WebDriver driver, Properties locators){
 		this.driver = driver;
+		this.locators= locators;
 		this.url =locators.getProperty("baseUrl")+locators.getProperty("login.url.suffix");
 		this.usernamelocator = By.cssSelector(locators.getProperty("login.textfield.username.css"));
 		this.passwordlocator = By.cssSelector(locators.getProperty("login.textfield.password.css"));
@@ -45,12 +48,12 @@ public class LoginPage {
 	}
 	
 	public LoginPage SubmitLogin(){
-		driver.findElement(loginbuttonlocator).submit();
+		driver.findElement(loginbuttonlocator).click();
 	log.debug("Loging in as a merchant");
 		return this;
 	}
 	
-	public void LoginUser(String username,String password)
+	public void LoginUser(String username,String password) throws Exception
 
      	
 	{	
@@ -58,12 +61,14 @@ public class LoginPage {
 		TypeUserName(username);
 		TypePassword(password);
 		SubmitLogin();
+		Thread.sleep(2000);
+		
 				
 	}
 	
       
  
-	public LoginPage IsSucessfull(String Username,Properties locators){
+	public LoginPage IsSucessfull(String Username){
 		String CurrentUrl = driver.getCurrentUrl();
 		
 		String ExpectedURl= locators.getProperty("baseUrl")+locators.getProperty("personalise.url.suffix");
