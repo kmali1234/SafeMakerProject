@@ -57,7 +57,7 @@ public class LoginPage {
 
      	
 	{	
-		navigateTo();
+		//navigateTo();
 		TypeUserName(username);
 		TypePassword(password);
 		SubmitLogin();
