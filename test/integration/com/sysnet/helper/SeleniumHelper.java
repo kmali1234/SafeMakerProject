@@ -31,7 +31,7 @@ public class SeleniumHelper {
 		}
 		return false;
 		}
-	private boolean isElementPresent(By by) {
+	public boolean isElementPresent(By by) {
 		/*This boolean method checks if the element passed to it is present on a page or not
 		*The method creates a list of WebElements that match the "By" variable passed to it as an argument
 		*If the size of this list is greater than 0, then the Element is present on the page.
