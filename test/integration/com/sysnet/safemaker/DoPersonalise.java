@@ -19,7 +19,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import sun.util.logging.resources.logging;
 
-import com.sysnet.helper.Assertions;
 import com.sysnet.helper.SeleniumHelper;
 import com.sysnet.pageobjects.LoginPage;
 import com.sysnet.pageobjects.LogoutPage;
