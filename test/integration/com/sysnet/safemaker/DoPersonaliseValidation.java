@@ -1,3 +1,4 @@
+
 package com.sysnet.safemaker;
 
 import java.io.FileInputStream;
@@ -43,8 +44,7 @@ public class DoPersonaliseValidation {
 		baseUrl=clientProps.getProperty("baseUrl");
 		loginpageUrlSufix=clientProps.getProperty("login.url.suffix");
 		url = baseUrl+loginpageUrlSufix;
-		
-
+	
 		merchantFile = SeleniumHelper.readExcelFile("test/integration/TestAccs.xlsx", "Status");
 		count = merchantFile.getLastRowNum();
         
@@ -60,7 +60,9 @@ public class DoPersonaliseValidation {
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
+	
 		
+	 
 
 		for(int i=1; i<=count; i++){
 			midRow = merchantFile.getRow(i);
@@ -70,13 +72,13 @@ public class DoPersonaliseValidation {
 		
 		LoginPage lp = new LoginPage(driver, clientProps);
 		lp.LoginUser(username, password);
-		Thread.sleep(1000);
 		PersonaliseValidation pv = new PersonaliseValidation(driver, clientProps);
-		pv.usernamevalidation();
-		pv.blankEmail();
-		Thread.sleep(3000);
-        LogoutPage lop = new LogoutPage(driver, clientProps);
-        lop.userLogout();
+		Thread.sleep(5000);
+    	pv.blankValidation();
+		Thread.sleep(5000);
+	    pv.invalidValidation();
+		LogoutPage lop = new LogoutPage(driver, clientProps);
+		lop.userLogout();
 		}
 	}
 	
