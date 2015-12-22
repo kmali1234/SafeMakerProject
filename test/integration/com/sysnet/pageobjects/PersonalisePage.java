@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 public class PersonalisePage {
 
 	private WebDriver driver;
@@ -14,26 +15,24 @@ public class PersonalisePage {
 	private By emailLocator;
 	private By conformEmailLocators;
 	private By submitButtonLocator;
+	private By conformUsernameLocator;
 
-	public PersonalisePage(WebDriver driver, Properties props) {
-
-		this.driver = driver;
-
-		this.usernameFieldLocator = By.cssSelector(props
-				.getProperty("personalise.textfield.username.css"));
-		// this.conformUsernameLocator=By.id(props.getProperty("personalise.textfield.confirmUsername.css"));
-		this.passwordLocator = By.cssSelector(props
-				.getProperty("personalise.textfield.password.css"));
-		this.conformPasswordLocator = By.cssSelector(props
-				.getProperty("personalise.textfield.confirmPassword.css"));
-		this.emailLocator = By.cssSelector(props
-				.getProperty("personalise.textfield.email.css"));
-		this.conformEmailLocators = By.cssSelector(props
-				.getProperty("personalise.textfield.confirmEmail.css"));
-		this.submitButtonLocator = By.cssSelector(props
-				.getProperty("personalise.button.submit.css"));
-
-	}
+			public PersonalisePage(WebDriver driver, Properties props) {
+				
+				this.driver = driver;
+				
+				
+				
+				this.usernameFieldLocator=By.cssSelector(props.getProperty("personalise.button.accept.css"));
+				this.usernameFieldLocator=By.id(props.getProperty("personalise.textfield.username.id"));
+				this.conformUsernameLocator=By.id(props.getProperty("personalise.textfield.confirmUsername.id"));
+				this.passwordLocator=By.id(props.getProperty("personalise.textfield.password.id"));
+				this.conformPasswordLocator=By.id(props.getProperty("personalise.textfield.confirmPassword.id"));
+				this.emailLocator=By.id(props.getProperty("personalise.textfield.email.id"));
+				this.conformEmailLocators= By.id(props.getProperty("personalise.textfield.confirmEmail.id"));
+				this.submitButtonLocator= By.cssSelector(props.getProperty("personalise.button.submit.css"));
+				
+			}
 
 	public void personaliseMerchant(String username) {
 		enterUserName(username);
