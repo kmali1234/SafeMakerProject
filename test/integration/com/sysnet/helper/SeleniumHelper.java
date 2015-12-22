@@ -9,12 +9,17 @@ import java.util.concurrent.TimeUnit;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import com.sysnet.pageobjects.PersonaliseValidation;
 
 public class SeleniumHelper {
 	
 	private WebDriver driver;
+	
+	
 
 	public SeleniumHelper(WebDriver driver, Properties props){
 		this.driver = driver;
@@ -58,7 +63,19 @@ public class SeleniumHelper {
 		
 	
 	}
-
+	public boolean textCompare(String actValidMsg, String expValidMsg){
+		
+	
+	if(actValidMsg.equals(expValidMsg))
+	{
+		System.out.println("Actual matches with expected, expected emial validation message is "+ expValidMsg);
+		}else{
+			System.out.println("Actuall Message: "+actValidMsg+" does not match with expected message: "+expValidMsg);
+		} 
+	return true;
+		}
+	
+	
 }
 
 
