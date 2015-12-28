@@ -24,7 +24,7 @@ public class DoPersonaliseValidation {
 	private String baseUrl;
 	private String loginpageUrlSufix;
 	private String url;
-	private Sheet merchantFile;
+	private Sheet merchantSheet;
 	private int count;
 	private WebDriver driver;
 	private String username;
@@ -45,8 +45,9 @@ public class DoPersonaliseValidation {
 		loginpageUrlSufix=clientProps.getProperty("login.url.suffix");
 		url = baseUrl+loginpageUrlSufix;
 	
-		merchantFile = SeleniumHelper.readExcelFile("test/integration/TestAccs.xlsx", "Status");
-		count = merchantFile.getLastRowNum();
+		SeleniumHelper sh= new SeleniumHelper(driver, clientProps);
+		merchantSheet = sh.readExcelFile("test/integration/TestAccs.xlsx", "Status");
+		count = merchantSheet.getLastRowNum();
         
 		
 		
@@ -65,7 +66,7 @@ public class DoPersonaliseValidation {
 	 
 
 		for(int i=1; i<=count; i++){
-			midRow = merchantFile.getRow(i);
+			midRow = merchantSheet.getRow(i);
 			username = midRow.getCell(0).toString();
 			password = "Sysnet12";
 			

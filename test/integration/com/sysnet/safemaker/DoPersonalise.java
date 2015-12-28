@@ -34,7 +34,7 @@ public class DoPersonalise {
 	private String url;
 	private Object baseUrl;
 
-	private Sheet merchantFile;
+	private Sheet merchantSheet;
 	private int count;
 	private Row midRow;
 	private String expUsername;
@@ -52,9 +52,9 @@ public class DoPersonalise {
 		loginpageUrlSufix = clientProps.getProperty("login.url.suffix");
 		url = baseUrl + loginpageUrlSufix;
 
-		merchantFile = SeleniumHelper.readExcelFile(
-				"test/integration/TestAccs.xlsx", "Status");
-		count = merchantFile.getLastRowNum();
+		SeleniumHelper sh= new SeleniumHelper(driver, clientProps);
+		merchantSheet = sh.readExcelFile("test/integration/TestAccs.xlsx", "Status");
+		count = merchantSheet.getLastRowNum();
 
 	}
 
@@ -65,7 +65,7 @@ public class DoPersonalise {
 		driver.manage().window().maximize();
 		driver.get(url);
 		for (int i = 1; i <= count; i++) {
-			midRow = merchantFile.getRow(i);
+			midRow = merchantSheet.getRow(i);
 			username = midRow.getCell(0).toString();
 			password = "Sysnet12";
 			expUsername = "test" + username;

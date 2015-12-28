@@ -3,6 +3,8 @@ package com.sysnet.safemaker;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import javax.swing.JOptionPane;
+
 import org.apache.poi.ss.usermodel.Sheet;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,9 +22,12 @@ public class SAQAProfile {
 	private String baseUrl;
 	private String loginpageUrlSufix;
 	private String url;
-	private Sheet merchantFile;
 	private int count;
 	private WebDriver driver;
+	private Sheet profileSheet;
+	private int pRowCount;
+	private Sheet merchantSheet;
+
 
 	@Before
 	public void setup() throws Exception {
@@ -41,10 +46,13 @@ public class SAQAProfile {
 		loginpageUrlSufix = clientProps.getProperty("login.url.suffix");
 		url = baseUrl + loginpageUrlSufix;
 		System.out.println(url);
+		driver.get(url);
+		SeleniumHelper sh= new SeleniumHelper(driver, clientProps);
+		merchantSheet = sh.readExcelFile("test/integration/TestAccs.xlsx", "Status");
+		count = merchantSheet.getLastRowNum();
 
-		merchantFile = SeleniumHelper.readExcelFile(
-				"test/integration/TestAccs.xlsx", "Status");
-		count = merchantFile.getLastRowNum();
+		profileSheet = sh.readExcelFile("test/integration/aibms/Profile.xlsx", "SAQ type A-EP");
+		pRowCount = profileSheet.getLastRowNum();
 
 		Browser browser = new Browser();
 		driver = browser.getdriver(conifgProps.getProperty("browser")
@@ -52,9 +60,18 @@ public class SAQAProfile {
 	}
 
 	@Test
-	public void merchantJourney() {
+	public void merchantJourney() throws Exception {
+		System.out.println(pRowCount);
+		int merchantCount=merchantSheet.getLastRowNum();
+		if(pRowCount>merchantCount){
+			String warning="This script needs sufficient number of Merchants";
+			JOptionPane.showMessageDialog(null,warning);
+			Thread.sleep(100);
+			
+			driver.quit();
+		}
 
-		driver.get(url);
+		
 	}
 
 	// @After

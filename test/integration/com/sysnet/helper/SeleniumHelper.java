@@ -48,7 +48,7 @@ public class SeleniumHelper {
 		}
 	}
 	
-	public static Sheet readExcelFile(String filePath, String sheetName) throws Exception 
+	public Sheet readExcelFile(String filePath, String sheetName) throws Exception 
 	{
 		
 		File f = new File(filePath);

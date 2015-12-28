@@ -30,12 +30,10 @@ import com.sysnet.pageobjects.LogoutPage;
 		private WebDriver driver;
 		private String username;
 		private String propertyfilepath;
-		private Properties userprops;
 		private String password;
 		private String url;
-		private String propertyfilepath1;
 		private Object baseUrl;
-		private Sheet merchantFile;
+		private Sheet merchantSheet;
 		private int count;
 		private Row midRow;
 
@@ -54,8 +52,9 @@ import com.sysnet.pageobjects.LogoutPage;
 			url = baseUrl+loginpageUrlSufix;
 			
 			
-			merchantFile = SeleniumHelper.readExcelFile("test/integration/TestAccs.xlsx", "Status");
-			count = merchantFile.getLastRowNum();
+			SeleniumHelper sh= new SeleniumHelper(driver, clientProps);
+			merchantSheet = sh.readExcelFile("test/integration/TestAccs.xlsx", "Status");
+			count = merchantSheet.getLastRowNum();
 			System.out.println(count);
 			
 			
@@ -70,7 +69,7 @@ import com.sysnet.pageobjects.LogoutPage;
 			driver.get(url);
 			
 			for(int i=1; i<=count; i++){
-				midRow = merchantFile.getRow(i);
+				midRow = merchantSheet.getRow(i);
 				username = midRow.getCell(0).toString();
 				password = "Sysnet12";
 				
