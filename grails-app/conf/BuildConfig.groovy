@@ -40,7 +40,7 @@ grails.project.dependency.resolution = {
 
 	dependencies {
 		// specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-		test ('org.seleniumhq.selenium:selenium-java:2.48.2'){ excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs' }
+		test ('org.seleniumhq.selenium:selenium-java:2.49.0'){ excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs' }
 
 		test ('org.apache.poi:poi-ooxml:3.9'){ excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs' }
 

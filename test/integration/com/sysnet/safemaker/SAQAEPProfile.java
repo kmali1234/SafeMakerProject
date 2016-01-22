@@ -23,7 +23,7 @@ import com.sysnet.pageobjects.LoginPage;
 import com.sysnet.pageobjects.LogoutPage;
 import com.sysnet.pageobjects.PersonalisePage;
 
-public class SAQAProfile {
+public class SAQAEPProfile {
 
 	private String conifgFilePath;
 	private Properties conifgProps;
@@ -85,7 +85,7 @@ public class SAQAProfile {
 		merchantSheet= wrkBook1.getSheet("Status"); 
 		count = merchantSheet.getLastRowNum();
 
-		profileSheet = sh.readExcelFile("test/integration/aibms/Profile.xlsx", "SAQ type A");
+		profileSheet = sh.readExcelFile("test/integration/aibms/Profile.xlsx", "SAQ type A-EP");
 		pRowCount = profileSheet.getLastRowNum();
 
 		Browser browser = new Browser();

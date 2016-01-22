@@ -28,7 +28,7 @@ public class LoginPage {
 		this.loginbuttonlocator = By.cssSelector(locators.getProperty("login.button.submit.css"));
 	//navigateTo();
 		
-		 driver.navigate().to(url);		
+		// driver.navigate().to(url);		
 	}
 	
 	
@@ -49,7 +49,7 @@ public class LoginPage {
 	
 	public LoginPage SubmitLogin(){
 		driver.findElement(loginbuttonlocator).click();
-	log.debug("Loging in as a merchant");
+	//log.debug("Loging in as a merchant");
 		return this;
 	}
 	
@@ -57,11 +57,12 @@ public class LoginPage {
 
      	
 	{	
-		navigateTo();
+		//navigateTo();
 		TypeUserName(username);
 		TypePassword(password);
 		SubmitLogin();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
+		
 		
 				
 	}

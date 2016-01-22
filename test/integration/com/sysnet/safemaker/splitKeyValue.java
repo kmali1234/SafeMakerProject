@@ -6,6 +6,7 @@ import java.util.Properties;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
+import org.grails.datastore.mapping.query.Query.IsEmpty;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -34,7 +35,7 @@ public class splitKeyValue {
 		FileInputStream locatorStream = new FileInputStream(propertyfilepath);
 		clientProps.load(locatorStream);
 		SeleniumHelper sh=new SeleniumHelper(driver, clientProps);
-		saqASheet=sh.readExcelFile("test/integration/aibms/Profile.xlsx", "SAQ type A");
+		saqASheet=sh.readExcelFile("test/integration/aibms/Profile.xlsx", "SAQ type C");
 		
 	}
 	
@@ -50,15 +51,15 @@ public class splitKeyValue {
 				
 				for (int screenNumber = 1; screenNumber < sRow.getLastCellNum(); screenNumber++) {
 					cell=sRow.getCell(screenNumber);
-					if(cell!=null){
+					if(cell != null && (cell.getCellType()==Cell.CELL_TYPE_STRING)){
 						
+						System.out.println(screenNumber);
+						System.out.println("the text in the cell is:"+sRow.getCell(screenNumber).getStringCellValue());
 								Profile.splitLine(sRow.getCell(screenNumber).getStringCellValue(), driver, clientProps);
 						System.out.println(sRow.getCell(screenNumber).getStringCellValue());
 						Thread.sleep(300);
 						System.out.println("\n");
 						
-						
-					}else{
 						
 					}
 					

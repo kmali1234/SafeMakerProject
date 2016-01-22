@@ -73,17 +73,18 @@ public class DoPersonalise {
 			Thread.sleep(500);
 			LoginPage lp = new LoginPage(driver, clientProps);
 			lp.LoginUser(username, password);
-			log.info(username + " logged in sucessufully");
+			Thread.sleep(8000);
+			//log.info(username + " logged in sucessufully");
 			PersonalisePage pp = new PersonalisePage(driver, clientProps);
 			pp.personaliseMerchant(expUsername);
-			log.info(expUsername + " personalised sucessfully");
+			//log.info(expUsername + " personalised sucessfully");
 
 			// take the screenshot at the end of every test
-			File scrFile = ((TakesScreenshot) driver)
+			/*File scrFile = ((TakesScreenshot) driver)
 					.getScreenshotAs(OutputType.FILE);
 			// now save the screenshto to a file some place
 			FileUtils.copyFile(scrFile, new java.io.File(
-					"ComplianceProject/Screenshots"));
+					"ComplianceProject/Screenshots"));*/
 			// Assertions pers = new Assertions(driver, clientProps);
 			// pers.assertTitle("Personalise");
 			Thread.sleep(3000);

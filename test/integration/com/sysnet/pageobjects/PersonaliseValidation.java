@@ -17,20 +17,10 @@ public class PersonaliseValidation {
 	private By submitButtonLocator;
 	private WebDriver driver;
 	private int unLength;
-	private By sucessValidation;
 	private By minLengthUsername;
-	private By emailValidationMsg;
 	private Properties props;
-	private String emLength="";
-	private By confirmEmailValidationMsg;
-	private By passwordValidationMsg;
-	private By confirmPasswordValidationMsg;
-	private String expEmailValidMessg;
-	private String expPasswordValidMessg;
-	private By emailvalidmessage;
-	private String emailBlankValidationMsg;
-	private String emailinvalidvalidmessage;
-	private WebDriver WebDriver;
+
+
 	private String expUserValidMsg;
 	private By actUserValidMsgLocator;
 	private By actEmailValidMsgLocator;
@@ -44,7 +34,6 @@ public class PersonaliseValidation {
 	private String actPwdValidMsg;
 	private String actConfPwdValidMsg;
 	private By actconfirmEmailValidMsgLocator;
-	private By expconfirmEmailValidMsgLocator;
 	private String actConfirmEmailValidMsg;
 	private String expconfirmEmailValidMsg;
 	private String expinvalidUserValidMsg;
@@ -52,8 +41,13 @@ public class PersonaliseValidation {
 	private String expInvalidPwdValidMsg;
 	private String expInvalidConfPwdValidMsg;
 	private String expInvalidconfirmEmailValidMsg;
-	private String emailinvalidemailmessage;
-	private String emailinvalidMessage;
+	private By sucessValidation;
+	private By emailValidationMsg;
+	private By confirmEmailValidationMsg;
+	private By passwordValidationMsg;
+	private By confirmPasswordValidationMsg;
+	private String emailBlankValidationMsg;
+
 
 	
 	
