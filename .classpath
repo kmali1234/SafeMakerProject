@@ -118,5 +118,6 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.grails.ide.eclipse.core.CLASSPATH_CONTAINER"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="lib" path="C:/Users/davuluris/Documents/My Received Files/org.apache.logging.log4j-1.2.17.jar.zip"/>
 	<classpathentry kind="output" path="target-eclipse/classes"/>
 </classpath>

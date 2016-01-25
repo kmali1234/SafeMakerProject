@@ -167,7 +167,7 @@ public class SAQAProfile {
 						skiptutorials=By.cssSelector(clientProps.getProperty("tutorials.button.skip.css"));
 						driver.findElement(skiptutorials).click();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
-						//saqType=driver.findElement(By.cssSelector(clientProps.getProperty("dashboard.saqtype.test.css"))).getText();
+						saqType=driver.findElement(By.cssSelector(clientProps.getProperty("dashboard.saqtype.test.css"))).getText();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						driver.navigate().refresh();
@@ -176,12 +176,13 @@ public class SAQAProfile {
 						lop.userLogout();
 						merchanRowNum++;
 						scenario++;
+						usernameCell.setCellValue(username);
+						usedCell.setCellValue("YES");
 					}
 					
 				
 			}
-			usernameCell.setCellValue(username);
-			usedCell.setCellValue("YES");
+			
 			Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 			Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 			

@@ -4,15 +4,20 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.LocalFileDetector;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -21,10 +26,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SeleniumHelper {
 	
 	private WebDriver driver;
+	
+
+	private List<WebElement> noOfColumns;
+	private WebElement dateWidget;
+	private List<WebElement> rows;
+	private List<WebElement> columns;
+
+	
 	private Workbook wrkBook;
 	
 	
-
+	public  final Logger logger = Logger.getLogger(SeleniumHelper.class);
 	public SeleniumHelper(WebDriver driver, Properties props){
 		this.driver = driver;
 	}
@@ -97,8 +110,31 @@ public class SeleniumHelper {
 		out.close();
 		
 	}
-
 	
+	public void selectUploadFile(String Filepath)
+	{
+		WebElement El = driver.findElement(By.id("'fileUploadField'"));
+	    ((RemoteWebElement) El ).setFileDetector(new LocalFileDetector()); 
+	    El.sendKeys();
+	    logger.info("File Uploaded" +El);
+	}
+	
+	
+	public void selectDate(String date)
+	 {
+	 dateWidget = driver.findElement(By.id("resultDate"));
+	 rows=dateWidget.findElements(By.tagName("tr"));
+	 columns=dateWidget.findElements(By.tagName("td"));
+
+	 for (WebElement cell: columns){
+	  //Selects Date
+	  if (cell.getText().equals(date)){
+	   cell.findElement(By.linkText(date)).click();
+	   logger.info("Calendar Date Chosen" +cell);
+	   break;
+	   
+	  }
+	 }}
 	
 	
 }

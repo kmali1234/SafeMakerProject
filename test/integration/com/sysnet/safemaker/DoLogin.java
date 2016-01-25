@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.junit.After;
@@ -37,12 +38,13 @@ import com.sysnet.pageobjects.LogoutPage;
 		private int count;
 		private Row midRow;
 
-		public final Logger log =Logger.getLogger(DoLogin.class.getClass());
+		public final Logger log = Logger.getLogger(DoLogin.class.getClass());
 		@Before
 		public void SetUp() throws Exception
 		{
 			
-			
+
+			PropertyConfigurator.configure("log4j.properties");
 			propertyfilepath="test/integration/aibms.properties";
 			clientProps = new Properties();
 			FileInputStream locatorStream = new FileInputStream(propertyfilepath);
@@ -70,13 +72,13 @@ import com.sysnet.pageobjects.LogoutPage;
 			
 			for(int i=1; i<=count; i++){
 				midRow = merchantSheet.getRow(i);
-				username = midRow.getCell(0).toString();
+				username = midRow.getCell(6).toString();
 				password = "Sysnet12";
 				
 				
 			LoginPage lp = new LoginPage(driver, clientProps);
 			lp.LoginUser(username, password);
-			
+			log.info(username + "successfully logged in");
 			
 			// take the screenshot at the end of every test
 	        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -84,6 +86,7 @@ import com.sysnet.pageobjects.LogoutPage;
 	        FileUtils.copyFile(scrFile, new java.io.File("SafeMakerProject/Screenshots"));
 	        LogoutPage lop = new LogoutPage(driver, clientProps);
 	        lop.userLogout();
+	        log.info(username + "successfully logged out");    
 		}
 	        
 	}
