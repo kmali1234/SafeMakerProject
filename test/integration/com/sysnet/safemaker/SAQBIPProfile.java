@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import javax.swing.JOptionPane;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -50,7 +51,7 @@ public class SAQBIPProfile {
 	private Cell usernameCell;
 	private int merchantCount;
 	private String username;
-	private int count;
+	private int count=0;
 	private By starProfileButton;
 	private SeleniumHelper sh;
 	private By skiptutorials;
@@ -60,7 +61,9 @@ public class SAQBIPProfile {
 	private Workbook wrkBook1;
 	private FileInputStream in;
 	private String used;
+	private String saqSheet;
 
+	private final  Logger log = Logger.getLogger(SAQBIPProfile.class.getName());
 
 	@Before
 	public void setup() throws Exception {
@@ -82,10 +85,11 @@ public class SAQBIPProfile {
 		merchantfilepath="test/integration/TestAccs.xlsx";
 		in = new FileInputStream(merchantfilepath);
 		wrkBook1 = (Workbook)WorkbookFactory.create(in);
-		merchantSheet= wrkBook1.getSheet("Status"); 
+		merchantSheet= wrkBook1.getSheet("SAQBIP"); 
 		count = merchantSheet.getLastRowNum();
-
-		profileSheet = sh.readExcelFile("test/integration/aibms/Profile.xlsx", "SAQ type B-IP");
+		saqSheet="SAQ type B-IP";
+		profileSheet = sh.readExcelFile("test/integration/aibms/Profile.xlsx", saqSheet );
+		
 		pRowCount = profileSheet.getLastRowNum();
 
 		Browser browser = new Browser();
@@ -107,7 +111,7 @@ public class SAQBIPProfile {
 				
 				System.out.println(currentScenario);
 				System.out.println(merchantSheet.getLastRowNum());
-				if(merchanRowNum<=merchantSheet.getLastRowNum()){
+				if(merchanRowNum<=count){
 					
 					Row row = merchantSheet.getRow(merchanRowNum);
 					usedCell = row.getCell(1);
@@ -148,6 +152,8 @@ public class SAQBIPProfile {
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						log.info("Merchant profile initiated for "+saqSheet+ " "+currentScenario);
 						System.out.println(prow.getLastCellNum());
 						for (int screenNumber = 1; screenNumber < prow.getLastCellNum(); screenNumber++) {
 							
@@ -193,7 +199,7 @@ public class SAQBIPProfile {
 			
 			in = new FileInputStream(merchantfilepath);
 			wrkBook1 = (Workbook)WorkbookFactory.create(in);
-			merchantSheet= wrkBook1.getSheet("Status");
+			merchantSheet= wrkBook1.getSheet("SAQBIP");
 			Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 			
 		}

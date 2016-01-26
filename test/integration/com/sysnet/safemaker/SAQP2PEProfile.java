@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import javax.swing.JOptionPane;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -50,7 +51,7 @@ public class SAQP2PEProfile {
 	private Cell usernameCell;
 	private int merchantCount;
 	private String username;
-	private int count;
+	private int count=0;
 	private By starProfileButton;
 	private SeleniumHelper sh;
 	private By skiptutorials;
@@ -60,10 +61,13 @@ public class SAQP2PEProfile {
 	private Workbook wrkBook1;
 	private FileInputStream in;
 	private String used;
-
+	private String saqSheet;
+	
+	private final  Logger log = Logger.getLogger(SAQP2PEProfile.class.getName());
 
 	@Before
 	public void setup() throws Exception {
+		
 		conifgFilePath = "test/integration/config.Properties";
 		conifgProps = new Properties();
 		FileInputStream locatorStream = new FileInputStream(conifgFilePath);
@@ -82,10 +86,12 @@ public class SAQP2PEProfile {
 		merchantfilepath="test/integration/TestAccs.xlsx";
 		in = new FileInputStream(merchantfilepath);
 		wrkBook1 = (Workbook)WorkbookFactory.create(in);
-		merchantSheet= wrkBook1.getSheet("Status"); 
+		merchantSheet= wrkBook1.getSheet("SAQP2PE"); 
 		count = merchantSheet.getLastRowNum();
 
-		profileSheet = sh.readExcelFile("test/integration/aibms/Profile.xlsx", "SAQ type P2PE");
+		saqSheet="SAQ type P2PE";
+		profileSheet = sh.readExcelFile("test/integration/aibms/Profile.xlsx", saqSheet );
+		
 		pRowCount = profileSheet.getLastRowNum();
 
 		Browser browser = new Browser();
@@ -107,7 +113,8 @@ public class SAQP2PEProfile {
 				
 				System.out.println(currentScenario);
 				System.out.println(merchantSheet.getLastRowNum());
-				if(merchanRowNum<=merchantSheet.getLastRowNum()){
+				
+				if(merchanRowNum<=count){
 					
 					Row row = merchantSheet.getRow(merchanRowNum);
 					usedCell = row.getCell(1);
@@ -148,7 +155,9 @@ public class SAQP2PEProfile {
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						System.out.println(prow.getLastCellNum());
+						log.info("Merchant profile initiated for "+saqSheet+ " "+currentScenario);
 						for (int screenNumber = 1; screenNumber < prow.getLastCellNum(); screenNumber++) {
 							
 							if(prow.getCell(screenNumber)!=null && (prow.getCell(screenNumber).getCellType()==Cell.CELL_TYPE_STRING)){
@@ -193,7 +202,7 @@ public class SAQP2PEProfile {
 			
 			in = new FileInputStream(merchantfilepath);
 			wrkBook1 = (Workbook)WorkbookFactory.create(in);
-			merchantSheet= wrkBook1.getSheet("Status");
+			merchantSheet= wrkBook1.getSheet("SAQP2PE");
 			Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 			
 		}

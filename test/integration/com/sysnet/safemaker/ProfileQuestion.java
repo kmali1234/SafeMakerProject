@@ -75,7 +75,7 @@ driver.findElement(By.cssSelector(cssSelector)).sendKeys(keyValue);
 		
 		SeleniumHelper spc=new SeleniumHelper(driver, clientProps);
 		spc.clickDialogIfDisplayed();
-		log.info(profileKey+" answer is "+keyValue);
+		//log.info(profileKey+" answer is "+keyValue);
 		
 	}
 

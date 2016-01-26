@@ -61,6 +61,7 @@ public class LoginPage {
 		TypeUserName(username);
 		TypePassword(password);
 		SubmitLogin();
+		log.info("Merchant Logged in with Username: "+username);
 		Thread.sleep(5000);
 		
 		

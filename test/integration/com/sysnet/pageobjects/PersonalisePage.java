@@ -2,6 +2,7 @@ package com.sysnet.pageobjects;
 
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -23,6 +24,7 @@ import com.sysnet.helper.SeleniumHelper;
 			private Properties props;
 
 			private boolean notPersonalised;
+			private final Logger log =Logger.getLogger(PersonalisePage.class.getClass());
 			public PersonalisePage(WebDriver driver, Properties props) {
 				
 				this.driver = driver;
@@ -45,6 +47,7 @@ import com.sysnet.helper.SeleniumHelper;
 					enterUserName(username);
 					EnterPasswordEmail();
 					submitForm();
+					log.info("Merchant is personalised and the username is: "+username);
 				
 			}
 
