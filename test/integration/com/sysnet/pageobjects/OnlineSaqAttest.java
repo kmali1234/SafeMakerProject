@@ -5,9 +5,12 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.sysnet.helper.SeleniumHelper;
+import com.thoughtworks.selenium.webdriven.JavascriptLibrary;
 
 public class OnlineSaqAttest {
 	private final Logger log = Logger.getLogger(UploadCompliance.class.getClass());
@@ -17,57 +20,91 @@ public class OnlineSaqAttest {
 	private By saqAnswer;
 	private By saqNextButton;
 	private By confirmButton;
+	private By reProfileButton;
 	private By manageButton;
 	private By yesButton;
 	private By nextButton;
 	private Properties props;
 	private By finishButton ;
+	private By completesecuritybutton;
+	private By attestButton;
+	private By onlineSaqyes;
+	private By turnOffHelpTextLocator;
+	private By finalNextButton;
+
 	
 	public OnlineSaqAttest(WebDriver driver, Properties locators) {
-	//	PropertyConfigurator.configure("log4j.properties");
+		PropertyConfigurator.configure("log4j.properties");
 		this.driver = driver;
 		this.locators = locators;
-		this.onlineSaq = By.cssSelector(locators.getProperty("button.onlinesaqyes.css"));
-		this.saqAnswer = By.cssSelector(locators.getProperty("button.saqanswer.css"));
-		this.saqNextButton = By.cssSelector(locators.getProperty("button.onlinesaqnext.css"));
-		this.confirmButton = By.cssSelector(locators.getProperty("button.confirm.css"));
-		this.manageButton = By.cssSelector(locators.getProperty("dashboard.button.manage.css"));
-		this.yesButton = By.cssSelector(locators.getProperty("button.yes.css"));
-		this.nextButton = By.cssSelector(locators.getProperty("dashboard.button.next.css"));
-		this.finishButton = By.cssSelector(locators.getProperty("button.finish.css"));
 		
+	    this.manageButton = By.cssSelector(locators.getProperty("saq.dashboard.button.manage.css"));
+		this.onlineSaqyes = By.cssSelector(locators.getProperty("saq.button.yes.css"));
+		this.saqAnswer = By.cssSelector(locators.getProperty("saq.completesecurity.button.saqanswer.css"));
+		this.saqNextButton = By.cssSelector(locators.getProperty("saq.button.onlinesaqnext.css"));
+		this.confirmButton = By.cssSelector(locators.getProperty("saq.button.confirm.css"));
+		this.reProfileButton = By.cssSelector(locators.getProperty("saq.button.reProfile.css"));
+	    this.turnOffHelpTextLocator = By.cssSelector(locators.getProperty("saq.filterbutton.turnoff.css"));
+		this.yesButton = By.cssSelector(locators.getProperty("saq.yes.button.css"));
+	//	this.nextButton = By.cssSelector(locators.getProperty("next.button.css"));
+		//this.finishButton = By.cssSelector(locators.getProperty("button.finish.css"));
+		this.finishButton = By.cssSelector(locators.getProperty("saq.next.button.css"));
+		this.attestButton = By.cssSelector(locators.getProperty("saq.attest.button.css"));
+		this.finalNextButton = By.cssSelector(locators.getProperty("saq.finalNext.button.css"));
 	}
 
-	public OnlineSaqAttest manageButton(){
+	public OnlineSaqAttest manageButton() throws Exception{
 		driver.findElement(manageButton).click();
+		//driver.findElement(By.linkText("wdgt__btn--second")).click();
+		Thread.sleep(3000);
 		log.info("manageButton clicked");
 		return this;
 	}
 	
-	public OnlineSaqAttest answerButton(){
-		driver.findElement(By.linkText("Answer now")).click();
+	public OnlineSaqAttest saqAnswer(){
+		//driver.findElement(By.linkText("sgs-action-view__action-link")).click();
+		driver.findElement(saqAnswer).click();
 		return this;
 	}
 
+	
+	
+	public OnlineSaqAttest onlineSaq(){
+		driver.findElement(onlineSaq).sendKeys("onlineSaq");
+		log.info("onlineSaq");
+		return this;
+	} 
 	public OnlineSaqAttest yesButton() throws Exception{
 		
 		
 		SeleniumHelper selh = new SeleniumHelper(driver, props);
-		
-		if(selh.isElementPresent(nextButton))
+		WebElement temp = driver.findElement(turnOffHelpTextLocator);
+        JavascriptLibrary jsLib = new JavascriptLibrary();
+		 jsLib.callEmbeddedSelenium(driver,"triggerMouseEventAt", temp,"click", "0,0");
+		 Thread.sleep(1000);
+		while(selh.isElementPresent(saqNextButton) || selh.isElementPresent(finalNextButton))
 			{
-			if(selh.isElementPresent(yesButton))
+			while(selh.isElementPresent(yesButton))
 			{
 				driver.findElement(yesButton).click();		
 				log.info("yesButton clicked");
 				Thread.sleep(1000);
-				if(selh.isElementPresent(finishButton))
-				{
-					driver.findElement(finishButton).click();
-					Thread.sleep(1000);
-				}
+
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+			        js.executeScript("javascript:window.scrollBy(250,350)");
+			        while(selh.isElementPresent(finishButton))
+					{
+						driver.findElement(finishButton).click();	
+						log.info("finishButton clicked");	
+						Thread.sleep(1000);
+					}
+			     
 			}
-			driver.findElement(nextButton).click();
+			if(selh.isElementPresent(saqNextButton)){
+			driver.findElement(saqNextButton).click();
+			} else if(selh.isElementPresent(finalNextButton)){
+				driver.findElement(finalNextButton).click();
+			}
 			Thread.sleep(1000);
 			
 			
@@ -78,18 +115,10 @@ public class OnlineSaqAttest {
 		
 	}
 	
-	public OnlineSaqAttest onlineSaq(){
-		driver.findElement(onlineSaq).sendKeys("onlineSaq");
-		log.info("onlineSaq");
-		return this;
-	} 
+		
 
-	public OnlineSaqAttest saqAnswer(){
-		driver.findElement(saqAnswer).sendKeys("saqAnswer");
-		log.info("onlineSaqAttest");
-		return this;
-	}
-	
+			
+			
 	public OnlineSaqAttest saqNextButton(){
 		driver.findElement(saqNextButton).sendKeys("saqNextButton");
 		log.info("saqNextButton");
