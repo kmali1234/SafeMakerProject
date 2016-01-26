@@ -34,6 +34,7 @@ public class ProfileQuestion {
 			createselectorAndDoEvent(profileKey, keyValue, clientProps, driver);
 			System.out.println("proflileKey: "+profileKey);
 			System.out.println("KeyValue: "+keyValue);
+			log.info(profileKey+" question is answered as: "+keyValue);
 			}
 		}
 		
