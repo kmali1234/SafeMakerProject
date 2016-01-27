@@ -164,10 +164,12 @@ public class SAQDProfile {
 								
 								Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 								NextButton.click(driver, clientProps);
-								
+								Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 								
 							}
 						}
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						skiptutorials=By.cssSelector(clientProps.getProperty("tutorials.button.skip.css"));

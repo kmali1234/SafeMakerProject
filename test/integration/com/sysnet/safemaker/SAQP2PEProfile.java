@@ -167,7 +167,7 @@ public class SAQP2PEProfile {
 								
 								Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 								NextButton.click(driver, clientProps);
-								
+								Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 								
 							}
 						}
