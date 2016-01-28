@@ -39,7 +39,7 @@ public class Browser {
 			driver.manage().window().maximize();
 			break;
 		}
-		case "phanthomjs": {
+		case "Phanthomjs": {
 			dCaps = new DesiredCapabilities();
 			dCaps.setJavascriptEnabled(true);
 			dCaps.setCapability("takesScreenshot", false);

@@ -22,6 +22,7 @@ import org.openqa.selenium.WebElement;
 import com.sysnet.helper.SeleniumHelper;
 import com.sysnet.pageobjects.LoginPage;
 import com.sysnet.pageobjects.LogoutPage;
+import com.sysnet.pageobjects.OnlineSaqAttest;
 import com.sysnet.pageobjects.PersonalisePage;
 
 public class SAQP2PEProfile {
@@ -102,6 +103,7 @@ public class SAQP2PEProfile {
 
 	@Test
 	public void merchantJourney() throws Exception {
+		try{
 		System.out.println(pRowCount);
 		
 		checkForMerchants();
@@ -177,6 +179,8 @@ public class SAQP2PEProfile {
 						driver.findElement(skiptutorials).click();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						//saqType=driver.findElement(By.cssSelector(clientProps.getProperty("dashboard.saqtype.test.css"))).getText();
+						OnlineSaqAttest osa= new OnlineSaqAttest(driver, clientProps);
+						osa.saqCompliant();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						driver.navigate().refresh();
@@ -185,6 +189,7 @@ public class SAQP2PEProfile {
 						lop.userLogout();
 						merchanRowNum++;
 						scenario++;
+						log.info("Merchant "+username+" is sucessfully Attested");
 					}
 					
 				
@@ -206,7 +211,9 @@ public class SAQP2PEProfile {
 			Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 			
 		}
-
+		}catch(Exception e){
+			log.error("Merchant journey for merchant:"+username+"and SAQ type"+saqSheet.toString()+" intrupted by an exception", e);
+		}
 		
 	}
 

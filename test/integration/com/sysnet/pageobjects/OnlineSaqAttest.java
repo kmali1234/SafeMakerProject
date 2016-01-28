@@ -13,7 +13,7 @@ import com.sysnet.helper.SeleniumHelper;
 import com.thoughtworks.selenium.webdriven.JavascriptLibrary;
 
 public class OnlineSaqAttest {
-	private final Logger log = Logger.getLogger(UploadCompliance.class.getClass());
+	private final Logger log = Logger.getLogger(OnlineSaqAttest.class.getClass());
 	private WebDriver driver;
 	private Properties locators;
 	private By onlineSaq;
@@ -31,15 +31,18 @@ public class OnlineSaqAttest {
 	private By onlineSaqyes;
 	private By turnOffHelpTextLocator;
 	private By finalNextButton;
+	private By questionnaireTextLocator;
+	private String questionnaireText;
 
 	
 	public OnlineSaqAttest(WebDriver driver, Properties locators) {
-		PropertyConfigurator.configure("log4j.properties");
+		//PropertyConfigurator.configure("log4j.properties");
 		this.driver = driver;
 		this.locators = locators;
 		
 	    this.manageButton = By.cssSelector(locators.getProperty("saq.dashboard.button.manage.css"));
 		this.onlineSaqyes = By.cssSelector(locators.getProperty("saq.button.yes.css"));
+		this.questionnaireTextLocator=By.cssSelector(locators.getProperty("saq.questionnaire.text.css"));
 		this.saqAnswer = By.cssSelector(locators.getProperty("saq.completesecurity.button.saqanswer.css"));
 		this.saqNextButton = By.cssSelector(locators.getProperty("saq.button.onlinesaqnext.css"));
 		this.confirmButton = By.cssSelector(locators.getProperty("saq.button.confirm.css"));
@@ -69,11 +72,11 @@ public class OnlineSaqAttest {
 
 	
 	
-	public OnlineSaqAttest onlineSaq(){
-		driver.findElement(onlineSaq).sendKeys("onlineSaq");
-		log.info("onlineSaq");
-		return this;
-	} 
+//	public OnlineSaqAttest onlineSaq(){
+//		driver.findElement(onlineSaq).sendKeys("onlineSaq");
+//		log.info("onlineSaq");
+//		return this;
+//	} 
 	public OnlineSaqAttest yesButton() throws Exception{
 		
 		
@@ -86,14 +89,17 @@ public class OnlineSaqAttest {
 			{
 			while(selh.isElementPresent(yesButton))
 			{
+				questionnaireText=driver.findElement(questionnaireTextLocator).getText();
 				driver.findElement(yesButton).click();		
 				log.info("yesButton clicked");
 				Thread.sleep(1000);
-
+				
+				log.info(" Question: \""+questionnaireText+"\" is answered as Yes");
 				JavascriptExecutor js = (JavascriptExecutor) driver;
 			        js.executeScript("javascript:window.scrollBy(250,350)");
 			        while(selh.isElementPresent(finishButton))
 					{
+			        	
 						driver.findElement(finishButton).click();	
 						log.info("finishButton clicked");	
 						Thread.sleep(1000);
@@ -128,6 +134,34 @@ public class OnlineSaqAttest {
 	public OnlineSaqAttest confirmButton(){
 		driver.findElement(confirmButton).click();
 		log.info("confirmButton");
+		return this;
+	}
+	
+	public OnlineSaqAttest saqCompliant() throws Exception{
+		try{
+		Thread.sleep(500);
+		
+		manageButton();
+		log.info("clicked on manage sucessufully");
+		Thread.sleep(1000);
+		saqAnswer();
+		log.info("clicked on answer button sucessufully");
+		Thread.sleep(1000);
+		yesButton();
+		log.info(" clicked on yes button sucessufully");
+		Thread.sleep(1000);
+//		onlineSaq();
+//		log.info("clicked on onlinesaq sucessufully");
+//		saqNextButton();
+//		log.info("clicked on saqnextbutton sucessufully");
+//		Thread.sleep(1000);
+//		log.info("clicked on confirmbutton sucessufully");
+//		confirmButton();
+		Thread.sleep(1000);
+		}catch(Exception e)
+		{
+			log.error("Unable to complete SAQ and Attestation", e);
+		}
 		return this;
 	}
 	

@@ -1,0 +1,78 @@
+2016-01-28 12:02:32,264 - com.sysnet.safemaker.SAQP2PEProfile - INFO - Merchant Test20160127063 is sucessfully Attested
+2016-01-28 12:02:38,010 - java.lang.Class - INFO - Merchant Logged in with Username: 20160127064
+2016-01-28 12:02:44,498 - java.lang.Class - INFO - Merchant is personalised and the username is: Test20160127064
+2016-01-28 12:02:51,680 - com.sysnet.safemaker.SAQP2PEProfile - INFO - Merchant profile initiated for SAQ type P2PE Scenario2
+2016-01-28 12:02:51,887 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData answer is yes
+2016-01-28 12:02:51,888 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData question is answered as: yes
+2016-01-28 12:03:00,829 - com.sysnet.safemaker.ProfileQuestion - INFO - pacMoto answer is check
+2016-01-28 12:03:00,830 - com.sysnet.safemaker.ProfileQuestion - INFO - pacMoto question is answered as: check
+2016-01-28 12:03:05,351 - com.sysnet.safemaker.ProfileQuestion - INFO - motoPhone answer is check
+2016-01-28 12:03:05,351 - com.sysnet.safemaker.ProfileQuestion - INFO - motoPhone question is answered as: check
+2016-01-28 12:03:09,874 - com.sysnet.safemaker.ProfileQuestion - INFO - motoOutsourced answer is no
+2016-01-28 12:03:09,875 - com.sysnet.safemaker.ProfileQuestion - INFO - motoOutsourced question is answered as: no
+2016-01-28 12:03:14,366 - com.sysnet.safemaker.ProfileQuestion - INFO - motoSetupMethodPhone answer is yes
+2016-01-28 12:03:14,367 - com.sysnet.safemaker.ProfileQuestion - INFO - motoSetupMethodPhone question is answered as: yes
+2016-01-28 12:03:18,914 - com.sysnet.safemaker.ProfileQuestion - INFO - motoCallRecording answer is no
+2016-01-28 12:03:18,915 - com.sysnet.safemaker.ProfileQuestion - INFO - motoCallRecording question is answered as: no
+2016-01-28 12:03:23,463 - com.sysnet.safemaker.ProfileQuestion - INFO - chdInCrm answer is no
+2016-01-28 12:03:23,463 - com.sysnet.safemaker.ProfileQuestion - INFO - chdInCrm question is answered as: no
+2016-01-28 12:03:27,984 - com.sysnet.safemaker.ProfileQuestion - INFO - chdAgentAccess answer is no
+2016-01-28 12:03:27,985 - com.sysnet.safemaker.ProfileQuestion - INFO - chdAgentAccess question is answered as: no
+2016-01-28 12:03:32,517 - com.sysnet.safemaker.ProfileQuestion - INFO - ePosUsed answer is check
+2016-01-28 12:03:32,517 - com.sysnet.safemaker.ProfileQuestion - INFO - ePosUsed question is answered as: check
+2016-01-28 12:03:37,066 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peSolutionInUse answer is yes
+2016-01-28 12:03:37,066 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peSolutionInUse question is answered as: yes
+2016-01-28 12:03:41,787 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peSolutionOnly answer is yes
+2016-01-28 12:03:41,788 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peSolutionOnly question is answered as: yes
+2016-01-28 12:03:42,015 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peHwSolutions_list question is answered as: INFO
+2016-01-28 12:03:46,555 - com.sysnet.safemaker.ProfileQuestion - INFO - payConexPoi_list question is answered as: INFO
+2016-01-28 12:03:51,124 - com.sysnet.safemaker.ProfileQuestion - INFO - sadReceived answer is no
+2016-01-28 12:03:51,125 - com.sysnet.safemaker.ProfileQuestion - INFO - sadReceived question is answered as: no
+2016-01-28 12:03:55,646 - com.sysnet.safemaker.ProfileQuestion - INFO - physicalCardDataUsed answer is no
+2016-01-28 12:03:55,647 - com.sysnet.safemaker.ProfileQuestion - INFO - physicalCardDataUsed question is answered as: no
+2016-01-28 12:04:00,191 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse answer is no
+2016-01-28 12:04:00,191 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse question is answered as: no
+2016-01-28 12:04:00,373 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData answer is no
+2016-01-28 12:04:00,374 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData question is answered as: no
+2016-01-28 12:04:05,272 - com.sysnet.safemaker.ProfileQuestion - INFO - securityPolicy answer is yes
+2016-01-28 12:04:05,273 - com.sysnet.safemaker.ProfileQuestion - INFO - securityPolicy question is answered as: yes
+2016-01-28 12:04:09,816 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected answer is no
+2016-01-28 12:04:09,816 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected question is answered as: no
+2016-01-28 12:04:14,358 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship answer is no
+2016-01-28 12:04:14,359 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship question is answered as: no
+2016-01-28 12:04:18,928 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has answer is no
+2016-01-28 12:04:18,929 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has question is answered as: no
+2016-01-28 12:04:23,498 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed answer is no
+2016-01-28 12:04:23,499 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed question is answered as: no
+2016-01-28 12:04:28,031 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeFacilitiesAndLocations question is answered as: text
+2016-01-28 12:04:28,238 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeChdCapacity question is answered as: text
+2016-01-28 12:04:28,443 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeDescription question is answered as: text
+2016-01-28 12:04:40,206 - java.lang.Class - INFO - manageButton clicked
+2016-01-28 12:04:40,206 - java.lang.Class - INFO - clicked on manage sucessufully
+2016-01-28 12:04:41,385 - java.lang.Class - INFO - clicked on answer button sucessufully
+2016-01-28 12:04:43,901 - java.lang.Class - INFO - yesButton clicked
+2016-01-28 12:04:44,902 - java.lang.Class - INFO -  Question: "Is data storage amount and retention time limited to that required for legal, regulatory, and/or business requirements?" is answered as Yes
+2016-01-28 12:04:45,342 - java.lang.Class - INFO - yesButton clicked
+2016-01-28 12:04:46,343 - java.lang.Class - INFO -  Question: "Are there defined processes in place for securely deleting cardholder data when no longer needed for legal, regulatory, and/or business reasons?" is answered as Yes
+2016-01-28 12:04:46,788 - java.lang.Class - INFO - yesButton clicked
+2016-01-28 12:04:47,789 - java.lang.Class - INFO -  Question: "Are there specific retention requirements for cardholder data?
+For example, cardholder data needs to be held for X period for Y business reasons." is answered as Yes
+2016-01-28 12:04:48,327 - java.lang.Class - INFO - yesButton clicked
+2016-01-28 12:04:49,328 - java.lang.Class - INFO -  Question: "Is there a quarterly process for identifying and securely deleting stored cardholder data that exceeds defined retention requirements?" is answered as Yes
+2016-01-28 12:04:49,816 - java.lang.Class - INFO - yesButton clicked
+2016-01-28 12:04:50,817 - java.lang.Class - INFO -  Question: "Does all stored cardholder data meet the requirements defined in the data-retention policy?" is answered as Yes
+2016-01-28 12:04:51,305 - java.lang.Class - INFO - yesButton clicked
+2016-01-28 12:04:52,306 - java.lang.Class - INFO -  Question: "Is the PAN masked when displayed (the first six and last four digits are the maximum number of digits to be displayed) such that only personnel with a legitimate business need can see the full PAN?
+Note: This requirement does not supersede stricter requirements in place for displays of cardholder data for example, legal or payment card brand requirements for point-of-sale (POS) receipts." is answered as Yes
+2016-01-28 12:04:52,770 - java.lang.Class - INFO - yesButton clicked
+2016-01-28 12:04:53,771 - java.lang.Class - INFO -  Question: "Are security policies and operational procedures for protecting stored cardholder data:
+Documented
+In use
+Known to all affected parties?" is answered as Yes
+2016-01-28 12:04:55,699 - java.lang.Class - INFO - yesButton clicked
+2016-01-28 12:04:56,700 - java.lang.Class - INFO -  Question: "Are security policies and operational procedures for restricting physical access to cardholder data:
+Documented
+In use
+Known to all affected parties?" is answered as Yes
+2016-01-28 12:04:59,860 - java.lang.Class - INFO -  clicked on yes button sucessufully
+2016-01-28 12:05:08,526 - com.sysnet.safemaker.SAQP2PEProfile - INFO - Merchant Test20160127064 is sucessfully Attested

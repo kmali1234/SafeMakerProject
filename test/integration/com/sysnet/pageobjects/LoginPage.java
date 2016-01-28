@@ -53,17 +53,21 @@ public class LoginPage {
 		return this;
 	}
 	
-	public void LoginUser(String username,String password) throws Exception
+	public void LoginUser(String username,String password) 
 
      	
 	{	
+		try{
 		//navigateTo();
 		TypeUserName(username);
 		TypePassword(password);
 		SubmitLogin();
 		log.info("Merchant Logged in with Username: "+username);
 		Thread.sleep(5000);
-		
+		} catch (Exception e)
+		{
+			log.error("Login failure for username:"+username, e);
+		}
 		
 				
 	}

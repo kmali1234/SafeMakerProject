@@ -82,7 +82,7 @@ public class DoSAQAttest {
 			olp.yesButton();
 			log.info(" clicked on yes button sucessufully");
 			Thread.sleep(1000);
-			olp.onlineSaq();
+			//olp.onlineSaq();
 			log.info("clicked on onlinesaq sucessufully");
 			olp.saqNextButton();
 			log.info("clicked on saqnextbutton sucessufully");

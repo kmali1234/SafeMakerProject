@@ -43,11 +43,15 @@ import com.sysnet.helper.SeleniumHelper;
 			}
 
 			public  void personaliseMerchant(String username) {
-				
+				try{
 					enterUserName(username);
 					EnterPasswordEmail();
 					submitForm();
 					log.info("Merchant is personalised and the username is: "+username);
+				}catch(Exception e){
+					log.error("Merchant "+username+" personalision failed", e);
+				}
+				
 				
 			}
 
