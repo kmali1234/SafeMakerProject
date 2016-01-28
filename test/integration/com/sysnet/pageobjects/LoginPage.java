@@ -2,11 +2,9 @@ package com.sysnet.pageobjects;
 
 import java.util.Properties;
 
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 public class LoginPage {
 	
 	private WebDriver driver;
@@ -53,27 +51,23 @@ public class LoginPage {
 		return this;
 	}
 	
-	public void LoginUser(String username,String password) 
+	public void LoginUser(String username,String password) throws Exception
 
      	
 	{	
-		try{
 		//navigateTo();
 		TypeUserName(username);
 		TypePassword(password);
 		SubmitLogin();
 		log.info("Merchant Logged in with Username: "+username);
 		Thread.sleep(5000);
-		} catch (Exception e)
-		{
-			log.error("Login failure for username:"+username, e);
-		}
+		
 		
 				
 	}
 	
       
- 
+	
 	public LoginPage IsSucessfull(String Username){
 		String CurrentUrl = driver.getCurrentUrl();
 		

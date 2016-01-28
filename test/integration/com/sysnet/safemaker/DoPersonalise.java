@@ -1,28 +1,24 @@
 package com.sysnet.safemaker;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+
 
 import com.sysnet.helper.SeleniumHelper;
 import com.sysnet.pageobjects.LoginPage;
 import com.sysnet.pageobjects.LogoutPage;
 import com.sysnet.pageobjects.PersonalisePage;
-
 //import com.sun.java.util.jar.pack.Package.File;
-
 public class DoPersonalise {
 
 	private Properties clientProps;
@@ -39,7 +35,7 @@ public class DoPersonalise {
 	private Row midRow;
 	private String expUsername;
 
-	private final Logger log = Logger.getLogger(DoLogin.class.getClass());
+	private final Logger log = Logger.getLogger(DoPersonalise.class.getClass());
 
 	@Before
 	public void SetUp() throws Exception {
@@ -57,7 +53,7 @@ public class DoPersonalise {
 		count = merchantSheet.getLastRowNum();
 
 	}
-
+	
 	@Test
 	public void getPersonalise() throws Exception {
 
