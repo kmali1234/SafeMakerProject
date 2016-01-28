@@ -454,11 +454,80 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="AllSAQProfileTests">
+    <target name="SAQAEPProfile">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="com.sysnet.safemaker.AllSAQProfileTests" todir="${junit.output.dir}"/>
+            <test name="com.sysnet.safemaker.SAQAEPProfile" todir="${junit.output.dir}"/>
+            <classpath refid="SafeMakerProject.classpath"/>
+        </junit>
+    </target>
+    <target name="SAQAProfile">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.sysnet.safemaker.SAQAProfile" todir="${junit.output.dir}"/>
+            <classpath refid="SafeMakerProject.classpath"/>
+        </junit>
+    </target>
+    <target name="SAQBIPProfile">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.sysnet.safemaker.SAQBIPProfile" todir="${junit.output.dir}"/>
+            <classpath refid="SafeMakerProject.classpath"/>
+        </junit>
+    </target>
+    <target name="SAQBProfile">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.sysnet.safemaker.SAQBProfile" todir="${junit.output.dir}"/>
+            <classpath refid="SafeMakerProject.classpath"/>
+        </junit>
+    </target>
+    <target name="SAQCProfile">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.sysnet.safemaker.SAQCProfile" todir="${junit.output.dir}"/>
+            <classpath refid="SafeMakerProject.classpath"/>
+        </junit>
+    </target>
+    <target name="SAQCVTProfile">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.sysnet.safemaker.SAQCVTProfile" todir="${junit.output.dir}"/>
+            <classpath refid="SafeMakerProject.classpath"/>
+        </junit>
+    </target>
+    <target name="SAQDProfile">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.sysnet.safemaker.SAQDProfile" todir="${junit.output.dir}"/>
+            <classpath refid="SafeMakerProject.classpath"/>
+        </junit>
+    </target>
+    <target name="SAQP2PEProfile">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.sysnet.safemaker.SAQP2PEProfile" todir="${junit.output.dir}"/>
+            <classpath refid="SafeMakerProject.classpath"/>
+        </junit>
+    </target>
+    <target name="ScenarioFileGenerator">
+        <java classname="com.sysnet.profileexcelgenerator.ScenarioFileGenerator" failonerror="true" fork="yes">
+            <classpath refid="SafeMakerProject.classpath"/>
+        </java>
+    </target>
+    <target name="splitKeyValue">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.sysnet.safemaker.splitKeyValue" todir="${junit.output.dir}"/>
             <classpath refid="SafeMakerProject.classpath"/>
         </junit>
     </target>
