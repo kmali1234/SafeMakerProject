@@ -22,7 +22,9 @@ import org.openqa.selenium.WebElement;
 import com.sysnet.helper.SeleniumHelper;
 import com.sysnet.pageobjects.LoginPage;
 import com.sysnet.pageobjects.LogoutPage;
+import com.sysnet.pageobjects.OnlineSaqAttest;
 import com.sysnet.pageobjects.PersonalisePage;
+import com.sysnet.pageobjects.UploadScanScenario;
 
 public class SAQBIPProfile {
 
@@ -93,13 +95,14 @@ public class SAQBIPProfile {
 		pRowCount = profileSheet.getLastRowNum();
 
 		Browser browser = new Browser();
-		driver = browser.getdriver(conifgProps.getProperty("browser").toString());
+		driver = browser.getdriver(conifgProps.getProperty("browser").toString(), clientProps);
 		driver.get(url);
 
 	}
 
 	@Test
 	public void merchantJourney() throws Exception {
+		try{
 		System.out.println(pRowCount);
 		
 		checkForMerchants();
@@ -144,18 +147,20 @@ public class SAQBIPProfile {
 						pp.personaliseMerchant(username);
 						
 						
-						Thread.sleep(3000);
-						 starProfileButton=By.cssSelector(clientProps.getProperty("profile.button.starsprofile.css"));
-						 
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						
-							driver.findElement(starProfileButton).click();
+						starProfileButton=By.cssSelector(clientProps.getProperty("profile.button.starsprofile.css"));		
+						driver.findElement(starProfileButton).click();
+						
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						log.info("Merchant profile initiated for "+saqSheet+ " "+currentScenario);
 						System.out.println(prow.getLastCellNum());
-						for (int screenNumber = 1; screenNumber < prow.getLastCellNum(); screenNumber++) {
+						for (int screenNumber = 2; screenNumber < prow.getLastCellNum(); screenNumber++) {
 							
 							if(prow.getCell(screenNumber)!=null && (prow.getCell(screenNumber).getCellType()==Cell.CELL_TYPE_STRING)){
 								System.out.println(screenNumber);
@@ -173,7 +178,16 @@ public class SAQBIPProfile {
 						skiptutorials=By.cssSelector(clientProps.getProperty("tutorials.button.skip.css"));
 						driver.findElement(skiptutorials).click();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						//saqType=driver.findElement(By.cssSelector(clientProps.getProperty("dashboard.saqtype.test.css"))).getText();
+						System.out.println(prow.getCell(1).getStringCellValue().toString().toUpperCase());
+						if(prow.getCell(1).getStringCellValue().toString().toUpperCase().equals("YES")){
+							UploadScanScenario uss = new UploadScanScenario(driver, clientProps);
+							uss.doScanUpload();
+						}
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						OnlineSaqAttest osa= new OnlineSaqAttest(driver, clientProps);
+						osa.saqCompliant();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						driver.navigate().refresh();
@@ -182,6 +196,7 @@ public class SAQBIPProfile {
 						lop.userLogout();
 						merchanRowNum++;
 						scenario++;
+						log.info("Merchant "+username+" is sucessfully Attested");
 					}
 					
 				
@@ -203,6 +218,10 @@ public class SAQBIPProfile {
 			Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 			
 		}
+		} catch(Exception e){
+			log.error("Merchant journey for merchant:"+username+"and SAQ type"+saqSheet.toString()+" intrupted by an exception", e);
+		}
+		
 
 		
 	}

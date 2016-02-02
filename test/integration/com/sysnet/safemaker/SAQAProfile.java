@@ -94,7 +94,7 @@ public class SAQAProfile {
 		pRowCount = profileSheet.getLastRowNum();
 
 		Browser browser = new Browser();
-		driver = browser.getdriver(conifgProps.getProperty("browser").toString());
+		driver = browser.getdriver(conifgProps.getProperty("browser").toString(), clientProps);
 		driver.get(url);
 
 	}

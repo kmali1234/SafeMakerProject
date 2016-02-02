@@ -93,7 +93,7 @@ public class SAQCVTProfile {
 		pRowCount = profileSheet.getLastRowNum();
 
 		Browser browser = new Browser();
-		driver = browser.getdriver(conifgProps.getProperty("browser").toString());
+		driver = browser.getdriver(conifgProps.getProperty("browser").toString(), clientProps);
 		driver.get(url);
 
 	}
@@ -154,6 +154,7 @@ public class SAQCVTProfile {
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						log.info("Merchant profile initiated for "+saqSheet+ " "+currentScenario);
 						System.out.println(prow.getLastCellNum());
 						for (int screenNumber = 1; screenNumber < prow.getLastCellNum(); screenNumber++) {
@@ -165,7 +166,7 @@ public class SAQCVTProfile {
 								
 								Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 								NextButton.click(driver, clientProps);
-								
+								Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 								
 							}
 						}

@@ -94,7 +94,7 @@ public class SAQBProfile {
 		pRowCount = profileSheet.getLastRowNum();
 
 		Browser browser = new Browser();
-		driver = browser.getdriver(conifgProps.getProperty("browser").toString());
+		driver = browser.getdriver(conifgProps.getProperty("browser").toString(), clientProps);
 		driver.get(url);
 
 	}
@@ -151,6 +151,7 @@ public class SAQBProfile {
 						 
 						
 							driver.findElement(starProfileButton).click();
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));

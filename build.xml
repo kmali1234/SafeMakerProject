@@ -3,17 +3,16 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. -->
-<project basedir="." default="build" name="SafeMakerProject">
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="SafeMakerProject">
     <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="D:/Installs/SpringSource/ggts-3.4.0.RELEASE"/>
-    <property name="junit.output.dir" value="logs"/>
+    <property name="ECLIPSE_HOME" value="D:/Installs/springsource/ggts-3.4.0.RELEASE"/>
+    <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.7"/>
     <property name="source" value="1.7"/>
     <path id="Groovy DSL Support.libraryclasspath">
         <pathelement location="C:/Users/davuluris/.groovy/greclipse/global_dsld_support"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.codehaus.groovy_2.3.10.xx-201502282108-e43j8/plugin_dsld_support/"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.codehaus.groovy_2.0.7.xx-20130828-1400-e43-RELEASE/plugin_dsld_support/"/>
     </path>
     <path id="Grails Dependencies.libraryclasspath">
         <pathelement location="C:/Users/davuluris/.grails/ivy-cache/org.springframework.uaa/org.springframework.uaa.client/bundles/org.springframework.uaa.client-1.0.1.RELEASE.jar"/>
@@ -171,7 +170,7 @@
         <pathelement location="C:/Users/davuluris/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-jasper/jars/tomcat-embed-jasper-7.0.39.jar"/>
         <pathelement location="C:/Users/davuluris/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-log4j/jars/tomcat-embed-logging-log4j-7.0.39.jar"/>
         <pathelement location="C:/Users/davuluris/.grails/2.2.4/projects/SafeMakerProject/plugin-classes"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.grails.ide.eclipse.resources_3.6.4.201503050947-RELEASE/dsl-support/"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.grails.ide.eclipse.resources_3.4.0.201310051518-RELEASE/dsl-support/"/>
     </path>
     <path id="SafeMakerProject.classpath">
         <pathelement location="target-eclipse/classes"/>
@@ -221,11 +220,7 @@
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
-        <copy includeemptydirs="false" todir="target-eclipse/classes">
-            <fileset dir="test/integration">
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
+       
         <copy includeemptydirs="false" todir="target-eclipse/classes">
             <fileset dir="test/unit">
                 <exclude name="**/*.java"/>
@@ -281,7 +276,6 @@
             <exclude name="Config.groovy"/>
             <exclude name="BootStrap.groovy"/>
             <exclude name="spring/resources.groovy"/>
-        	<include name="AllSAQProfileTests.java"/>
             <classpath refid="SafeMakerProject.classpath"/>
         </javac>
     </target>
@@ -416,7 +410,14 @@
             <classpath refid="SafeMakerProject.classpath"/>
         </java>
     </target>
-    
+    <target name="splitKeyValue">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.sysnet.safemaker.splitKeyValue" todir="${junit.output.dir}"/>
+            <classpath refid="SafeMakerProject.classpath"/>
+        </junit>
+    </target>
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">
             <fileset dir="${junit.output.dir}">

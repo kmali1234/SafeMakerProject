@@ -94,7 +94,7 @@ public UploadScanScenario(WebDriver driver, Properties locators) throws Exceptio
 
 
 
-	public UploadScanScenario uploadManageScan() {
+	public UploadScanScenario manageASVScan() {
 		driver.findElement(uploadManageScan).click();
 		// driver.findElement(managescan).sendKeys("managescan");
 		log.info("Clicked on upload manage scan sucessfully");
@@ -109,7 +109,7 @@ public UploadScanScenario(WebDriver driver, Properties locators) throws Exceptio
 		return this;
 	}
 
-	public UploadScanScenario uploadresscan() {
+	public UploadScanScenario chooseUploadScan() {
 		driver.findElement(uploadresscan).click();
 		// driver.findElement(managescan).sendKeys("managescan");
 		log.info("Clicked Upload Results sucessfully");
@@ -117,23 +117,32 @@ public UploadScanScenario(WebDriver driver, Properties locators) throws Exceptio
 	}
 
 	public UploadScanScenario startexecutivereport() throws Exception {
-		Thread.sleep(1000);
+		
 		driver.findElement(executivereportscan).click();
 		Thread.sleep(1000);
-		Runtime.getRuntime().exec(
-				"C:\\Users\\kmali\\Desktop\\FileUploadExecutive.exe");
-		log.info("Clicked on Executive Report button sucessfully");
+		
+		Runtime.getRuntime().exec("C:\\AutomationDoc\\FileUploadExecutive.exe");
+		//driver.get("C:\\Users\\kmali\\Desktop\\fileUploadLatest.html");
+		//driver.get("C:\\AutomationDoc\\FileUpload.exe");
 		Thread.sleep(1000);
+		//driver.findElement(By.xpath(".//*[@id='1']")).click();
+		
+		log.info("Clicked on Executive Report button sucessfully");
+		
 		return this;
 
 	}
 
 	public UploadScanScenario starttechnicalreport() throws Exception {
-		Thread.sleep(1000);
+		
 		driver.findElement(technicalreportscan).click();
 		Thread.sleep(1000);
-		Runtime.getRuntime().exec("C:\\Users\\kmali\\Desktop\\FileUpload.exe");
+		//driver.get("C:\\Users\\kmali\\Desktop\\fileUploadLatest.html");
+		Runtime.getRuntime().exec("C:\\AutomationDoc\\FileUploadExecutive.exe");
+		//Runtime.getRuntime().exec("C:\\AutomationDoc\\FileUpload.exe");
 		Thread.sleep(1000);
+		//driver.findElement(By.xpath(".//*[@id='1']")).click();
+		
 		log.info("Clicked on Start Technical Report sucessfully");
 		return this;
 
@@ -143,8 +152,7 @@ public UploadScanScenario(WebDriver driver, Properties locators) throws Exceptio
 		((JavascriptExecutor) driver)
 				.executeScript("document.getElementById('asv').removeAttribute('readonly',0);");
 		new Select(
-				driver.findElement(By
-						.xpath("/html/body/div[1]/div/div/div/div[1]/ui-view/div/div[2]/form/div[3]/div/sgs-select/div/div/select")))
+				driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[1]/ui-view/div/div[2]/form/div[3]/div/sgs-select/div/div/select")))
 				.selectByVisibleText("Alert Logic, Inc.");
 		log.info("Selected Asv Scan option from drop down menu");
 		return this;
@@ -157,12 +165,12 @@ public UploadScanScenario(WebDriver driver, Properties locators) throws Exceptio
 		return this;
 	}
 
-	public void calendarScan() throws Exception {
+	public UploadScanScenario calendarScan() throws Exception {
 		// click on textfield of date
 		driver.findElement(By.id("resultDate")).click();
 		// click on back arrow
 		Thread.sleep(2000);
-		// driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[1]/ui-view/div/div[2]/form/div[4]/div/sgs-date-picker/div/input")).click();
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[1]/ui-view/div/div[2]/form/div[4]/div/sgs-date-picker/div/input")).click();
 		driver.findElement(By.className("sgs-datepicker__btn--back")).click();
 		// select particular date
 		Thread.sleep(2000);
@@ -171,6 +179,7 @@ public UploadScanScenario(WebDriver driver, Properties locators) throws Exceptio
 				.click();
 		Thread.sleep(2000);
 		log.info("Selected a particular date sucessfully");
+		return this;
 	}
 
 	public void clickOnUpload() throws Exception {
@@ -178,9 +187,35 @@ public UploadScanScenario(WebDriver driver, Properties locators) throws Exceptio
 		log.info("Clicked on upload button sucessfully");
 	}
 
-	public void Quit() {
-		driver.close();
-
-	}
+	 public UploadScanScenario doScanUpload() throws Exception{
+			try{
+				manageASVScan();
+				Thread.sleep(1000);
+				log.info("Upload Manage Scan clicked successsfully");
+				chooseUploadScan();
+			Thread.sleep(1000);
+			log.info("Upload result scan button clicked sucessfully");
+			startexecutivereport();
+			Thread.sleep(1000);
+			log.info("Clicked on Start Executive Report sucessfully");
+			starttechnicalreport();
+			Thread.sleep(1000);
+			log.info("Clicked on start technical report sucessfully");
+			selectasvscan();
+			Thread.sleep(1000);
+			log.info("selected asv scan option sucessfully");
+			Thread.sleep(2000);
+			calendarScan();
+			Thread.sleep(3000);
+			log.info("Clicked on calendar date sucessfully");
+			clickOnUpload();
+			Thread.sleep(2000);
+			} catch(Exception e) {
+				log.error("unable to upload scan documents", e);
+			}
+			return this;
+			
+	 }
+	
 
 }

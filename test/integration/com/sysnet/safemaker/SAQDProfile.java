@@ -22,7 +22,9 @@ import org.openqa.selenium.WebElement;
 import com.sysnet.helper.SeleniumHelper;
 import com.sysnet.pageobjects.LoginPage;
 import com.sysnet.pageobjects.LogoutPage;
+import com.sysnet.pageobjects.OnlineSaqAttest;
 import com.sysnet.pageobjects.PersonalisePage;
+import com.sysnet.pageobjects.UploadScanScenario;
 
 public class SAQDProfile {
 
@@ -93,7 +95,7 @@ public class SAQDProfile {
 		pRowCount = profileSheet.getLastRowNum();
 
 		Browser browser = new Browser();
-		driver = browser.getdriver(conifgProps.getProperty("browser").toString());
+		driver = browser.getdriver(conifgProps.getProperty("browser").toString(), clientProps);
 		driver.get(url);
 
 	}
@@ -153,9 +155,10 @@ public class SAQDProfile {
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						log.info("Merchant profile initiated for "+saqSheet+ " "+currentScenario);
 						System.out.println(prow.getLastCellNum());
-						for (int screenNumber = 1; screenNumber < prow.getLastCellNum(); screenNumber++) {
+						for (int screenNumber = 2; screenNumber < prow.getLastCellNum(); screenNumber++) {
 							
 							if(prow.getCell(screenNumber)!=null && (prow.getCell(screenNumber).getCellType()==Cell.CELL_TYPE_STRING)){
 								System.out.println(screenNumber);
@@ -176,6 +179,14 @@ public class SAQDProfile {
 						driver.findElement(skiptutorials).click();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						//saqType=driver.findElement(By.cssSelector(clientProps.getProperty("dashboard.saqtype.test.css"))).getText();
+						System.out.println(prow.getCell(1).getStringCellValue().toString().toUpperCase());
+						if(prow.getCell(1).getStringCellValue().toString().toUpperCase().equals("YES")){
+							UploadScanScenario uss = new UploadScanScenario(driver, clientProps);
+							uss.doScanUpload();
+						}
+						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						OnlineSaqAttest osa= new OnlineSaqAttest(driver, clientProps);
+						osa.saqCompliant();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						driver.navigate().refresh();

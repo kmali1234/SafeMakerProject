@@ -40,13 +40,13 @@ grails.project.dependency.resolution = {
 
 	dependencies {
 		// specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-		test ('org.seleniumhq.selenium:selenium-java:2.49.0'){ excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs' }
+		test ('org.seleniumhq.selenium:selenium-java:2.50.1'){ excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs' }
 
 		test ('org.apache.poi:poi-ooxml:3.9'){ excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs' }
 
 		test('org.apache.logging.log4j:log4j-jcl:2.4.1'){ excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs' }
 
-		compile('com.codeborne:phantomjsdriver:1.2.1'){ excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs' }
+	//	compile('com.codeborne:phantomjsdriver:1.2.1'){ excludes 'xml-apis', 'xercesImpl', 'xmlParserAPIs' }
 
 		compile 'net.sourceforge.jexcelapi:jxl:2.6.12'
 		compile ('org.jdom:jdom:1.1'){ excludes 'xml-apis', "xercesImpl" }

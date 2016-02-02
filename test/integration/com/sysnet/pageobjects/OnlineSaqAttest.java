@@ -142,7 +142,7 @@ public class OnlineSaqAttest {
 		Thread.sleep(500);
 		
 		manageButton();
-		log.info("clicked on manage sucessufully");
+		log.info("clicked on manage SAQ sucessufully");
 		Thread.sleep(1000);
 		saqAnswer();
 		log.info("clicked on answer button sucessufully");

@@ -1,78 +1,1103 @@
-2016-01-28 12:02:32,264 - com.sysnet.safemaker.SAQP2PEProfile - INFO - Merchant Test20160127063 is sucessfully Attested
-2016-01-28 12:02:38,010 - java.lang.Class - INFO - Merchant Logged in with Username: 20160127064
-2016-01-28 12:02:44,498 - java.lang.Class - INFO - Merchant is personalised and the username is: Test20160127064
-2016-01-28 12:02:51,680 - com.sysnet.safemaker.SAQP2PEProfile - INFO - Merchant profile initiated for SAQ type P2PE Scenario2
-2016-01-28 12:02:51,887 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData answer is yes
-2016-01-28 12:02:51,888 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData question is answered as: yes
-2016-01-28 12:03:00,829 - com.sysnet.safemaker.ProfileQuestion - INFO - pacMoto answer is check
-2016-01-28 12:03:00,830 - com.sysnet.safemaker.ProfileQuestion - INFO - pacMoto question is answered as: check
-2016-01-28 12:03:05,351 - com.sysnet.safemaker.ProfileQuestion - INFO - motoPhone answer is check
-2016-01-28 12:03:05,351 - com.sysnet.safemaker.ProfileQuestion - INFO - motoPhone question is answered as: check
-2016-01-28 12:03:09,874 - com.sysnet.safemaker.ProfileQuestion - INFO - motoOutsourced answer is no
-2016-01-28 12:03:09,875 - com.sysnet.safemaker.ProfileQuestion - INFO - motoOutsourced question is answered as: no
-2016-01-28 12:03:14,366 - com.sysnet.safemaker.ProfileQuestion - INFO - motoSetupMethodPhone answer is yes
-2016-01-28 12:03:14,367 - com.sysnet.safemaker.ProfileQuestion - INFO - motoSetupMethodPhone question is answered as: yes
-2016-01-28 12:03:18,914 - com.sysnet.safemaker.ProfileQuestion - INFO - motoCallRecording answer is no
-2016-01-28 12:03:18,915 - com.sysnet.safemaker.ProfileQuestion - INFO - motoCallRecording question is answered as: no
-2016-01-28 12:03:23,463 - com.sysnet.safemaker.ProfileQuestion - INFO - chdInCrm answer is no
-2016-01-28 12:03:23,463 - com.sysnet.safemaker.ProfileQuestion - INFO - chdInCrm question is answered as: no
-2016-01-28 12:03:27,984 - com.sysnet.safemaker.ProfileQuestion - INFO - chdAgentAccess answer is no
-2016-01-28 12:03:27,985 - com.sysnet.safemaker.ProfileQuestion - INFO - chdAgentAccess question is answered as: no
-2016-01-28 12:03:32,517 - com.sysnet.safemaker.ProfileQuestion - INFO - ePosUsed answer is check
-2016-01-28 12:03:32,517 - com.sysnet.safemaker.ProfileQuestion - INFO - ePosUsed question is answered as: check
-2016-01-28 12:03:37,066 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peSolutionInUse answer is yes
-2016-01-28 12:03:37,066 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peSolutionInUse question is answered as: yes
-2016-01-28 12:03:41,787 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peSolutionOnly answer is yes
-2016-01-28 12:03:41,788 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peSolutionOnly question is answered as: yes
-2016-01-28 12:03:42,015 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peHwSolutions_list question is answered as: INFO
-2016-01-28 12:03:46,555 - com.sysnet.safemaker.ProfileQuestion - INFO - payConexPoi_list question is answered as: INFO
-2016-01-28 12:03:51,124 - com.sysnet.safemaker.ProfileQuestion - INFO - sadReceived answer is no
-2016-01-28 12:03:51,125 - com.sysnet.safemaker.ProfileQuestion - INFO - sadReceived question is answered as: no
-2016-01-28 12:03:55,646 - com.sysnet.safemaker.ProfileQuestion - INFO - physicalCardDataUsed answer is no
-2016-01-28 12:03:55,647 - com.sysnet.safemaker.ProfileQuestion - INFO - physicalCardDataUsed question is answered as: no
-2016-01-28 12:04:00,191 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse answer is no
-2016-01-28 12:04:00,191 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse question is answered as: no
-2016-01-28 12:04:00,373 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData answer is no
-2016-01-28 12:04:00,374 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData question is answered as: no
-2016-01-28 12:04:05,272 - com.sysnet.safemaker.ProfileQuestion - INFO - securityPolicy answer is yes
-2016-01-28 12:04:05,273 - com.sysnet.safemaker.ProfileQuestion - INFO - securityPolicy question is answered as: yes
-2016-01-28 12:04:09,816 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected answer is no
-2016-01-28 12:04:09,816 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected question is answered as: no
-2016-01-28 12:04:14,358 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship answer is no
-2016-01-28 12:04:14,359 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship question is answered as: no
-2016-01-28 12:04:18,928 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has answer is no
-2016-01-28 12:04:18,929 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has question is answered as: no
-2016-01-28 12:04:23,498 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed answer is no
-2016-01-28 12:04:23,499 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed question is answered as: no
-2016-01-28 12:04:28,031 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeFacilitiesAndLocations question is answered as: text
-2016-01-28 12:04:28,238 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeChdCapacity question is answered as: text
-2016-01-28 12:04:28,443 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeDescription question is answered as: text
-2016-01-28 12:04:40,206 - java.lang.Class - INFO - manageButton clicked
-2016-01-28 12:04:40,206 - java.lang.Class - INFO - clicked on manage sucessufully
-2016-01-28 12:04:41,385 - java.lang.Class - INFO - clicked on answer button sucessufully
-2016-01-28 12:04:43,901 - java.lang.Class - INFO - yesButton clicked
-2016-01-28 12:04:44,902 - java.lang.Class - INFO -  Question: "Is data storage amount and retention time limited to that required for legal, regulatory, and/or business requirements?" is answered as Yes
-2016-01-28 12:04:45,342 - java.lang.Class - INFO - yesButton clicked
-2016-01-28 12:04:46,343 - java.lang.Class - INFO -  Question: "Are there defined processes in place for securely deleting cardholder data when no longer needed for legal, regulatory, and/or business reasons?" is answered as Yes
-2016-01-28 12:04:46,788 - java.lang.Class - INFO - yesButton clicked
-2016-01-28 12:04:47,789 - java.lang.Class - INFO -  Question: "Are there specific retention requirements for cardholder data?
-For example, cardholder data needs to be held for X period for Y business reasons." is answered as Yes
-2016-01-28 12:04:48,327 - java.lang.Class - INFO - yesButton clicked
-2016-01-28 12:04:49,328 - java.lang.Class - INFO -  Question: "Is there a quarterly process for identifying and securely deleting stored cardholder data that exceeds defined retention requirements?" is answered as Yes
-2016-01-28 12:04:49,816 - java.lang.Class - INFO - yesButton clicked
-2016-01-28 12:04:50,817 - java.lang.Class - INFO -  Question: "Does all stored cardholder data meet the requirements defined in the data-retention policy?" is answered as Yes
-2016-01-28 12:04:51,305 - java.lang.Class - INFO - yesButton clicked
-2016-01-28 12:04:52,306 - java.lang.Class - INFO -  Question: "Is the PAN masked when displayed (the first six and last four digits are the maximum number of digits to be displayed) such that only personnel with a legitimate business need can see the full PAN?
-Note: This requirement does not supersede stricter requirements in place for displays of cardholder data for example, legal or payment card brand requirements for point-of-sale (POS) receipts." is answered as Yes
-2016-01-28 12:04:52,770 - java.lang.Class - INFO - yesButton clicked
-2016-01-28 12:04:53,771 - java.lang.Class - INFO -  Question: "Are security policies and operational procedures for protecting stored cardholder data:
+2016-02-02 12:54:06,364 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:54:07,364 - java.lang.Class - INFO -  Question: "Is there a process to identify security vulnerabilities, including the following:
+Using reputable outside sources for vulnerability information?
+Assigning a risk ranking to vulnerabilities that includes identification of all "high” risk and "critical” vulnerabilities?
+Note: Risk rankings should be based on industry best practices as well as consideration of potential impact. For example, criteria for ranking vulnerabilities may include consideration of the CVSS base score and/or the classification by the vendor, and/or type of systems affected.
+Methods for evaluating vulnerabilities and assigning risk ratings will vary based on an organization’s environment and risk assessment strategy. Risk rankings should, at a minimum, identify all vulnerabilities considered to be a "high risk” to the environment. In addition to the risk ranking, vulnerabilities may be considered "critical” if they pose an imminent threat to the environment, impact critical systems, and/or would result in a potential compromise if not addressed. Examples of critical systems may include security systems, public-facing devices and systems, databases, and other systems that store, process or transmit cardholder data." is answered as Yes
+2016-02-02 12:54:09,241 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:54:10,242 - java.lang.Class - INFO -  Question: "Are group, shared, or generic accounts, passwords, or other authentication methods prohibited as follows:
+Generic user IDs and accounts are disabled or removed;
+Shared user IDs for system administration activities and other critical functions do not exist; and
+Shared and generic user IDs are not used to administer any system components?" is answered as Yes
+2016-02-02 12:54:12,218 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:54:13,219 - java.lang.Class - INFO -  Question: "Are quarterly external vulnerability scans performed?
+Note: Quarterly external vulnerability scans must be performed by an Approved Scanning Vendor (ASV), approved by the Payment Card Industry Security Standards Council (PCI SSC).
+Refer to the ASV Program Guide published on the PCI SSC website for scan customer responsibilities, scan preparation, etc." is answered as Yes
+2016-02-02 12:54:13,554 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 12:54:14,994 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:54:15,994 - java.lang.Class - INFO -  Question: "Do external quarterly scan and rescan results satisfy the ASV Program Guide requirements for a passing scan (for example, no vulnerabilities rated 4.0 or higher by the CVSS, and no automatic failures)?" is answered as Yes
+2016-02-02 12:54:16,435 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:54:17,436 - java.lang.Class - INFO -  Question: "Are quarterly external vulnerability scans performed by a PCI SSC Approved Scanning Vendor (ASV)?" is answered as Yes
+2016-02-02 12:54:20,620 - java.lang.Class - INFO -  clicked on yes button sucessufully
+2016-02-02 12:54:32,660 - com.sysnet.safemaker.SAQBIPProfile - INFO - Merchant Test20160129059 is sucessfully Attested
+2016-02-02 12:54:43,391 - java.lang.Class - INFO - Merchant Logged in with Username: 20160129060
+2016-02-02 12:54:49,727 - java.lang.Class - INFO - Merchant is personalised and the username is: Test20160129060
+2016-02-02 12:55:03,933 - com.sysnet.safemaker.SAQBIPProfile - INFO - Merchant profile initiated for SAQ type B-IP Scenario2
+2016-02-02 12:55:04,142 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData answer is yes
+2016-02-02 12:55:04,143 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData question is answered as: yes
+2016-02-02 12:55:08,714 - com.sysnet.safemaker.ProfileQuestion - INFO - pacMoto answer is check
+2016-02-02 12:55:08,715 - com.sysnet.safemaker.ProfileQuestion - INFO - pacMoto question is answered as: check
+2016-02-02 12:55:13,258 - com.sysnet.safemaker.ProfileQuestion - INFO - motoPhone answer is check
+2016-02-02 12:55:13,259 - com.sysnet.safemaker.ProfileQuestion - INFO - motoPhone question is answered as: check
+2016-02-02 12:55:17,831 - com.sysnet.safemaker.ProfileQuestion - INFO - motoOutsourced answer is no
+2016-02-02 12:55:17,831 - com.sysnet.safemaker.ProfileQuestion - INFO - motoOutsourced question is answered as: no
+2016-02-02 12:55:22,348 - com.sysnet.safemaker.ProfileQuestion - INFO - motoSetupMethodPhone answer is yes
+2016-02-02 12:55:22,349 - com.sysnet.safemaker.ProfileQuestion - INFO - motoSetupMethodPhone question is answered as: yes
+2016-02-02 12:55:26,857 - com.sysnet.safemaker.ProfileQuestion - INFO - motoCallRecording answer is no
+2016-02-02 12:55:26,858 - com.sysnet.safemaker.ProfileQuestion - INFO - motoCallRecording question is answered as: no
+2016-02-02 12:55:31,376 - com.sysnet.safemaker.ProfileQuestion - INFO - chdInCrm answer is no
+2016-02-02 12:55:31,377 - com.sysnet.safemaker.ProfileQuestion - INFO - chdInCrm question is answered as: no
+2016-02-02 12:55:35,898 - com.sysnet.safemaker.ProfileQuestion - INFO - chdAgentAccess answer is no
+2016-02-02 12:55:35,899 - com.sysnet.safemaker.ProfileQuestion - INFO - chdAgentAccess question is answered as: no
+2016-02-02 12:55:40,441 - com.sysnet.safemaker.ProfileQuestion - INFO - standalonePosUsed answer is check
+2016-02-02 12:55:40,442 - com.sysnet.safemaker.ProfileQuestion - INFO - standalonePosUsed question is answered as: check
+2016-02-02 12:55:44,964 - com.sysnet.safemaker.ProfileQuestion - INFO - ipTerminalUsed answer is check
+2016-02-02 12:55:44,965 - com.sysnet.safemaker.ProfileQuestion - INFO - ipTerminalUsed question is answered as: check
+2016-02-02 12:55:49,481 - com.sysnet.safemaker.ProfileQuestion - INFO - posTerminal_list question is answered as: INFO
+2016-02-02 12:55:54,045 - com.sysnet.safemaker.ProfileQuestion - INFO - remoteAccessToPos answer is no
+2016-02-02 12:55:54,045 - com.sysnet.safemaker.ProfileQuestion - INFO - remoteAccessToPos question is answered as: no
+2016-02-02 12:55:58,564 - com.sysnet.safemaker.ProfileQuestion - INFO - sadReceived answer is no
+2016-02-02 12:55:58,565 - com.sysnet.safemaker.ProfileQuestion - INFO - sadReceived question is answered as: no
+2016-02-02 12:56:03,083 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData answer is no
+2016-02-02 12:56:03,084 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData question is answered as: no
+2016-02-02 12:56:03,266 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse answer is no
+2016-02-02 12:56:03,267 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse question is answered as: no
+2016-02-02 12:56:08,169 - com.sysnet.safemaker.ProfileQuestion - INFO - securityPolicySaqC answer is yes
+2016-02-02 12:56:08,170 - com.sysnet.safemaker.ProfileQuestion - INFO - securityPolicySaqC question is answered as: yes
+2016-02-02 12:56:12,712 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected answer is no
+2016-02-02 12:56:12,712 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected question is answered as: no
+2016-02-02 12:56:17,207 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship answer is no
+2016-02-02 12:56:17,208 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship question is answered as: no
+2016-02-02 12:56:21,701 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has answer is no
+2016-02-02 12:56:21,702 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has question is answered as: no
+2016-02-02 12:56:26,221 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed answer is no
+2016-02-02 12:56:26,222 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed question is answered as: no
+2016-02-02 12:56:30,739 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeFacilitiesAndLocations question is answered as: text
+2016-02-02 12:56:30,946 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeChdCapacity question is answered as: text
+2016-02-02 12:56:31,152 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeDescription question is answered as: text
+2016-02-02 12:56:43,803 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on upload manage scan sucessfully
+2016-02-02 12:56:44,803 - com.sysnet.pageobjects.UploadScanScenario - INFO - Upload Manage Scan clicked successsfully
+2016-02-02 12:56:44,984 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked Upload Results sucessfully
+2016-02-02 12:56:45,985 - com.sysnet.pageobjects.UploadScanScenario - INFO - Upload result scan button clicked sucessfully
+2016-02-02 12:56:48,192 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on Executive Report button sucessfully
+2016-02-02 12:56:49,192 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on Start Executive Report sucessfully
+2016-02-02 12:56:51,424 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on Start Technical Report sucessfully
+2016-02-02 12:56:52,424 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on start technical report sucessfully
+2016-02-02 12:56:52,911 - com.sysnet.pageobjects.UploadScanScenario - INFO - Selected Asv Scan option from drop down menu
+2016-02-02 12:56:53,911 - com.sysnet.pageobjects.UploadScanScenario - INFO - selected asv scan option sucessfully
+2016-02-02 12:57:03,077 - com.sysnet.pageobjects.UploadScanScenario - INFO - Selected a particular date sucessfully
+2016-02-02 12:57:06,078 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on calendar date sucessfully
+2016-02-02 12:57:06,283 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on upload button sucessfully
+2016-02-02 12:57:13,964 - java.lang.Class - INFO - manageButton clicked
+2016-02-02 12:57:13,964 - java.lang.Class - INFO - clicked on manage SAQ sucessufully
+2016-02-02 12:57:15,119 - java.lang.Class - INFO - clicked on answer button sucessufully
+2016-02-02 12:57:17,861 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:18,862 - java.lang.Class - INFO -  Question: "Is there a current network diagram that documents all connections between the cardholder data environment and other networks, including any wireless networks?" is answered as Yes
+2016-02-02 12:57:19,401 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:20,401 - java.lang.Class - INFO -  Question: "Is there a process to ensure the diagram is kept current?" is answered as Yes
+2016-02-02 12:57:20,867 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:21,868 - java.lang.Class - INFO -  Question: "Is a firewall required and implemented at each Internet connection and between any demilitarized zone (DMZ) and the internal network zone?" is answered as Yes
+2016-02-02 12:57:22,335 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:23,336 - java.lang.Class - INFO -  Question: "Is the current network diagram consistent with the firewall configuration standards?" is answered as Yes
+2016-02-02 12:57:23,798 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:24,799 - java.lang.Class - INFO -  Question: "Do firewall and router configuration standards include a documented list of services, protocols, and ports, including business justification (for example, hypertext transfer protocol (HTTP), Secure Sockets Layer (SSL), Secure Shell (SSH), and Virtual Private Network (VPN) protocols)?" is answered as Yes
+2016-02-02 12:57:25,289 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:26,290 - java.lang.Class - INFO -  Question: "Are all insecure services, protocols, and ports identified, and are security features documented and implemented for each identified service?
+Note: Examples of insecure services, protocols, or ports include but are not limited to FTP, Telnet, POP3, IMAP, and SNMP" is answered as Yes
+2016-02-02 12:57:26,755 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:27,756 - java.lang.Class - INFO -  Question: "Are perimeter firewalls installed between all wireless networks and the cardholder data environment, and are these firewalls configured to deny or, if traffic is necessary for business purposes, permit only authorized traffic between the wireless environment and the cardholder data environment?" is answered as Yes
+2016-02-02 12:57:28,221 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:29,222 - java.lang.Class - INFO -  Question: "Are anti-spoofing measures implemented to detect and block forged sourced IP addresses from entering the network? (For example, block traffic originating from the internet with an internal address.)" is answered as Yes
+2016-02-02 12:57:29,661 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:30,662 - java.lang.Class - INFO -  Question: "For POS POI terminals (and the SSL/TLS termination points to which they connect) using SSL and/or early TLS and for which the entity asserts are not susceptible to any known exploits for those protocols:
+Is there documentation (for example, vendor documentation, system/network configuration details, etc.) that verifies the devices are not susceptible to any known exploits for SSL/early TLS?" is answered as Yes
+2016-02-02 12:57:31,224 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:32,224 - java.lang.Class - INFO -  Question: "For all other environments using SSL and/or early TLS:
+Does the documented Risk Mitigation and Migration Plan include the following?
+Description of usage, including; what data is being transmitted, types and number of systems that use and/or support SSL/early TLS, type of environment;
+Risk assessment results and risk reduction controls in place;
+Description of processes to monitor for new vulnerabilities associated with SSL/early TLS;
+Description of change control processes that are implemented to ensure SSL/early TLS is not implemented into new environments;
+Overview of migration project plan including target migration completion date no later than 30th June 2016." is answered as Yes
+2016-02-02 12:57:34,175 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:35,177 - java.lang.Class - INFO -  Question: "Are only trusted keys and/or certificates accepted?" is answered as Yes
+2016-02-02 12:57:35,637 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:36,638 - java.lang.Class - INFO -  Question: "Are security protocols implemented to use only secure configurations, and to not support insecure versions or configurations?" is answered as Yes
+2016-02-02 12:57:37,200 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:38,200 - java.lang.Class - INFO -  Question: "Is the proper encryption strength implemented for the encryption methodology in use (check vendor recommendations/best practices)?" is answered as Yes
+2016-02-02 12:57:38,689 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:39,690 - java.lang.Class - INFO -  Question: "For TLS implementations, is TLS enabled whenever cardholder data is transmitted or received?
+For example, for browser-based implementations:
+"HTTPS" appears as the browser Universal Record Locator (URL) protocol, and
+Cardholder data is only requested if "HTTPS" appears as part of the URL." is answered as Yes
+2016-02-02 12:57:40,179 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:41,180 - java.lang.Class - INFO -  Question: "For POS POI terminals (and the SSL/TLS termination points to which they connect) using SSL and/or early TLS and for which the entity asserts are not susceptible to any known exploits for those protocols:
+Is there documentation (for example, vendor documentation, system/network configuration details, etc.) that verifies the devices are not susceptible to any known exploits for SSL/early TLS?" is answered as Yes
+2016-02-02 12:57:41,668 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:42,669 - java.lang.Class - INFO -  Question: "For all other environments using SSL and/or early TLS:
+Does the documented Risk Mitigation and Migration Plan include the following?
+Description of usage, including; what data is being transmitted, types and number of systems that use and/or support SSL/early TLS, type of environment;
+Risk assessment results and risk reduction controls in place;
+Description of processes to monitor for new vulnerabilities associated with SSL/early TLS;
+Description of change control processes that are implemented to ensure SSL/early TLS is not implemented into new environments;
+Overview of migration project plan including target migration completion date no later than 30th June 2016." is answered as Yes
+2016-02-02 12:57:43,255 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:44,256 - java.lang.Class - INFO -  Question: "Are industry best practices (for example, IEEE 802.11i) used to implement strong encryption for authentication and transmission for wireless networks transmitting cardholder data or connected to the cardholder data environment?
+Note: The use of WEP as a security control is prohibited." is answered as Yes
+2016-02-02 12:57:46,128 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:47,129 - java.lang.Class - INFO -  Question: "Is there a process to identify security vulnerabilities, including the following:
+Using reputable outside sources for vulnerability information?
+Assigning a risk ranking to vulnerabilities that includes identification of all "high” risk and "critical” vulnerabilities?
+Note: Risk rankings should be based on industry best practices as well as consideration of potential impact. For example, criteria for ranking vulnerabilities may include consideration of the CVSS base score and/or the classification by the vendor, and/or type of systems affected.
+Methods for evaluating vulnerabilities and assigning risk ratings will vary based on an organization’s environment and risk assessment strategy. Risk rankings should, at a minimum, identify all vulnerabilities considered to be a "high risk” to the environment. In addition to the risk ranking, vulnerabilities may be considered "critical” if they pose an imminent threat to the environment, impact critical systems, and/or would result in a potential compromise if not addressed. Examples of critical systems may include security systems, public-facing devices and systems, databases, and other systems that store, process or transmit cardholder data." is answered as Yes
+2016-02-02 12:57:49,000 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:50,001 - java.lang.Class - INFO -  Question: "Are group, shared, or generic accounts, passwords, or other authentication methods prohibited as follows:
+Generic user IDs and accounts are disabled or removed;
+Shared user IDs for system administration activities and other critical functions do not exist; and
+Shared and generic user IDs are not used to administer any system components?" is answered as Yes
+2016-02-02 12:57:51,906 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:52,907 - java.lang.Class - INFO -  Question: "Are quarterly external vulnerability scans performed?
+Note: Quarterly external vulnerability scans must be performed by an Approved Scanning Vendor (ASV), approved by the Payment Card Industry Security Standards Council (PCI SSC).
+Refer to the ASV Program Guide published on the PCI SSC website for scan customer responsibilities, scan preparation, etc." is answered as Yes
+2016-02-02 12:57:53,240 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 12:57:54,648 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:55,650 - java.lang.Class - INFO -  Question: "Do external quarterly scan and rescan results satisfy the ASV Program Guide requirements for a passing scan (for example, no vulnerabilities rated 4.0 or higher by the CVSS, and no automatic failures)?" is answered as Yes
+2016-02-02 12:57:56,112 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 12:57:57,113 - java.lang.Class - INFO -  Question: "Are quarterly external vulnerability scans performed by a PCI SSC Approved Scanning Vendor (ASV)?" is answered as Yes
+2016-02-02 12:58:00,243 - java.lang.Class - INFO -  clicked on yes button sucessufully
+2016-02-02 12:58:12,156 - com.sysnet.safemaker.SAQBIPProfile - INFO - Merchant Test20160129060 is sucessfully Attested
+2016-02-02 14:07:14,785 - java.lang.Class - INFO - Merchant Logged in with Username: 20160129013
+2016-02-02 14:07:21,213 - java.lang.Class - INFO - Merchant is personalised and the username is: Test20160129013
+2016-02-02 14:07:32,835 - com.sysnet.safemaker.SAQAEPProfile - INFO - Merchant profile initiated for SAQ type A-EP Scenario1
+2016-02-02 14:07:33,183 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData answer is yes
+2016-02-02 14:07:33,183 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData question is answered as: yes
+2016-02-02 14:07:37,735 - com.sysnet.safemaker.ProfileQuestion - INFO - pacEcomm answer is check
+2016-02-02 14:07:37,736 - com.sysnet.safemaker.ProfileQuestion - INFO - pacEcomm question is answered as: check
+2016-02-02 14:07:42,586 - com.sysnet.safemaker.ProfileQuestion - INFO - websiteOwnNetwork answer is yes
+2016-02-02 14:07:42,586 - com.sysnet.safemaker.ProfileQuestion - INFO - websiteOwnNetwork question is answered as: yes
+2016-02-02 14:07:42,792 - com.sysnet.safemaker.ProfileQuestion - INFO - hostingProvider_listInfo question is answered as: INFO
+2016-02-02 14:07:47,394 - com.sysnet.safemaker.ProfileQuestion - INFO - ecommSetupRedirect answer is yes
+2016-02-02 14:07:47,394 - com.sysnet.safemaker.ProfileQuestion - INFO - ecommSetupRedirect question is answered as: yes
+2016-02-02 14:07:47,605 - com.sysnet.safemaker.ProfileQuestion - INFO - ecommSetup_method_other answer is yes
+2016-02-02 14:07:47,605 - com.sysnet.safemaker.ProfileQuestion - INFO - ecommSetup_method_other question is answered as: yes
+2016-02-02 14:07:52,130 - com.sysnet.safemaker.ProfileQuestion - INFO - ecommSetup_channel answer is no
+2016-02-02 14:07:52,130 - com.sysnet.safemaker.ProfileQuestion - INFO - ecommSetup_channel question is answered as: no
+2016-02-02 14:07:56,726 - com.sysnet.safemaker.ProfileQuestion - INFO - ecommSetup_channel_softwareSetup answer is no
+2016-02-02 14:07:56,727 - com.sysnet.safemaker.ProfileQuestion - INFO - ecommSetup_channel_softwareSetup question is answered as: no
+2016-02-02 14:08:01,276 - com.sysnet.safemaker.ProfileQuestion - INFO - websiteDevelopment answer is yes
+2016-02-02 14:08:01,276 - com.sysnet.safemaker.ProfileQuestion - INFO - websiteDevelopment question is answered as: yes
+2016-02-02 14:08:05,894 - com.sysnet.safemaker.ProfileQuestion - INFO - paymentProvider_list question is answered as: INFO
+2016-02-02 14:08:10,452 - com.sysnet.safemaker.ProfileQuestion - INFO - pspCompliance answer is yes
+2016-02-02 14:08:10,453 - com.sysnet.safemaker.ProfileQuestion - INFO - pspCompliance question is answered as: yes
+2016-02-02 14:08:10,662 - com.sysnet.safemaker.ProfileQuestion - INFO - pspDontPassBackData answer is yes
+2016-02-02 14:08:10,662 - com.sysnet.safemaker.ProfileQuestion - INFO - pspDontPassBackData question is answered as: yes
+2016-02-02 14:08:15,234 - com.sysnet.safemaker.ProfileQuestion - INFO - shoppingCart question is answered as: INFO
+2016-02-02 14:08:19,810 - com.sysnet.safemaker.ProfileQuestion - INFO - sadReceived answer is no
+2016-02-02 14:08:19,810 - com.sysnet.safemaker.ProfileQuestion - INFO - sadReceived question is answered as: no
+2016-02-02 14:08:24,360 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData answer is no
+2016-02-02 14:08:24,360 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData question is answered as: no
+2016-02-02 14:08:24,570 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse answer is no
+2016-02-02 14:08:24,570 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse question is answered as: no
+2016-02-02 14:08:29,118 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected answer is no
+2016-02-02 14:08:29,118 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected question is answered as: no
+2016-02-02 14:08:33,691 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship answer is no
+2016-02-02 14:08:33,691 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship question is answered as: no
+2016-02-02 14:08:38,265 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has answer is no
+2016-02-02 14:08:38,265 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has question is answered as: no
+2016-02-02 14:08:42,816 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed answer is no
+2016-02-02 14:08:42,816 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed question is answered as: no
+2016-02-02 14:08:47,387 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeFacilitiesAndLocations question is answered as: text
+2016-02-02 14:08:47,593 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeChdCapacity question is answered as: text
+2016-02-02 14:08:47,825 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeDescription question is answered as: text
+2016-02-02 14:08:58,801 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on upload manage scan sucessfully
+2016-02-02 14:08:59,802 - com.sysnet.pageobjects.UploadScanScenario - INFO - Upload Manage Scan clicked successsfully
+2016-02-02 14:09:00,032 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked Upload Results sucessfully
+2016-02-02 14:09:01,033 - com.sysnet.pageobjects.UploadScanScenario - INFO - Upload result scan button clicked sucessfully
+2016-02-02 14:09:03,441 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on Executive Report button sucessfully
+2016-02-02 14:09:04,441 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on Start Executive Report sucessfully
+2016-02-02 14:09:06,650 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on Start Technical Report sucessfully
+2016-02-02 14:09:07,650 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on start technical report sucessfully
+2016-02-02 14:09:08,144 - com.sysnet.pageobjects.UploadScanScenario - INFO - Selected Asv Scan option from drop down menu
+2016-02-02 14:09:09,145 - com.sysnet.pageobjects.UploadScanScenario - INFO - selected asv scan option sucessfully
+2016-02-02 14:09:18,263 - com.sysnet.pageobjects.UploadScanScenario - INFO - Selected a particular date sucessfully
+2016-02-02 14:09:21,263 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on calendar date sucessfully
+2016-02-02 14:09:21,468 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on upload button sucessfully
+2016-02-02 14:09:29,152 - java.lang.Class - INFO - manageButton clicked
+2016-02-02 14:09:29,152 - java.lang.Class - INFO - clicked on manage SAQ sucessufully
+2016-02-02 14:09:30,307 - java.lang.Class - INFO - clicked on answer button sucessufully
+2016-02-02 14:09:33,957 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:34,958 - java.lang.Class - INFO -  Question: "Is a firewall required and implemented at each Internet connection and between any demilitarized zone (DMZ) and the internal network zone?" is answered as Yes
+2016-02-02 14:09:35,530 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:36,531 - java.lang.Class - INFO -  Question: "Is the current network diagram consistent with the firewall configuration standards?" is answered as Yes
+2016-02-02 14:09:37,128 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:38,128 - java.lang.Class - INFO -  Question: "Do firewall and router configuration standards include a documented list of services, protocols, and ports, including business justification (for example, hypertext transfer protocol (HTTP), Secure Sockets Layer (SSL), Secure Shell (SSH), and Virtual Private Network (VPN) protocols)?" is answered as Yes
+2016-02-02 14:09:38,743 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:39,744 - java.lang.Class - INFO -  Question: "Are all insecure services, protocols, and ports identified, and are security features documented and implemented for each identified service?
+Note: Examples of insecure services, protocols, or ports include but are not limited to FTP, Telnet, POP3, IMAP, and SNMP" is answered as Yes
+2016-02-02 14:09:40,340 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:41,340 - java.lang.Class - INFO -  Question: "Is inbound and outbound traffic restricted to that which is necessary for the cardholder data environment?" is answered as Yes
+2016-02-02 14:09:41,913 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:42,913 - java.lang.Class - INFO -  Question: "Is all other inbound and outbound traffic specifically denied (for example by using an explicit "deny all” or an implicit deny after allow statement)?" is answered as Yes
+2016-02-02 14:09:43,383 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:44,384 - java.lang.Class - INFO -  Question: "Are anti-spoofing measures implemented to detect and block forged sourced IP addresses from entering the network? (For example, block traffic originating from the internet with an internal address.)" is answered as Yes
+2016-02-02 14:09:44,902 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:45,904 - java.lang.Class - INFO -  Question: "Is outbound traffic from the cardholder data environment to the Internet explicitly authorized?" is answered as Yes
+2016-02-02 14:09:46,458 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:47,459 - java.lang.Class - INFO -  Question: "Is stateful inspection, also known as dynamic packet filtering, implemented that is, only established connections are allowed into the network?" is answered as Yes
+2016-02-02 14:09:47,978 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:48,978 - java.lang.Class - INFO -  Question: "Are methods in place to prevent the disclosure of private IP addresses and routing information to the Internet?
+Note: Methods to obscure IP addressing may include, but are not limited to:
+Network Address Translation (NAT)
+Placing servers containing cardholder data behind proxy servers/firewalls,
+Removal or filtering of route advertisements for private networks that employ registered addressing,
+Internal use of RFC1918 address space instead of registered addresses." is answered as Yes
+2016-02-02 14:09:49,499 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:50,500 - java.lang.Class - INFO -  Question: "Is any disclosure of private IP addresses and routing information to external entities authorized?" is answered as Yes
+2016-02-02 14:09:51,116 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:52,117 - java.lang.Class - INFO -  Question: "Are vendor-supplied defaults always changed before installing a system on the network?
+This applies to ALL default passwords, including but not limited to those used by operating systems, software that provides security services, application and system accounts, point-of-sale (POS) terminals, Simple Network Management Protocol (SNMP) community strings, etc." is answered as Yes
+2016-02-02 14:09:52,612 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:53,613 - java.lang.Class - INFO -  Question: "Are unnecessary default accounts removed or disabled before installing a system on the network?" is answered as Yes
+2016-02-02 14:09:54,107 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:55,109 - java.lang.Class - INFO -  Question: "Are configuration standards developed for all system components and are they consistent with industry-accepted system hardening standards?
+Sources of industry-accepted system hardening standards may include, but are not limited to, SysAdmin Audit Network Security (SANS) Institute, National Institute of Standards Technology (NIST), International Organization for Standardization (ISO), and Center for Internet Security (CIS)." is answered as Yes
+2016-02-02 14:09:55,579 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:56,579 - java.lang.Class - INFO -  Question: "Are system configuration standards updated as new vulnerability issues are identified, as defined in Requirement 6.1?" is answered as Yes
+2016-02-02 14:09:57,092 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:58,093 - java.lang.Class - INFO -  Question: "Are system configuration standards applied when new systems are configured?" is answered as Yes
+2016-02-02 14:09:58,555 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:09:59,556 - java.lang.Class - INFO -  Question: "Do system configuration standards include all of the following:
+Changing of all vendor-supplied defaults and elimination of unnecessary default accounts?
+Implementing only one primary function per server to prevent functions that require different security levels from co-existing on the same server?
+Enabling only necessary services, protocols, daemons, etc., as required for the function of the system?
+Implementing additional security features for any required services, protocols or daemons that are considered to be insecure?
+Configuring system security parameters to prevent misuse?
+Removing all unnecessary functionality, such as scripts, drivers, features, subsystems, file systems, and unnecessary web servers?" is answered as Yes
+2016-02-02 14:10:00,023 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:01,024 - java.lang.Class - INFO -  Question: "Is only one primary function implemented per server, to prevent functions that require different security levels from co-existing on the same server?
+For example, web servers, database servers, and DNS should be implemented on separate servers." is answered as Yes
+2016-02-02 14:10:01,489 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:02,490 - java.lang.Class - INFO -  Question: "If virtualization technologies are used, is only one primary function implemented per virtual system component or device?" is answered as Yes
+2016-02-02 14:10:03,053 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:04,054 - java.lang.Class - INFO -  Question: "Are only necessary services, protocols, daemons, etc. enabled as required for the function of the system (services and protocols not directly needed to perform the device’s specified function are disabled)?" is answered as Yes
+2016-02-02 14:10:04,519 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:05,521 - java.lang.Class - INFO -  Question: "Are all enabled insecure services, daemons, or protocols justified per documented configuration standards?" is answered as Yes
+2016-02-02 14:10:06,034 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:07,035 - java.lang.Class - INFO -  Question: "Are additional security features documented and implemented for any required services, protocols or daemons that are considered to be insecure?
+For example, use secured technologies such as SSH, S-FTP, TLS, or IPSec VPN to protect insecure services such as NetBIOS, file-sharing, Telnet, FTP, etc.
+Note: SSL and early TLS are not considered strong cryptography and cannot be used as a security control after 30th June, 2016. Prior to this date, existing implementations that use SSL and/or early TLS must have a formal Risk Mitigation and Migration Plan in place.
+Effective immediately, new implementations must not use SSL or early TLS.
+POS POI terminals (and the SSL/TLS termination points to which they connect) that can be verified as not being susceptible to any known exploits for SSL and early TLS may continue using these as a security control after 30th June, 2016." is answered as Yes
+2016-02-02 14:10:07,501 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:08,501 - java.lang.Class - INFO -  Question: "Are system administrators and/or personnel that configure system components knowledgeable about common security parameter settings for those system components?" is answered as Yes
+2016-02-02 14:10:09,037 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:10,038 - java.lang.Class - INFO -  Question: "Are common system security parameters settings included in the system configuration standards?" is answered as Yes
+2016-02-02 14:10:10,503 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:11,504 - java.lang.Class - INFO -  Question: "Are security parameter settings set appropriately on system components?" is answered as Yes
+2016-02-02 14:10:11,969 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:12,970 - java.lang.Class - INFO -  Question: "Has all unnecessary functionality such as scripts, drivers, features, subsystems, file systems, and unnecessary web servers been removed?" is answered as Yes
+2016-02-02 14:10:13,436 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:14,437 - java.lang.Class - INFO -  Question: "Are enabled functions documented and do they support secure configuration?" is answered as Yes
+2016-02-02 14:10:14,975 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:15,976 - java.lang.Class - INFO -  Question: "Is only documented functionality present on system components?" is answered as Yes
+2016-02-02 14:10:16,466 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:17,467 - java.lang.Class - INFO -  Question: "Is all non-console administrative access encrypted with strong cryptography, and is a strong encryption method invoked before the administrator’s password is requested?" is answered as Yes
+2016-02-02 14:10:17,930 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:18,930 - java.lang.Class - INFO -  Question: "Are system services and parameter files configured to prevent the use of Telnet and other insecure remote login commands?" is answered as Yes
+2016-02-02 14:10:19,391 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:20,392 - java.lang.Class - INFO -  Question: "Is administrator access to web-based management interfaces encrypted with strong cryptography?" is answered as Yes
+2016-02-02 14:10:20,927 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:21,928 - java.lang.Class - INFO -  Question: "For the technology in use, is strong cryptography implemented according to industry best practice and/or vendor recommendations?" is answered as Yes
+2016-02-02 14:10:22,415 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:23,416 - java.lang.Class - INFO -  Question: "For POS POI terminals (and the SSL/TLS termination points to which they connect) using SSL and/or early TLS and for which the entity asserts are not susceptible to any known exploits for those protocols:
+Is there documentation (for example, vendor documentation, system/network configuration details, etc.) that verifies the devices are not susceptible to any known exploits for SSL/early TLS?" is answered as Yes
+2016-02-02 14:10:23,929 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:24,930 - java.lang.Class - INFO -  Question: "For all other environments using SSL and/or early TLS:
+Does the documented Risk Mitigation and Migration Plan include the following?
+Description of usage, including; what data is being transmitted, types and number of systems that use and/or support SSL/early TLS, type of environment;
+Risk assessment results and risk reduction controls in place;
+Description of processes to monitor for new vulnerabilities associated with SSL/early TLS;
+Description of change control processes that are implemented to ensure SSL/early TLS is not implemented into new environments;
+Overview of migration project plan including target migration completion date no later than 30th June 2016." is answered as Yes
+2016-02-02 14:10:26,926 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:27,927 - java.lang.Class - INFO -  Question: "The personal identification number (PIN) or the encrypted PIN block is not stored after authorization?" is answered as Yes
+2016-02-02 14:10:28,441 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:29,442 - java.lang.Class - INFO -  Question: "Are strong cryptography and security protocols, such as TLS, SSH or IPSEC, used to safeguard sensitive cardholder data during transmission over open, public networks?
+Examples of open, public networks include but are not limited to the Internet; wireless technologies, including 802.11 and Bluetooth; cellular technologies, for example, Global System for Mobile communications (GSM), Code division multiple access (CDMA); and General Packet Radio Service (GPRS).
+Note: SSL and early TLS are not considered strong cryptography and cannot be used as a security control after 30th June, 2016. Prior to this date, existing implementations that use SSL and/or early TLS must have a formal Risk Mitigation and Migration Plan in place.
+Effective immediately, new implementations must not use SSL or early TLS." is answered as Yes
+2016-02-02 14:10:29,908 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:30,908 - java.lang.Class - INFO -  Question: "Are only trusted keys and/or certificates accepted?" is answered as Yes
+2016-02-02 14:10:31,373 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:32,374 - java.lang.Class - INFO -  Question: "Are security protocols implemented to use only secure configurations, and to not support insecure versions or configurations?" is answered as Yes
+2016-02-02 14:10:32,838 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:33,838 - java.lang.Class - INFO -  Question: "Is the proper encryption strength implemented for the encryption methodology in use (check vendor recommendations/best practices)?" is answered as Yes
+2016-02-02 14:10:34,425 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:35,426 - java.lang.Class - INFO -  Question: "For SSL/TLS implementations, is SSL/TLS enabled whenever cardholder data is transmitted or received?
+For example, for browser-based implementations:
+"HTTPS” appears as the browser Universal Record Locator (URL) protocol, and
+Cardholder data is only requested if "HTTPS” appears as part of the URL." is answered as Yes
+2016-02-02 14:10:35,914 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:36,915 - java.lang.Class - INFO -  Question: "For POS POI terminals (and the SSL/TLS termination points to which they connect) using SSL and/or early TLS and for which the entity asserts are not susceptible to any known exploits for those protocols:
+Is there documentation (for example, vendor documentation, system/network configuration details, etc.) that verifies the devices are not susceptible to any known exploits for SSL/early TLS?" is answered as Yes
+2016-02-02 14:10:37,403 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:38,404 - java.lang.Class - INFO -  Question: "For all other environments using SSL and/or early TLS:
+Does the documented Risk Mitigation and Migration Plan include the following?
+Description of usage, including; what data is being transmitted, types and number of systems that use and/or support SSL/early TLS, type of environment;
+Risk assessment results and risk reduction controls in place;
+Description of processes to monitor for new vulnerabilities associated with SSL/early TLS;
+Description of change control processes that are implemented to ensure SSL/early TLS is not implemented into new environments;
+Overview of migration project plan including target migration completion date no later than 30th June 2016." is answered as Yes
+2016-02-02 14:10:40,779 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:41,780 - java.lang.Class - INFO -  Question: "Is anti-virus software deployed on all systems commonly affected by malicious software?" is answered as Yes
+2016-02-02 14:10:42,274 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:43,275 - java.lang.Class - INFO -  Question: "Are anti-virus programs capable of detecting, removing, and protecting against all known types of malicious software (for example, viruses, Trojans, worms, spyware, adware, and rootkits)?" is answered as Yes
+2016-02-02 14:10:43,741 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:44,742 - java.lang.Class - INFO -  Question: "Are periodic evaluations performed to identify and evaluate evolving malware threats in order to confirm whether those systems considered to not be commonly affected by malicious software continue as such?" is answered as Yes
+2016-02-02 14:10:45,234 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:46,235 - java.lang.Class - INFO -  Question: "Are all anti-virus software and definitions kept current?" is answered as Yes
+2016-02-02 14:10:46,775 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:47,776 - java.lang.Class - INFO -  Question: "Are automatic updates and periodic scans enabled and being performed?" is answered as Yes
+2016-02-02 14:10:48,271 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:49,272 - java.lang.Class - INFO -  Question: "Are all anti-virus mechanisms generating audit logs, and are logs retained in accordance with PCI DSS Requirement 10.7?" is answered as Yes
+2016-02-02 14:10:49,761 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:50,762 - java.lang.Class - INFO -  Question: "Are all anti-virus mechanisms:
+Actively running?
+Unable to be disabled or altered by users?
+Note: Anti-virus solutions may be temporarily disabled only if there is legitimate technical need, as authorized by management on a case-by-case basis. If anti-virus protection needs to be disabled for a specific purpose, it must be formally authorized. Additional security measures may also need to be implemented for the period of time during which anti-virus protection is not active." is answered as Yes
+2016-02-02 14:10:51,248 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:52,249 - java.lang.Class - INFO -  Question: "Is there a process to identify security vulnerabilities, including the following:
+Using reputable outside sources for vulnerability information?
+Assigning a risk ranking to vulnerabilities that includes identification of all "high” risk and "critical” vulnerabilities?
+Note: Risk rankings should be based on industry best practices as well as consideration of potential impact. For example, criteria for ranking vulnerabilities may include consideration of the CVSS base score and/or the classification by the vendor, and/or type of systems affected.
+Methods for evaluating vulnerabilities and assigning risk ratings will vary based on an organization’s environment and risk assessment strategy. Risk rankings should, at a minimum, identify all vulnerabilities considered to be a "high risk” to the environment. In addition to the risk ranking, vulnerabilities may be considered "critical” if they pose an imminent threat to the environment, impact critical systems, and/or would result in a potential compromise if not addressed. Examples of critical systems may include security systems, public-facing devices and systems, databases, and other systems that store, process or transmit cardholder data." is answered as Yes
+2016-02-02 14:10:52,787 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:53,788 - java.lang.Class - INFO -  Question: "Are all system components and software protected from known vulnerabilities by installing applicable vendor-supplied security patches?" is answered as Yes
+2016-02-02 14:10:54,278 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:55,279 - java.lang.Class - INFO -  Question: "Are critical security patches installed within one month of release?
+Note: Critical security patches should be identified according to the risk ranking process defined in Requirement 6.1." is answered as Yes
+2016-02-02 14:10:55,769 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:56,770 - java.lang.Class - INFO -  Question: "Are change-control procedures for implementing security patches and software modifications documented and require the following?
+Documentation of impact
+Documented change control approval by authorized parties
+Functionality testing to verify that the change does not adversely impact the security of the system
+Back-out procedures" is answered as Yes
+2016-02-02 14:10:57,236 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:58,236 - java.lang.Class - INFO -  Question: "Documentation of impact?" is answered as Yes
+2016-02-02 14:10:58,775 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:10:59,776 - java.lang.Class - INFO -  Question: "Documented approval by authorized parties?" is answered as Yes
+2016-02-02 14:11:00,240 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:01,241 - java.lang.Class - INFO -  Question: "Functionality testing to verify that the change does not adversely impact the security of the system?" is answered as Yes
+2016-02-02 14:11:01,707 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:02,708 - java.lang.Class - INFO -  Question: "For custom code changes, testing of updates for compliance with PCI DSS Requirement 6.5 before being deployed into production?" is answered as Yes
+2016-02-02 14:11:03,175 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:04,175 - java.lang.Class - INFO -  Question: "Back-out procedures?" is answered as Yes
+2016-02-02 14:11:04,788 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:05,788 - java.lang.Class - INFO -  Question: "Do coding techniques address injection flaws, particularly SQL injection?
+Note: Also consider OS Command Injection, LDAP and XPath injection flaws as well as other injection flaws." is answered as Yes
+2016-02-02 14:11:06,251 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:07,252 - java.lang.Class - INFO -  Question: "Do coding techniques address buffer overflow vulnerabilities?" is answered as Yes
+2016-02-02 14:11:07,716 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:08,716 - java.lang.Class - INFO -  Question: "Do coding techniques address cross-site scripting (XSS) vulnerabilities?" is answered as Yes
+2016-02-02 14:11:09,180 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:10,181 - java.lang.Class - INFO -  Question: "Do coding techniques address improper access control such as insecure direct object references, failure to restrict URL access, directory traversal, and failure to restrict user access to functions?" is answered as Yes
+2016-02-02 14:11:10,694 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:11,695 - java.lang.Class - INFO -  Question: "Do coding techniques address cross-site request forgery (CSRF)?" is answered as Yes
+2016-02-02 14:11:12,185 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:13,186 - java.lang.Class - INFO -  Question: "Do coding techniques address broken authentication and session management?
+Note: Requirement 6.5.10 is a best practice until June 30, 2015, after which it becomes a requirement." is answered as Yes
+2016-02-02 14:11:13,799 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:14,799 - java.lang.Class - INFO -  Question: "For public-facing web applications, are new threats and vulnerabilities addressed on an ongoing basis, and are these applications protected against known attacks by applying either of the following methods?
+Reviewing public-facing web applications via manual or automated application vulnerability security assessment tools or methods, as follows:
+At least annually
+After any changes
+By an organization that specializes in application security
+That, at a minimum, all vulnerabilities in Requirement 6.5 are included in the assessment
+That all vulnerabilities are corrected
+That the application is re-evaluated after the corrections
+Note: This assessment is not the same as the vulnerability scans performed for Requirement 11.2.
+
+– OR –
+
+Installing an automated technical solution that detects and prevents web-based attacks (for example, a web-application firewall) as follows:
+Is situated in front of public-facing web applications to detect and prevent web-based attacks.
+Is actively running and up to date as applicable.
+Is generating audit logs.
+Is configured to either block web-based attacks, or generate an alert that is immediately investigated." is answered as Yes
+2016-02-02 14:11:15,082 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:11:18,355 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:19,356 - java.lang.Class - INFO -  Question: "Is access to privileged user IDs restricted as follows:
+To least privileges necessary to perform job responsibilities?
+Assigned only to roles that specifically require that privileged access?" is answered as Yes
+2016-02-02 14:11:19,847 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:20,848 - java.lang.Class - INFO -  Question: "Are access assigned based on individual personnel’s job classification and function?" is answered as Yes
+2016-02-02 14:11:21,315 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:22,316 - java.lang.Class - INFO -  Question: "Are all users assigned a unique ID before allowing them to access system components or cardholder data?" is answered as Yes
+2016-02-02 14:11:22,782 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:23,783 - java.lang.Class - INFO -  Question: "Is access for any terminated users immediately deactivated or removed?" is answered as Yes
+2016-02-02 14:11:24,372 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:25,373 - java.lang.Class - INFO -  Question: "Are accounts used by vendors to access, support, or maintain system components via remote access enabled only during the time period needed and disabled when not in use?" is answered as Yes
+2016-02-02 14:11:25,864 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:26,865 - java.lang.Class - INFO -  Question: "Are vendor remote access accounts monitored when in use?" is answered as Yes
+2016-02-02 14:11:27,402 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:28,403 - java.lang.Class - INFO -  Question: "Are repeated access attempts limited by locking out the user ID after no more than six attempts?" is answered as Yes
+2016-02-02 14:11:28,869 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:29,870 - java.lang.Class - INFO -  Question: "Once a user account is locked out, is the lockout duration set to a minimum of 30 minutes or until an administrator enables the user ID?" is answered as Yes
+2016-02-02 14:11:30,459 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:31,460 - java.lang.Class - INFO -  Question: "In addition to assigning a unique ID, is one or more of the following methods employed to authenticate all users?
+Something you know, such as a password or passphrase
+Something you have, such as a token device or smart card
+Something you are, such as a biometric" is answered as Yes
+2016-02-02 14:11:31,925 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:32,926 - java.lang.Class - INFO -  Question: "Is strong cryptography used to render all authentication credentials (such as passwords/phrases) unreadable during transmission and storage on all system components?" is answered as Yes
+2016-02-02 14:11:33,390 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:34,390 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:34,830 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:35,831 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:36,346 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:37,346 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:37,808 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:38,808 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:39,273 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:40,273 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:40,713 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:41,713 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:42,153 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:43,153 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:43,624 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:44,624 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:45,066 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:46,066 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:46,505 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:47,505 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:48,019 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:49,020 - java.lang.Class - INFO -  Question: "Are user password parameters configured to require passwords/passphrases meet the following?
+A minimum password length of at least seven characters
+Contain both numeric and alphabetic characters
+Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above." is answered as Yes
+2016-02-02 14:11:49,430 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:50,431 - java.lang.Class - INFO -  Question: "Are user passwords/passphrases changed at least once every 90 days?" is answered as Yes
+2016-02-02 14:11:50,922 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:51,923 - java.lang.Class - INFO -  Question: "Are user passwords/passphrases changed at least once every 90 days?" is answered as Yes
+2016-02-02 14:11:52,381 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:53,381 - java.lang.Class - INFO -  Question: "Must an individual submit a new password/phrase that is different from any of the last four passwords/phrases he or she has used?" is answered as Yes
+2016-02-02 14:11:53,846 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:54,847 - java.lang.Class - INFO -  Question: "Are passwords/phrases set to a unique value for each user for first-time use and upon reset, and must each user change their password immediately after the first use?" is answered as Yes
+2016-02-02 14:11:55,306 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:56,307 - java.lang.Class - INFO -  Question: "Is two-factor authentication incorporated for remote network access originating from outside the network by personnel (including users and administrators) and all third parties (including vendor access for support or maintenance)?
+Note: Two-factor authentication requires that two of the three authentication methods (see PCI DSS Requirement 8.2 for descriptions of authentication methods) be used for authentication. Using one factor twice (for example, using two separate passwords) is not considered two-factor authentication.
+Examples of two-factor technologies include remote authentication and dial-in service (RADIUS) with tokens; terminal access controller access control system (TACACS) with tokens; and other technologies that facilitate two-factor authentication." is answered as Yes
+2016-02-02 14:11:56,919 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:57,920 - java.lang.Class - INFO -  Question: "Are group, shared, or generic accounts, passwords, or other authentication methods prohibited as follows:
+Generic user IDs and accounts are disabled or removed;
+Shared user IDs for system administration activities and other critical functions do not exist; and
+Shared and generic user IDs are not used to administer any system components?" is answered as Yes
+2016-02-02 14:11:58,459 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:11:59,460 - java.lang.Class - INFO -  Question: "Where other authentication mechanisms are used (for example, physical or logical security tokens, smart cards, and certificates, etc.), is the use of these mechanisms assigned as follows?
+Authentication mechanisms must be assigned to an individual account and not shared among multiple accounts
+Physical and/or logical controls must be in place to ensure only the intended account can use that mechanism to gain access" is answered as Yes
+2016-02-02 14:11:59,923 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:00,924 - java.lang.Class - INFO -  Question: "Are appropriate facility entry controls in place to limit and monitor physical access to systems in the cardholder data environment?" is answered as Yes
+2016-02-02 14:12:01,461 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:02,462 - java.lang.Class - INFO -  Question: "Are all media physically secured (including but not limited to computers, removable electronic media, paper receipts, paper reports, and faxes)?
+For purposes of Requirement 9, "media” refers to all paper and electronic media containing cardholder data." is answered as Yes
+2016-02-02 14:12:02,926 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:03,927 - java.lang.Class - INFO -  Question: "Is strict control maintained over the internal or external distribution of any kind of media?" is answered as Yes
+2016-02-02 14:12:04,391 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:05,392 - java.lang.Class - INFO -  Question: "Is media classified so the sensitivity of the data can be determined?" is answered as Yes
+2016-02-02 14:12:05,857 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:06,858 - java.lang.Class - INFO -  Question: "Is media sent by secured courier or other delivery method that can be accurately tracked?" is answered as Yes
+2016-02-02 14:12:07,468 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:08,468 - java.lang.Class - INFO -  Question: "Is management approval obtained prior to moving the media (especially when media is distributed to individuals)?" is answered as Yes
+2016-02-02 14:12:08,931 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:09,932 - java.lang.Class - INFO -  Question: "Is strict control maintained over the storage and accessibility of media?" is answered as Yes
+2016-02-02 14:12:10,396 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:11,397 - java.lang.Class - INFO -  Question: "Is all media destroyed when it is no longer needed for business or legal reasons?" is answered as Yes
+2016-02-02 14:12:11,861 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:12,861 - java.lang.Class - INFO -  Question: "Are hardcopy materials cross-cut shredded, incinerated, or pulped so that cardholder data cannot be reconstructed?" is answered as Yes
+2016-02-02 14:12:13,424 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:14,425 - java.lang.Class - INFO -  Question: "Are storage containers used for materials that contain information to be destroyed secured to prevent access to the contents?" is answered as Yes
+2016-02-02 14:12:16,825 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:17,825 - java.lang.Class - INFO -  Question: "All actions taken by any individual with root or administrative privileges?" is answered as Yes
+2016-02-02 14:12:18,314 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:19,314 - java.lang.Class - INFO -  Question: "Invalid logical access attempts?" is answered as Yes
+2016-02-02 14:12:19,803 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:20,803 - java.lang.Class - INFO -  Question: "Use of and changes to identification and authentication mechanisms–including but not limited to creation of new accounts and elevation of privileges – and all changes, additions, or deletions to accounts with root or administrative privileges?" is answered as Yes
+2016-02-02 14:12:21,370 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:22,371 - java.lang.Class - INFO -  Question: "User identification?" is answered as Yes
+2016-02-02 14:12:22,837 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:23,837 - java.lang.Class - INFO -  Question: "Type of event?" is answered as Yes
+2016-02-02 14:12:24,328 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:25,328 - java.lang.Class - INFO -  Question: "Date and time?" is answered as Yes
+2016-02-02 14:12:25,818 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:26,818 - java.lang.Class - INFO -  Question: "Success or failure indication?" is answered as Yes
+2016-02-02 14:12:27,333 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:28,333 - java.lang.Class - INFO -  Question: "Origination of event?" is answered as Yes
+2016-02-02 14:12:28,825 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:29,826 - java.lang.Class - INFO -  Question: "Identity or name of affected data, system component, or resource?" is answered as Yes
+2016-02-02 14:12:30,289 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:31,289 - java.lang.Class - INFO -  Question: "Are logs for external-facing technologies (for example, wireless, firewalls, DNS, mail) written onto a secure, centralized, internal log server or media?" is answered as Yes
+2016-02-02 14:12:31,829 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:32,829 - java.lang.Class - INFO -  Question: "Are the following logs and security events reviewed at least daily, either manually or via log tools?
+All security events
+Logs of all system components that store, process, or transmit CHD and/or SAD
+Logs of all critical system components
+Logs of all servers and system components that perform security functions (for example, firewalls, intrusion-detection systems/intrusion-prevention systems (IDS/IPS), authentication servers, e-commerce redirection servers, etc.)" is answered as Yes
+2016-02-02 14:12:33,342 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:34,342 - java.lang.Class - INFO -  Question: "Are logs of all other system components periodically reviewed either manually or via log tools based on the organization’s policies and risk management strategy?" is answered as Yes
+2016-02-02 14:12:34,833 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:35,833 - java.lang.Class - INFO -  Question: "Is follow up to exceptions and anomalies identified during the review process performed?" is answered as Yes
+2016-02-02 14:12:36,299 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:37,299 - java.lang.Class - INFO -  Question: "Are audit logs retained for at least one year?" is answered as Yes
+2016-02-02 14:12:37,743 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:38,744 - java.lang.Class - INFO -  Question: "Are at least the last three months’ logs immediately available for analysis?" is answered as Yes
+2016-02-02 14:12:39,359 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:40,359 - java.lang.Class - INFO -  Question: "Are quarterly external vulnerability scans performed?
+Note: Quarterly external vulnerability scans must be performed by an Approved Scanning Vendor (ASV), approved by the Payment Card Industry Security Standards Council (PCI SSC).
+Refer to the ASV Program Guide published on the PCI SSC website for scan customer responsibilities, scan preparation, etc." is answered as Yes
+2016-02-02 14:12:40,692 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:12:42,102 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:43,102 - java.lang.Class - INFO -  Question: "Do external quarterly scan and rescan results satisfy the ASV Program Guide requirements for a passing scan (for example, no vulnerabilities rated 4.0 or higher by the CVSS, and no automatic failures)?" is answered as Yes
+2016-02-02 14:12:43,567 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:44,567 - java.lang.Class - INFO -  Question: "Are quarterly external vulnerability scans performed by a PCI SSC Approved Scanning Vendor (ASV)?" is answered as Yes
+2016-02-02 14:12:45,078 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:46,078 - java.lang.Class - INFO -  Question: "Are internal and external scans, and rescans as needed, performed after any significant change?
+Note: Scans must be performed by qualified personnel." is answered as Yes
+2016-02-02 14:12:46,566 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:47,567 - java.lang.Class - INFO -  Question: "Does the scan process include rescans until:
+For external scans, no vulnerabilities exist that are scored 4.0 or higher by the CVSS,
+For internal scans, a passing result is obtained or all "high-risk” vulnerabilities as defined in PCI DSS Requirement 6.1 are resolved?" is answered as Yes
+2016-02-02 14:12:48,057 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:49,057 - java.lang.Class - INFO -  Question: "Are scans performed by a qualified internal resource(s) or qualified external third party, and if applicable, does organizational independence of the tester exist (not required to be a QSA or ASV)?" is answered as Yes
+2016-02-02 14:12:49,621 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:50,621 - java.lang.Class - INFO -  Question: "Does the penetration-testing methodology include the following?
+Is based on industry-accepted penetration testing approaches (for example, NIST SP800-115)
+Includes coverage for the entire CDE perimeter and critical systems
+Includes testing from both inside and outside the network
+Includes testing to validate any segmentation and scope-reduction controls
+Defines application-layer penetration tests to include, at a minimum, the vulnerabilities listed in Requirement 6.5
+Defines network-layer penetration tests to include components that support network functions as well as operating systems
+Includes review and consideration of threats and vulnerabilities experienced in the last 12 months
+Specifies retention of penetration testing results and remediation activities results
+Note: This update to Requirement 11.3 is a best practice until June 30, 2015, after which it becomes a requirement. Prior to this date, PCI DSS v2.0 requirements for penetration testing must be followed until version 3 is in place." is answered as Yes
+2016-02-02 14:12:51,183 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:52,183 - java.lang.Class - INFO -  Question: "Is external penetration testing performed per the defined methodology, at least annually, and after any significant infrastructure or application changes to the environment (such as an operating system upgrade, a sub-network added to the environment, or an added web server)?" is answered as Yes
+2016-02-02 14:12:52,516 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:12:53,952 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:54,952 - java.lang.Class - INFO -  Question: "Are tests performed by a qualified internal resource or qualified external third party, and if applicable, does organizational independence of the tester exist (not required to be a QSA or ASV)?" is answered as Yes
+2016-02-02 14:12:55,417 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:56,417 - java.lang.Class - INFO -  Question: "Are exploitable vulnerabilities found during penetration testing corrected, followed by repeated testing to verify the corrections?" is answered as Yes
+2016-02-02 14:12:56,979 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:57,979 - java.lang.Class - INFO -  Question: "Are penetration-testing procedures defined to test all segmentation methods, to confirm they are operational and effective, and isolate all out-of-scope systems from systems in the CDE?" is answered as Yes
+2016-02-02 14:12:58,490 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:12:59,490 - java.lang.Class - INFO -  Question: "Does penetration testing to verify segmentation controls meet the following?
+Performed at least annually and after any changes to segmentation controls/methods
+Covers all segmentation controls/methods in use
+Verifies that segmentation methods are operational and effective, and isolate all out-of-scope systems from systems in the CDE." is answered as Yes
+2016-02-02 14:13:00,003 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:01,003 - java.lang.Class - INFO -  Question: "Is a change-detection mechanism (for example, file-integrity monitoring tools) deployed within the cardholder data environment to detect unauthorized modification of critical system files, configuration files, or content files?
+Examples of files that should be monitored include:
+System executables
+Application executables
+Configuration and parameter files
+Centrally stored, historical or archived, log, and audit files
+Additional critical files determined by entity (for example, through risk assessment or other means)" is answered as Yes
+2016-02-02 14:13:01,466 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:02,466 - java.lang.Class - INFO -  Question: "Is the change-detection mechanism configured to alert personnel to unauthorized modification of critical system files, configuration files or content files, and do the tools perform critical file comparisons at least weekly?
+Note: For change detection purposes, critical files are usually those that do not regularly change, but the modification of which could indicate a system compromise or risk of compromise. Change detection mechanisms such as file-integrity monitoring products usually come pre-configured with critical files for the related operating system. Other critical files, such as those for custom applications, must be evaluated and defined by the entity (that is the merchant or service provider)." is answered as Yes
+2016-02-02 14:13:03,003 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:04,003 - java.lang.Class - INFO -  Question: "Is a process in place to respond to any alerts generated by the change-detection solution?" is answered as Yes
+2016-02-02 14:13:06,203 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:07,203 - java.lang.Class - INFO -  Question: "Is a security policy established, published, maintained, and disseminated to all relevant personnel?" is answered as Yes
+2016-02-02 14:13:07,715 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:08,715 - java.lang.Class - INFO -  Question: "Is the security policy reviewed at least annually and updated when the environment changes?" is answered as Yes
+2016-02-02 14:13:09,146 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:13:10,608 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:11,608 - java.lang.Class - INFO -  Question: "Do security policy and procedures clearly define information security responsibilities for all personnel?" is answered as Yes
+2016-02-02 14:13:12,075 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:13,075 - java.lang.Class - INFO -  Question: "Establishing, documenting, and distributing security incident response and escalation procedures to ensure timely and effective handling of all situations?" is answered as Yes
+2016-02-02 14:13:13,585 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:14,585 - java.lang.Class - INFO -  Question: "Is a formal security awareness program in place to make all personnel aware of the importance of cardholder data security?" is answered as Yes
+2016-02-02 14:13:15,051 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:16,052 - java.lang.Class - INFO -  Question: "Is a list of service providers maintained?" is answered as Yes
+2016-02-02 14:13:16,591 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:17,591 - java.lang.Class - INFO -  Question: "Is a written agreement maintained that includes an acknowledgement that the service providers are responsible for the security of cardholder data the service providers possess or otherwise store, process, or transmit on behalf of the customer, or to the extent that they could impact the security of the customer’s cardholder data environment?
+Note: The exact wording of an acknowledgement will depend on the agreement between the two parties, the details of the service being provided, and the responsibilities assigned to each party. The acknowledgement does not have to include the exact wording provided in this requirement." is answered as Yes
+2016-02-02 14:13:18,056 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:19,057 - java.lang.Class - INFO -  Question: "Is there an established process for engaging service providers, including proper due diligence prior to engagement?" is answered as Yes
+2016-02-02 14:13:19,595 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:20,595 - java.lang.Class - INFO -  Question: "Is a program maintained to monitor service providers’ PCI DSS compliance status at least annually?" is answered as Yes
+2016-02-02 14:13:20,926 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:13:22,411 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:23,411 - java.lang.Class - INFO -  Question: "Is information maintained about which PCI DSS requirements are managed by each service provider, and which are managed by the entity?" is answered as Yes
+2016-02-02 14:13:23,876 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:24,876 - java.lang.Class - INFO -  Question: "Has an incident response plan been created to be implemented in the event of system breach?" is answered as Yes
+2016-02-02 14:13:25,364 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:26,364 - java.lang.Class - INFO -  Question: "Roles, responsibilities, and communication and contact strategies in the event of a compromise including notification of the payment brands, at a minimum?" is answered as Yes
+2016-02-02 14:13:26,826 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:27,826 - java.lang.Class - INFO -  Question: "Specific incident response procedures?" is answered as Yes
+2016-02-02 14:13:28,314 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:29,314 - java.lang.Class - INFO -  Question: "Business recovery and continuity procedures?" is answered as Yes
+2016-02-02 14:13:29,777 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:30,777 - java.lang.Class - INFO -  Question: "Data backup processes?" is answered as Yes
+2016-02-02 14:13:31,240 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:32,240 - java.lang.Class - INFO -  Question: "Analysis of legal requirements for reporting compromises?" is answered as Yes
+2016-02-02 14:13:32,699 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:33,699 - java.lang.Class - INFO -  Question: "Coverage and responses of all critical system components?" is answered as Yes
+2016-02-02 14:13:34,136 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:13:35,136 - java.lang.Class - INFO -  Question: "Reference or inclusion of incident response procedures from the payment brands?" is answered as Yes
+2016-02-02 14:13:36,889 - java.lang.Class - INFO -  clicked on yes button sucessufully
+2016-02-02 14:13:59,991 - java.lang.Class - INFO - Merchant Logged in with Username: 20160129014
+2016-02-02 14:14:06,446 - java.lang.Class - INFO - Merchant is personalised and the username is: Test20160129014
+2016-02-02 14:14:17,598 - com.sysnet.safemaker.SAQAEPProfile - INFO - Merchant profile initiated for SAQ type A-EP Scenario2
+2016-02-02 14:15:02,776 - java.lang.Class - INFO - Merchant Logged in with Username: 20160129014
+2016-02-02 14:15:58,078 - java.lang.Class - INFO - Merchant Logged in with Username: 20160129052
+2016-02-02 14:16:51,510 - java.lang.Class - INFO - Merchant Logged in with Username: 20160129053
+2016-02-02 14:16:57,961 - java.lang.Class - INFO - Merchant is personalised and the username is: Test20160129053
+2016-02-02 14:17:11,187 - com.sysnet.safemaker.SAQCProfile - INFO - Merchant profile initiated for SAQ type C Scenario1
+2016-02-02 14:17:11,426 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData answer is yes
+2016-02-02 14:17:11,427 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData question is answered as: yes
+2016-02-02 14:17:17,927 - com.sysnet.safemaker.ProfileQuestion - INFO - pacF2f answer is check
+2016-02-02 14:17:17,927 - com.sysnet.safemaker.ProfileQuestion - INFO - pacF2f question is answered as: check
+2016-02-02 14:17:24,449 - com.sysnet.safemaker.ProfileQuestion - INFO - smartphonePosUsed answer is check
+2016-02-02 14:17:24,449 - com.sysnet.safemaker.ProfileQuestion - INFO - smartphonePosUsed question is answered as: check
+2016-02-02 14:17:30,972 - com.sysnet.safemaker.ProfileQuestion - INFO - mobileMerchantSetup_swipe answer is no
+2016-02-02 14:17:30,973 - com.sysnet.safemaker.ProfileQuestion - INFO - mobileMerchantSetup_swipe question is answered as: no
+2016-02-02 14:17:31,180 - com.sysnet.safemaker.ProfileQuestion - INFO - mobileMerchantSetup_app answer is yes
+2016-02-02 14:17:31,181 - com.sysnet.safemaker.ProfileQuestion - INFO - mobileMerchantSetup_app question is answered as: yes
+2016-02-02 14:17:31,366 - com.sysnet.safemaker.ProfileQuestion - INFO - mobileMerchantSetup_vt answer is no
+2016-02-02 14:17:31,367 - com.sysnet.safemaker.ProfileQuestion - INFO - mobileMerchantSetup_vt question is answered as: no
+2016-02-02 14:17:37,891 - com.sysnet.safemaker.ProfileQuestion - INFO - mobileMerchantOnly answer is yes
+2016-02-02 14:17:37,893 - com.sysnet.safemaker.ProfileQuestion - INFO - mobileMerchantOnly question is answered as: yes
+2016-02-02 14:17:44,441 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData answer is no
+2016-02-02 14:17:44,441 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData question is answered as: no
+2016-02-02 14:17:44,652 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse answer is no
+2016-02-02 14:17:44,652 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse question is answered as: no
+2016-02-02 14:17:51,477 - com.sysnet.safemaker.ProfileQuestion - INFO - securityPolicySaqC answer is yes
+2016-02-02 14:17:51,478 - com.sysnet.safemaker.ProfileQuestion - INFO - securityPolicySaqC question is answered as: yes
+2016-02-02 14:17:58,051 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected answer is no
+2016-02-02 14:17:58,051 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected question is answered as: no
+2016-02-02 14:18:04,597 - com.sysnet.safemaker.ProfileQuestion - INFO - wirelessNetworksUsed answer is no
+2016-02-02 14:18:04,598 - com.sysnet.safemaker.ProfileQuestion - INFO - wirelessNetworksUsed question is answered as: no
+2016-02-02 14:18:11,119 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship answer is no
+2016-02-02 14:18:11,120 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship question is answered as: no
+2016-02-02 14:18:17,644 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has answer is no
+2016-02-02 14:18:17,644 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has question is answered as: no
+2016-02-02 14:18:24,138 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed answer is no
+2016-02-02 14:18:24,139 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed question is answered as: no
+2016-02-02 14:18:30,710 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeFacilitiesAndLocations question is answered as: text
+2016-02-02 14:18:30,918 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeChdCapacity question is answered as: text
+2016-02-02 14:18:31,126 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeDescription question is answered as: text
+2016-02-02 14:18:54,968 - java.lang.Class - INFO - manageButton clicked
+2016-02-02 14:18:54,968 - java.lang.Class - INFO - clicked on manage SAQ sucessufully
+2016-02-02 14:18:56,147 - java.lang.Class - INFO - clicked on answer button sucessufully
+2016-02-02 14:18:59,456 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:00,457 - java.lang.Class - INFO -  Question: "Is only one primary function implemented per server, to prevent functions that require different security levels from co-existing on the same server?
+For example, web servers, database servers, and DNS should be implemented on separate servers." is answered as Yes
+2016-02-02 14:19:00,953 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:01,954 - java.lang.Class - INFO -  Question: "If virtualization technologies are used, is only one primary function implemented per virtual system component or device?" is answered as Yes
+2016-02-02 14:19:02,501 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:03,501 - java.lang.Class - INFO -  Question: "Are additional security features documented and implemented for any required services, protocols or daemons that are considered to be insecure?
+For example, use secured technologies such as SSH, S-FTP, TLS, or IPSec VPN to protect insecure services such as NetBIOS, file-sharing, Telnet, FTP, etc.
+Note: SSL and early TLS are not considered strong cryptography and cannot be used as a security control after 30th June, 2016. Prior to this date, existing implementations that use SSL and/or early TLS must have a formal Risk Mitigation and Migration Plan in place.
+Effective immediately, new implementations must not use SSL or early TLS.
+POS POI terminals (and the SSL/TLS termination points to which they connect) that can be verified as not being susceptible to any known exploits for SSL and early TLS may continue using these as a security control after 30th June, 2016." is answered as Yes
+2016-02-02 14:19:03,971 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:04,972 - java.lang.Class - INFO -  Question: "Are system administrators and/or personnel that configure system components knowledgeable about common security parameter settings for those system components?" is answered as Yes
+2016-02-02 14:19:05,514 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:06,515 - java.lang.Class - INFO -  Question: "Are common system security parameters settings included in the system configuration standards?" is answered as Yes
+2016-02-02 14:19:06,989 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:07,990 - java.lang.Class - INFO -  Question: "Are security parameter settings set appropriately on system components?" is answered as Yes
+2016-02-02 14:19:08,459 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:09,459 - java.lang.Class - INFO -  Question: "Has all unnecessary functionality such as scripts, drivers, features, subsystems, file systems, and unnecessary web servers been removed?" is answered as Yes
+2016-02-02 14:19:09,924 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:10,925 - java.lang.Class - INFO -  Question: "Are enabled functions documented and do they support secure configuration?" is answered as Yes
+2016-02-02 14:19:11,493 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:12,494 - java.lang.Class - INFO -  Question: "Is only documented functionality present on system components?" is answered as Yes
+2016-02-02 14:19:13,012 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:14,013 - java.lang.Class - INFO -  Question: "For POS POI terminals (and the SSL/TLS termination points to which they connect) using SSL and/or early TLS and for which the entity asserts are not susceptible to any known exploits for those protocols:
+Is there documentation (for example, vendor documentation, system/network configuration details, etc.) that verifies the devices are not susceptible to any known exploits for SSL/early TLS?" is answered as Yes
+2016-02-02 14:19:14,580 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:15,581 - java.lang.Class - INFO -  Question: "For all other environments using SSL and/or early TLS:
+Does the documented Risk Mitigation and Migration Plan include the following?
+Description of usage, including; what data is being transmitted, types and number of systems that use and/or support SSL/early TLS, type of environment;
+Risk assessment results and risk reduction controls in place;
+Description of processes to monitor for new vulnerabilities associated with SSL/early TLS;
+Description of change control processes that are implemented to ensure SSL/early TLS is not implemented into new environments;
+Overview of migration project plan including target migration completion date no later than 30th June 2016." is answered as Yes
+2016-02-02 14:19:16,074 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:17,075 - java.lang.Class - INFO -  Question: "Are security policies and operational procedures for managing vendor defaults and other security parameters:
 Documented
 In use
 Known to all affected parties?" is answered as Yes
-2016-01-28 12:04:55,699 - java.lang.Class - INFO - yesButton clicked
-2016-01-28 12:04:56,700 - java.lang.Class - INFO -  Question: "Are security policies and operational procedures for restricting physical access to cardholder data:
+2016-02-02 14:19:19,136 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:20,137 - java.lang.Class - INFO -  Question: "Is sensitive authentication data deleted or rendered unrecoverable upon completion of the authorization process?" is answered as Yes
+2016-02-02 14:19:20,656 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:21,657 - java.lang.Class - INFO -  Question: "The full contents of any track (from the magnetic stripe located on the back of a card, equivalent data contained on a chip, or elsewhere) are not stored after authorization? This data is alternatively called full track, track, track 1, track 2, and magnetic-stripe data.
+Note: In the normal course of business, the following data elements from the magnetic stripe may need to be retained:
+The cardholder’s name,
+Primary account number (PAN),
+Expiration date, and
+To minimize risk, store only these data elements as needed for business." is answered as Yes
+2016-02-02 14:19:22,121 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:23,122 - java.lang.Class - INFO -  Question: "The card verification code or value (three-digit or four-digit number printed on the front or back of a payment card) is not stored after authorization?" is answered as Yes
+2016-02-02 14:19:23,592 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:24,592 - java.lang.Class - INFO -  Question: "The personal identification number (PIN) or the encrypted PIN block is not stored after authorization?" is answered as Yes
+2016-02-02 14:19:25,058 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:26,059 - java.lang.Class - INFO -  Question: "Are only trusted keys and/or certificates accepted?" is answered as Yes
+2016-02-02 14:19:26,528 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:27,528 - java.lang.Class - INFO -  Question: "Are security protocols implemented to use only secure configurations, and to not support insecure versions or configurations?" is answered as Yes
+2016-02-02 14:19:27,996 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:28,997 - java.lang.Class - INFO -  Question: "Is the proper encryption strength implemented for the encryption methodology in use (check vendor recommendations/best practices)?" is answered as Yes
+2016-02-02 14:19:29,490 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:30,491 - java.lang.Class - INFO -  Question: "For TLS implementations, is TLS enabled whenever cardholder data is transmitted or received?
+For example, for browser-based implementations:
+"HTTPS" appears as the browser Universal Record Locator (URL) protocol, and
+Cardholder data is only requested if "HTTPS" appears as part of the URL." is answered as Yes
+2016-02-02 14:19:30,982 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:31,983 - java.lang.Class - INFO -  Question: "For POS POI terminals (and the SSL/TLS termination points to which they connect) using SSL and/or early TLS and for which the entity asserts are not susceptible to any known exploits for those protocols:
+Is there documentation (for example, vendor documentation, system/network configuration details, etc.) that verifies the devices are not susceptible to any known exploits for SSL/early TLS?" is answered as Yes
+2016-02-02 14:19:32,499 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:33,500 - java.lang.Class - INFO -  Question: "For all other environments using SSL and/or early TLS:
+Does the documented Risk Mitigation and Migration Plan include the following?
+Description of usage, including; what data is being transmitted, types and number of systems that use and/or support SSL/early TLS, type of environment;
+Risk assessment results and risk reduction controls in place;
+Description of processes to monitor for new vulnerabilities associated with SSL/early TLS;
+Description of change control processes that are implemented to ensure SSL/early TLS is not implemented into new environments;
+Overview of migration project plan including target migration completion date no later than 30th June 2016." is answered as Yes
+2016-02-02 14:19:35,401 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:36,401 - java.lang.Class - INFO -  Question: "Is there a process to identify security vulnerabilities, including the following:
+Using reputable outside sources for vulnerability information?
+Assigning a risk ranking to vulnerabilities that includes identification of all "high” risk and "critical” vulnerabilities?
+Note: Risk rankings should be based on industry best practices as well as consideration of potential impact. For example, criteria for ranking vulnerabilities may include consideration of the CVSS base score and/or the classification by the vendor, and/or type of systems affected.
+Methods for evaluating vulnerabilities and assigning risk ratings will vary based on an organization’s environment and risk assessment strategy. Risk rankings should, at a minimum, identify all vulnerabilities considered to be a "high risk” to the environment. In addition to the risk ranking, vulnerabilities may be considered "critical” if they pose an imminent threat to the environment, impact critical systems, and/or would result in a potential compromise if not addressed. Examples of critical systems may include security systems, public-facing devices and systems, databases, and other systems that store, process or transmit cardholder data." is answered as Yes
+2016-02-02 14:19:39,970 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:40,971 - java.lang.Class - INFO -  Question: "All actions taken by any individual with root or administrative privileges?" is answered as Yes
+2016-02-02 14:19:41,469 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:42,470 - java.lang.Class - INFO -  Question: "Invalid logical access attempts?" is answered as Yes
+2016-02-02 14:19:43,038 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:44,039 - java.lang.Class - INFO -  Question: "Use of and changes to identification and authentication mechanisms–including but not limited to creation of new accounts and elevation of privileges – and all changes, additions, or deletions to accounts with root or administrative privileges?" is answered as Yes
+2016-02-02 14:19:44,531 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:45,532 - java.lang.Class - INFO -  Question: "User identification?" is answered as Yes
+2016-02-02 14:19:46,027 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:47,028 - java.lang.Class - INFO -  Question: "Type of event?" is answered as Yes
+2016-02-02 14:19:47,524 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:48,525 - java.lang.Class - INFO -  Question: "Date and time?" is answered as Yes
+2016-02-02 14:19:49,190 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:50,191 - java.lang.Class - INFO -  Question: "Success or failure indication?" is answered as Yes
+2016-02-02 14:19:50,762 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:51,763 - java.lang.Class - INFO -  Question: "Origination of event?" is answered as Yes
+2016-02-02 14:19:52,232 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:53,233 - java.lang.Class - INFO -  Question: "Identity or name of affected data, system component, or resource?" is answered as Yes
+2016-02-02 14:19:53,752 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:54,753 - java.lang.Class - INFO -  Question: "Are the following logs and security events reviewed at least daily, either manually or via log tools?
+All security events
+Logs of all system components that store, process, or transmit CHD and/or SAD
+Logs of all critical system components
+Logs of all servers and system components that perform security functions (for example, firewalls, intrusion-detection systems/intrusion-prevention systems (IDS/IPS), authentication servers, e-commerce redirection servers, etc.)" is answered as Yes
+2016-02-02 14:19:55,242 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:56,243 - java.lang.Class - INFO -  Question: "Are logs of all other system components periodically reviewed either manually or via log tools based on the organization’s policies and risk management strategy?" is answered as Yes
+2016-02-02 14:19:56,727 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:57,727 - java.lang.Class - INFO -  Question: "Is follow up to exceptions and anomalies identified during the review process performed?" is answered as Yes
+2016-02-02 14:19:58,195 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:19:59,196 - java.lang.Class - INFO -  Question: "Are audit logs retained for at least one year?" is answered as Yes
+2016-02-02 14:19:59,631 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:00,632 - java.lang.Class - INFO -  Question: "Are at least the last three months’ logs immediately available for analysis?" is answered as Yes
+2016-02-02 14:20:01,223 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:02,223 - java.lang.Class - INFO -  Question: "Are processes implemented for detection and identification of both authorized and unauthorized wireless access points on a quarterly basis?
+Note: Methods that may be used in the process include, but are not limited to, wireless network scans, physical/logical inspections of system components and infrastructure, network access control (NAC), or wireless IDS/IPS.
+Whichever methods are used, they must be sufficient to detect and identify any unauthorized devices." is answered as Yes
+2016-02-02 14:20:02,583 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:20:04,047 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:05,048 - java.lang.Class - INFO -  Question: "Does the methodology detect and identify any unauthorized wireless access points, including at least the following?
+WLAN cards inserted into system components;
+Portable or mobile devices attached to system components to create a wireless access point (for example, by USB, etc.); and
+Wireless devices attached to a network port or network device." is answered as Yes
+2016-02-02 14:20:05,517 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:06,517 - java.lang.Class - INFO -  Question: "If wireless scanning is utilized to identify authorized and unauthorized wireless access points, is the scan performed at least quarterly for all system components and facilities?" is answered as Yes
+2016-02-02 14:20:06,982 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:07,983 - java.lang.Class - INFO -  Question: "If automated monitoring is utilized (for example, wireless IDS/IPS, NAC, etc.), is monitoring configured to generate alerts to notify personnel?" is answered as Yes
+2016-02-02 14:20:08,474 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:09,475 - java.lang.Class - INFO -  Question: "Is an inventory of authorized wireless access points maintained and a business justification documented for all authorized wireless access points?" is answered as Yes
+2016-02-02 14:20:09,941 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:10,942 - java.lang.Class - INFO -  Question: "Does the incident response plan define and require a response in the event that an unauthorized wireless access point is detected?" is answered as Yes
+2016-02-02 14:20:11,407 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:12,408 - java.lang.Class - INFO -  Question: "Is action taken when unauthorized wireless access points are found?" is answered as Yes
+2016-02-02 14:20:12,873 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:13,874 - java.lang.Class - INFO -  Question: "Are penetration-testing procedures defined to test all segmentation methods, to confirm they are operational and effective, and isolate all out-of-scope systems from systems in the CDE?" is answered as Yes
+2016-02-02 14:20:14,413 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:15,414 - java.lang.Class - INFO -  Question: "Does penetration testing to verify segmentation controls meet the following?
+Performed at least annually and after any changes to segmentation controls/methods
+Covers all segmentation controls/methods in use
+Verifies that segmentation methods are operational and effective, and isolate all out-of-scope systems from systems in the CDE." is answered as Yes
+2016-02-02 14:20:15,979 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:16,979 - java.lang.Class - INFO -  Question: "Is a change-detection mechanism (for example, file-integrity monitoring tools) deployed within the cardholder data environment to detect unauthorized modification (including changes, additions, and deletions) of critical system files, configuration files, or content files?
+Examples of files that should be monitored include:
+System executables
+Application executables
+Configuration and parameter files
+Centrally stored, historical or archived, log, and audit files
+Additional critical files determined by entity (for example, through risk assessment or other means)" is answered as Yes
+2016-02-02 14:20:17,415 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:18,416 - java.lang.Class - INFO -  Question: "Is the change-detection mechanism configured to alert personnel to unauthorized modification (including changes, additions, and deletions) of critical system files, configuration files or content files, and do the tools perform critical file comparisons at least weekly?
+Note: For change detection purposes, critical files are usually those that do not regularly change, but the modification of which could indicate a system compromise or risk of compromise. Change detection mechanisms such as file-integrity monitoring products usually come pre-configured with critical files for the related operating system. Other critical files, such as those for custom applications, must be evaluated and defined by the entity (that is the merchant or service provider)." is answered as Yes
+2016-02-02 14:20:18,881 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:20:19,881 - java.lang.Class - INFO -  Question: "Is a process in place to respond to any alerts generated by the change-detection solution?" is answered as Yes
+2016-02-02 14:20:23,014 - java.lang.Class - INFO -  clicked on yes button sucessufully
+2016-02-02 14:20:45,541 - java.lang.Class - INFO - Merchant Logged in with Username: 20160129054
+2016-02-02 14:20:52,032 - java.lang.Class - INFO - Merchant is personalised and the username is: Test20160129054
+2016-02-02 14:21:05,210 - com.sysnet.safemaker.SAQCProfile - INFO - Merchant profile initiated for SAQ type C Scenario2
+2016-02-02 14:21:05,419 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData answer is yes
+2016-02-02 14:21:05,420 - com.sysnet.safemaker.ProfileQuestion - INFO - existingData question is answered as: yes
+2016-02-02 14:21:11,963 - com.sysnet.safemaker.ProfileQuestion - INFO - pacF2f answer is check
+2016-02-02 14:21:11,964 - com.sysnet.safemaker.ProfileQuestion - INFO - pacF2f question is answered as: check
+2016-02-02 14:21:18,455 - com.sysnet.safemaker.ProfileQuestion - INFO - ePosUsed answer is check
+2016-02-02 14:21:18,455 - com.sysnet.safemaker.ProfileQuestion - INFO - ePosUsed question is answered as: check
+2016-02-02 14:21:24,998 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peSolutionInUse answer is no
+2016-02-02 14:21:24,998 - com.sysnet.safemaker.ProfileQuestion - INFO - p2peSolutionInUse question is answered as: no
+2016-02-02 14:21:31,810 - com.sysnet.safemaker.ProfileQuestion - INFO - paymentApplication answer is yes
+2016-02-02 14:21:31,811 - com.sysnet.safemaker.ProfileQuestion - INFO - paymentApplication question is answered as: yes
+2016-02-02 14:21:38,354 - com.sysnet.safemaker.ProfileQuestion - INFO - paDssCertified answer is yes
+2016-02-02 14:21:38,354 - com.sysnet.safemaker.ProfileQuestion - INFO - paDssCertified question is answered as: yes
+2016-02-02 14:21:45,141 - com.sysnet.safemaker.ProfileQuestion - INFO - pciSscValidatedPaymentApplications_list question is answered as: INFO
+2016-02-02 14:21:51,656 - com.sysnet.safemaker.ProfileQuestion - INFO - batchSettlementFilesUsed answer is no
+2016-02-02 14:21:51,657 - com.sysnet.safemaker.ProfileQuestion - INFO - batchSettlementFilesUsed question is answered as: no
+2016-02-02 14:21:58,184 - com.sysnet.safemaker.ProfileQuestion - INFO - remoteAccessToPos answer is no
+2016-02-02 14:21:58,184 - com.sysnet.safemaker.ProfileQuestion - INFO - remoteAccessToPos question is answered as: no
+2016-02-02 14:22:04,728 - com.sysnet.safemaker.ProfileQuestion - INFO - physicalCardDataUsed answer is no
+2016-02-02 14:22:04,728 - com.sysnet.safemaker.ProfileQuestion - INFO - physicalCardDataUsed question is answered as: no
+2016-02-02 14:22:11,269 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData answer is no
+2016-02-02 14:22:11,270 - com.sysnet.safemaker.ProfileQuestion - INFO - emailCardData question is answered as: no
+2016-02-02 14:22:11,451 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse answer is no
+2016-02-02 14:22:11,452 - com.sysnet.safemaker.ProfileQuestion - INFO - otherUse question is answered as: no
+2016-02-02 14:22:18,350 - com.sysnet.safemaker.ProfileQuestion - INFO - securityPolicySaqC answer is yes
+2016-02-02 14:22:18,351 - com.sysnet.safemaker.ProfileQuestion - INFO - securityPolicySaqC question is answered as: yes
+2016-02-02 14:22:24,864 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected answer is no
+2016-02-02 14:22:24,865 - com.sysnet.safemaker.ProfileQuestion - INFO - internetConnected question is answered as: no
+2016-02-02 14:22:31,332 - com.sysnet.safemaker.ProfileQuestion - INFO - wirelessNetworksUsed answer is no
+2016-02-02 14:22:31,333 - com.sysnet.safemaker.ProfileQuestion - INFO - wirelessNetworksUsed question is answered as: no
+2016-02-02 14:22:37,826 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship answer is no
+2016-02-02 14:22:37,827 - com.sysnet.safemaker.ProfileQuestion - INFO - otherAcquirerRelationship question is answered as: no
+2016-02-02 14:22:44,345 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has answer is no
+2016-02-02 14:22:44,345 - com.sysnet.safemaker.ProfileQuestion - INFO - isa_has question is answered as: no
+2016-02-02 14:22:50,863 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed answer is no
+2016-02-02 14:22:50,863 - com.sysnet.safemaker.ProfileQuestion - INFO - qsaUsed question is answered as: no
+2016-02-02 14:22:57,432 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeFacilitiesAndLocations question is answered as: text
+2016-02-02 14:22:57,638 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeChdCapacity question is answered as: text
+2016-02-02 14:22:57,870 - com.sysnet.safemaker.ProfileQuestion - INFO - scopeDescription question is answered as: text
+2016-02-02 14:23:11,241 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on upload manage scan sucessfully
+2016-02-02 14:23:12,242 - com.sysnet.pageobjects.UploadScanScenario - INFO - Upload Manage Scan clicked successsfully
+2016-02-02 14:23:12,426 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked Upload Results sucessfully
+2016-02-02 14:23:13,426 - com.sysnet.pageobjects.UploadScanScenario - INFO - Upload result scan button clicked sucessfully
+2016-02-02 14:23:15,682 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on Executive Report button sucessfully
+2016-02-02 14:23:16,682 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on Start Executive Report sucessfully
+2016-02-02 14:23:18,938 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on Start Technical Report sucessfully
+2016-02-02 14:23:19,938 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on start technical report sucessfully
+2016-02-02 14:23:20,477 - com.sysnet.pageobjects.UploadScanScenario - INFO - Selected Asv Scan option from drop down menu
+2016-02-02 14:23:21,478 - com.sysnet.pageobjects.UploadScanScenario - INFO - selected asv scan option sucessfully
+2016-02-02 14:23:30,638 - com.sysnet.pageobjects.UploadScanScenario - INFO - Selected a particular date sucessfully
+2016-02-02 14:23:33,638 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on calendar date sucessfully
+2016-02-02 14:23:33,842 - com.sysnet.pageobjects.UploadScanScenario - INFO - Clicked on upload button sucessfully
+2016-02-02 14:23:41,522 - java.lang.Class - INFO - manageButton clicked
+2016-02-02 14:23:41,522 - java.lang.Class - INFO - clicked on manage SAQ sucessufully
+2016-02-02 14:23:42,700 - java.lang.Class - INFO - clicked on answer button sucessufully
+2016-02-02 14:23:45,316 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:23:46,317 - java.lang.Class - INFO -  Question: "Is only one primary function implemented per server, to prevent functions that require different security levels from co-existing on the same server?
+For example, web servers, database servers, and DNS should be implemented on separate servers." is answered as Yes
+2016-02-02 14:23:46,980 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:23:47,981 - java.lang.Class - INFO -  Question: "If virtualization technologies are used, is only one primary function implemented per virtual system component or device?" is answered as Yes
+2016-02-02 14:23:48,546 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:23:49,547 - java.lang.Class - INFO -  Question: "Are additional security features documented and implemented for any required services, protocols or daemons that are considered to be insecure?
+For example, use secured technologies such as SSH, S-FTP, TLS, or IPSec VPN to protect insecure services such as NetBIOS, file-sharing, Telnet, FTP, etc.
+Note: SSL and early TLS are not considered strong cryptography and cannot be used as a security control after 30th June, 2016. Prior to this date, existing implementations that use SSL and/or early TLS must have a formal Risk Mitigation and Migration Plan in place.
+Effective immediately, new implementations must not use SSL or early TLS.
+POS POI terminals (and the SSL/TLS termination points to which they connect) that can be verified as not being susceptible to any known exploits for SSL and early TLS may continue using these as a security control after 30th June, 2016." is answered as Yes
+2016-02-02 14:23:50,012 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:23:51,013 - java.lang.Class - INFO -  Question: "Are system administrators and/or personnel that configure system components knowledgeable about common security parameter settings for those system components?" is answered as Yes
+2016-02-02 14:23:51,478 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:23:52,479 - java.lang.Class - INFO -  Question: "Are common system security parameters settings included in the system configuration standards?" is answered as Yes
+2016-02-02 14:23:52,945 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:23:53,945 - java.lang.Class - INFO -  Question: "Are security parameter settings set appropriately on system components?" is answered as Yes
+2016-02-02 14:23:54,435 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:23:55,436 - java.lang.Class - INFO -  Question: "Has all unnecessary functionality such as scripts, drivers, features, subsystems, file systems, and unnecessary web servers been removed?" is answered as Yes
+2016-02-02 14:23:55,901 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:23:56,902 - java.lang.Class - INFO -  Question: "Are enabled functions documented and do they support secure configuration?" is answered as Yes
+2016-02-02 14:23:57,367 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:23:58,367 - java.lang.Class - INFO -  Question: "Is only documented functionality present on system components?" is answered as Yes
+2016-02-02 14:23:58,830 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:23:59,831 - java.lang.Class - INFO -  Question: "For POS POI terminals (and the SSL/TLS termination points to which they connect) using SSL and/or early TLS and for which the entity asserts are not susceptible to any known exploits for those protocols:
+Is there documentation (for example, vendor documentation, system/network configuration details, etc.) that verifies the devices are not susceptible to any known exploits for SSL/early TLS?" is answered as Yes
+2016-02-02 14:24:00,394 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:01,394 - java.lang.Class - INFO -  Question: "For all other environments using SSL and/or early TLS:
+Does the documented Risk Mitigation and Migration Plan include the following?
+Description of usage, including; what data is being transmitted, types and number of systems that use and/or support SSL/early TLS, type of environment;
+Risk assessment results and risk reduction controls in place;
+Description of processes to monitor for new vulnerabilities associated with SSL/early TLS;
+Description of change control processes that are implemented to ensure SSL/early TLS is not implemented into new environments;
+Overview of migration project plan including target migration completion date no later than 30th June 2016." is answered as Yes
+2016-02-02 14:24:01,857 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:02,858 - java.lang.Class - INFO -  Question: "Are security policies and operational procedures for managing vendor defaults and other security parameters:
 Documented
 In use
 Known to all affected parties?" is answered as Yes
-2016-01-28 12:04:59,860 - java.lang.Class - INFO -  clicked on yes button sucessufully
-2016-01-28 12:05:08,526 - com.sysnet.safemaker.SAQP2PEProfile - INFO - Merchant Test20160127064 is sucessfully Attested
+2016-02-02 14:24:04,908 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:05,909 - java.lang.Class - INFO -  Question: "Is sensitive authentication data deleted or rendered unrecoverable upon completion of the authorization process?" is answered as Yes
+2016-02-02 14:24:06,423 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:07,424 - java.lang.Class - INFO -  Question: "The full contents of any track (from the magnetic stripe located on the back of a card, equivalent data contained on a chip, or elsewhere) are not stored after authorization? This data is alternatively called full track, track, track 1, track 2, and magnetic-stripe data.
+Note: In the normal course of business, the following data elements from the magnetic stripe may need to be retained:
+The cardholder’s name,
+Primary account number (PAN),
+Expiration date, and
+To minimize risk, store only these data elements as needed for business." is answered as Yes
+2016-02-02 14:24:07,889 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:08,890 - java.lang.Class - INFO -  Question: "The card verification code or value (three-digit or four-digit number printed on the front or back of a payment card) is not stored after authorization?" is answered as Yes
+2016-02-02 14:24:09,349 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:10,350 - java.lang.Class - INFO -  Question: "The personal identification number (PIN) or the encrypted PIN block is not stored after authorization?" is answered as Yes
+2016-02-02 14:24:10,815 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:11,816 - java.lang.Class - INFO -  Question: "Are only trusted keys and/or certificates accepted?" is answered as Yes
+2016-02-02 14:24:12,379 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:13,379 - java.lang.Class - INFO -  Question: "Are security protocols implemented to use only secure configurations, and to not support insecure versions or configurations?" is answered as Yes
+2016-02-02 14:24:13,843 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:14,844 - java.lang.Class - INFO -  Question: "Is the proper encryption strength implemented for the encryption methodology in use (check vendor recommendations/best practices)?" is answered as Yes
+2016-02-02 14:24:15,383 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:16,384 - java.lang.Class - INFO -  Question: "For TLS implementations, is TLS enabled whenever cardholder data is transmitted or received?
+For example, for browser-based implementations:
+"HTTPS" appears as the browser Universal Record Locator (URL) protocol, and
+Cardholder data is only requested if "HTTPS" appears as part of the URL." is answered as Yes
+2016-02-02 14:24:16,847 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:17,847 - java.lang.Class - INFO -  Question: "For POS POI terminals (and the SSL/TLS termination points to which they connect) using SSL and/or early TLS and for which the entity asserts are not susceptible to any known exploits for those protocols:
+Is there documentation (for example, vendor documentation, system/network configuration details, etc.) that verifies the devices are not susceptible to any known exploits for SSL/early TLS?" is answered as Yes
+2016-02-02 14:24:18,432 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:19,433 - java.lang.Class - INFO -  Question: "For all other environments using SSL and/or early TLS:
+Does the documented Risk Mitigation and Migration Plan include the following?
+Description of usage, including; what data is being transmitted, types and number of systems that use and/or support SSL/early TLS, type of environment;
+Risk assessment results and risk reduction controls in place;
+Description of processes to monitor for new vulnerabilities associated with SSL/early TLS;
+Description of change control processes that are implemented to ensure SSL/early TLS is not implemented into new environments;
+Overview of migration project plan including target migration completion date no later than 30th June 2016." is answered as Yes
+2016-02-02 14:24:21,304 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:22,304 - java.lang.Class - INFO -  Question: "Is there a process to identify security vulnerabilities, including the following:
+Using reputable outside sources for vulnerability information?
+Assigning a risk ranking to vulnerabilities that includes identification of all "high” risk and "critical” vulnerabilities?
+Note: Risk rankings should be based on industry best practices as well as consideration of potential impact. For example, criteria for ranking vulnerabilities may include consideration of the CVSS base score and/or the classification by the vendor, and/or type of systems affected.
+Methods for evaluating vulnerabilities and assigning risk ratings will vary based on an organization’s environment and risk assessment strategy. Risk rankings should, at a minimum, identify all vulnerabilities considered to be a "high risk” to the environment. In addition to the risk ranking, vulnerabilities may be considered "critical” if they pose an imminent threat to the environment, impact critical systems, and/or would result in a potential compromise if not addressed. Examples of critical systems may include security systems, public-facing devices and systems, databases, and other systems that store, process or transmit cardholder data." is answered as Yes
+2016-02-02 14:24:26,040 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:27,040 - java.lang.Class - INFO -  Question: "All actions taken by any individual with root or administrative privileges?" is answered as Yes
+2016-02-02 14:24:27,532 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:28,533 - java.lang.Class - INFO -  Question: "Invalid logical access attempts?" is answered as Yes
+2016-02-02 14:24:29,051 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:30,052 - java.lang.Class - INFO -  Question: "Use of and changes to identification and authentication mechanisms–including but not limited to creation of new accounts and elevation of privileges – and all changes, additions, or deletions to accounts with root or administrative privileges?" is answered as Yes
+2016-02-02 14:24:30,546 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:31,547 - java.lang.Class - INFO -  Question: "User identification?" is answered as Yes
+2016-02-02 14:24:32,050 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:33,051 - java.lang.Class - INFO -  Question: "Type of event?" is answered as Yes
+2016-02-02 14:24:33,588 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:34,589 - java.lang.Class - INFO -  Question: "Date and time?" is answered as Yes
+2016-02-02 14:24:35,081 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:36,082 - java.lang.Class - INFO -  Question: "Success or failure indication?" is answered as Yes
+2016-02-02 14:24:36,649 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:37,650 - java.lang.Class - INFO -  Question: "Origination of event?" is answered as Yes
+2016-02-02 14:24:38,168 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:39,169 - java.lang.Class - INFO -  Question: "Identity or name of affected data, system component, or resource?" is answered as Yes
+2016-02-02 14:24:39,711 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:40,711 - java.lang.Class - INFO -  Question: "Are the following logs and security events reviewed at least daily, either manually or via log tools?
+All security events
+Logs of all system components that store, process, or transmit CHD and/or SAD
+Logs of all critical system components
+Logs of all servers and system components that perform security functions (for example, firewalls, intrusion-detection systems/intrusion-prevention systems (IDS/IPS), authentication servers, e-commerce redirection servers, etc.)" is answered as Yes
+2016-02-02 14:24:41,202 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:42,202 - java.lang.Class - INFO -  Question: "Are logs of all other system components periodically reviewed either manually or via log tools based on the organization’s policies and risk management strategy?" is answered as Yes
+2016-02-02 14:24:42,842 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:43,843 - java.lang.Class - INFO -  Question: "Is follow up to exceptions and anomalies identified during the review process performed?" is answered as Yes
+2016-02-02 14:24:44,408 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:45,409 - java.lang.Class - INFO -  Question: "Are audit logs retained for at least one year?" is answered as Yes
+2016-02-02 14:24:45,896 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:46,897 - java.lang.Class - INFO -  Question: "Are at least the last three months’ logs immediately available for analysis?" is answered as Yes
+2016-02-02 14:24:47,462 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:48,462 - java.lang.Class - INFO -  Question: "Are processes implemented for detection and identification of both authorized and unauthorized wireless access points on a quarterly basis?
+Note: Methods that may be used in the process include, but are not limited to, wireless network scans, physical/logical inspections of system components and infrastructure, network access control (NAC), or wireless IDS/IPS.
+Whichever methods are used, they must be sufficient to detect and identify any unauthorized devices." is answered as Yes
+2016-02-02 14:24:48,920 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:24:50,432 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:51,433 - java.lang.Class - INFO -  Question: "Does the methodology detect and identify any unauthorized wireless access points, including at least the following?
+WLAN cards inserted into system components;
+Portable or mobile devices attached to system components to create a wireless access point (for example, by USB, etc.); and
+Wireless devices attached to a network port or network device." is answered as Yes
+2016-02-02 14:24:51,923 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:52,923 - java.lang.Class - INFO -  Question: "If wireless scanning is utilized to identify authorized and unauthorized wireless access points, is the scan performed at least quarterly for all system components and facilities?" is answered as Yes
+2016-02-02 14:24:53,387 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:54,387 - java.lang.Class - INFO -  Question: "If automated monitoring is utilized (for example, wireless IDS/IPS, NAC, etc.), is monitoring configured to generate alerts to notify personnel?" is answered as Yes
+2016-02-02 14:24:55,001 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:56,001 - java.lang.Class - INFO -  Question: "Is an inventory of authorized wireless access points maintained and a business justification documented for all authorized wireless access points?" is answered as Yes
+2016-02-02 14:24:56,542 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:57,543 - java.lang.Class - INFO -  Question: "Does the incident response plan define and require a response in the event that an unauthorized wireless access point is detected?" is answered as Yes
+2016-02-02 14:24:58,031 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:24:59,031 - java.lang.Class - INFO -  Question: "Is action taken when unauthorized wireless access points are found?" is answered as Yes
+2016-02-02 14:24:59,545 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:00,545 - java.lang.Class - INFO -  Question: "Are quarterly internal vulnerability scans performed?" is answered as Yes
+2016-02-02 14:25:00,978 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:25:02,465 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:03,466 - java.lang.Class - INFO -  Question: "Does the quarterly internal scan process include rescans as needed until all "high-risk” vulnerabilities as defined in PCI DSS Requirement 6.1 are resolved?" is answered as Yes
+2016-02-02 14:25:03,930 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:04,931 - java.lang.Class - INFO -  Question: "Are quarterly internal scans performed by a qualified internal resource(s) or qualified external third party, and if applicable, does organizational independence of the tester exist (not required to be a QSA or ASV)?" is answered as Yes
+2016-02-02 14:25:05,468 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:06,468 - java.lang.Class - INFO -  Question: "Are quarterly external vulnerability scans performed?
+Note: Quarterly external vulnerability scans must be performed by an Approved Scanning Vendor (ASV), approved by the Payment Card Industry Security Standards Council (PCI SSC).
+Refer to the ASV Program Guide published on the PCI SSC website for scan customer responsibilities, scan preparation, etc." is answered as Yes
+2016-02-02 14:25:06,776 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:25:08,006 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:25:09,361 - java.lang.Class - INFO - finishButton clicked
+2016-02-02 14:25:10,769 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:11,770 - java.lang.Class - INFO -  Question: "Do external quarterly scan and rescan results satisfy the ASV Program Guide requirements for a passing scan (for example, no vulnerabilities rated 4.0 or higher by the CVSS, and no automatic failures)?" is answered as Yes
+2016-02-02 14:25:12,258 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:13,259 - java.lang.Class - INFO -  Question: "Are quarterly external vulnerability scans performed by a PCI SSC Approved Scanning Vendor (ASV)?" is answered as Yes
+2016-02-02 14:25:13,819 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:14,820 - java.lang.Class - INFO -  Question: "Are internal and external scans, and rescans as needed, performed after any significant change?
+Note: Scans must be performed by qualified personnel." is answered as Yes
+2016-02-02 14:25:15,334 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:16,335 - java.lang.Class - INFO -  Question: "Does the scan process include rescans until:
+For external scans, no vulnerabilities exist that are scored 4.0 or higher by the CVSS,
+For internal scans, a passing result is obtained or all "high-risk” vulnerabilities as defined in PCI DSS Requirement 6.1 are resolved?" is answered as Yes
+2016-02-02 14:25:16,800 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:17,801 - java.lang.Class - INFO -  Question: "Are scans performed by a qualified internal resource(s) or qualified external third party, and if applicable, does organizational independence of the tester exist (not required to be a QSA or ASV)?" is answered as Yes
+2016-02-02 14:25:18,266 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:19,266 - java.lang.Class - INFO -  Question: "Are penetration-testing procedures defined to test all segmentation methods, to confirm they are operational and effective, and isolate all out-of-scope systems from systems in the CDE?" is answered as Yes
+2016-02-02 14:25:19,851 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:20,852 - java.lang.Class - INFO -  Question: "Does penetration testing to verify segmentation controls meet the following?
+Performed at least annually and after any changes to segmentation controls/methods
+Covers all segmentation controls/methods in use
+Verifies that segmentation methods are operational and effective, and isolate all out-of-scope systems from systems in the CDE." is answered as Yes
+2016-02-02 14:25:21,390 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:22,391 - java.lang.Class - INFO -  Question: "Is a change-detection mechanism (for example, file-integrity monitoring tools) deployed within the cardholder data environment to detect unauthorized modification (including changes, additions, and deletions) of critical system files, configuration files, or content files?
+Examples of files that should be monitored include:
+System executables
+Application executables
+Configuration and parameter files
+Centrally stored, historical or archived, log, and audit files
+Additional critical files determined by entity (for example, through risk assessment or other means)" is answered as Yes
+2016-02-02 14:25:22,879 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:23,880 - java.lang.Class - INFO -  Question: "Is the change-detection mechanism configured to alert personnel to unauthorized modification (including changes, additions, and deletions) of critical system files, configuration files or content files, and do the tools perform critical file comparisons at least weekly?
+Note: For change detection purposes, critical files are usually those that do not regularly change, but the modification of which could indicate a system compromise or risk of compromise. Change detection mechanisms such as file-integrity monitoring products usually come pre-configured with critical files for the related operating system. Other critical files, such as those for custom applications, must be evaluated and defined by the entity (that is the merchant or service provider)." is answered as Yes
+2016-02-02 14:25:24,319 - java.lang.Class - INFO - yesButton clicked
+2016-02-02 14:25:25,321 - java.lang.Class - INFO -  Question: "Is a process in place to respond to any alerts generated by the change-detection solution?" is answered as Yes
+2016-02-02 14:25:28,578 - java.lang.Class - INFO -  clicked on yes button sucessufully
