@@ -70,7 +70,7 @@ public class DoPersonalise {
 			LoginPage lp = new LoginPage(driver, clientProps);
 			lp.LoginUser(username, password);
 			Thread.sleep(8000);
-			//log.info(username + " logged in sucessufully");
+			log.info(username + " logged in sucessufully");
 			PersonalisePage pp = new PersonalisePage(driver, clientProps);
 			pp.personaliseMerchant(expUsername);
 			//log.info(expUsername + " personalised sucessfully");

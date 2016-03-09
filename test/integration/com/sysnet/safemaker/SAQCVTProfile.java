@@ -42,7 +42,7 @@ public class SAQCVTProfile {
 	private Sheet merchantSheet;
 	private Row prow;
 	private String currentScenario;
-	private int merchanRowNum=1;
+	private int merchanRowNum = 1;
 	private Cell usedCell;
 	private Cell merchantCell;
 	private Cell saqCell;
@@ -52,7 +52,7 @@ public class SAQCVTProfile {
 	private Cell usernameCell;
 	private int merchantCount;
 	private String username;
-	private int count=0;
+	private int count = 0;
 	private By starProfileButton;
 	private SeleniumHelper sh;
 	private By skiptutorials;
@@ -63,7 +63,8 @@ public class SAQCVTProfile {
 	private FileInputStream in;
 	private String used;
 	private String saqSheet;
-	private final  Logger log = Logger.getLogger(SAQCVTProfile.class.getName());
+	private final Logger log = Logger.getLogger(SAQCVTProfile.class.getName());
+	private String profilePath;
 
 	@Before
 	public void setup() throws Exception {
@@ -72,7 +73,8 @@ public class SAQCVTProfile {
 		FileInputStream locatorStream = new FileInputStream(conifgFilePath);
 		conifgProps.load(locatorStream);
 		client = conifgProps.getProperty("client");
-		propertyfilepath = "test/integration/" + client + "/locators.properties";
+		propertyfilepath = "test/integration/" + client
+				+ "/locators.properties";
 		clientProps = new Properties();
 		FileInputStream locatorStream1 = new FileInputStream(propertyfilepath);
 		clientProps.load(locatorStream1);
@@ -81,102 +83,107 @@ public class SAQCVTProfile {
 		loginpageUrlSufix = clientProps.getProperty("login.url.suffix");
 		url = baseUrl + loginpageUrlSufix;
 		System.out.println(url);
-		sh= new SeleniumHelper(driver, clientProps);
-		merchantfilepath="test/integration/TestAccs.xlsx";
+		sh = new SeleniumHelper(driver, clientProps);
+		merchantfilepath = "test/integration/TestAccs.xlsx";
 		in = new FileInputStream(merchantfilepath);
-		wrkBook1 = (Workbook)WorkbookFactory.create(in);
-		merchantSheet= wrkBook1.getSheet("SAQCVT"); 
+		wrkBook1 = (Workbook) WorkbookFactory.create(in);
+		merchantSheet = wrkBook1.getSheet("SAQCVT");
 		count = merchantSheet.getLastRowNum();
-		saqSheet="SAQ type C-vt";
-		profileSheet = sh.readExcelFile("test/integration/aibms/Profile.xlsx", saqSheet );
-
+		saqSheet = "SAQ type C-vt";
+		profilePath="test/integration/"+client+"/Profile.xlsx";
+		profileSheet = sh.readExcelFile(profilePath,saqSheet);
 		pRowCount = profileSheet.getLastRowNum();
 
 		Browser browser = new Browser();
-		driver = browser.getdriver(conifgProps.getProperty("browser").toString(), clientProps);
+		driver = browser.getdriver(conifgProps.getProperty("browser")
+				.toString(), clientProps);
 		driver.get(url);
 
 	}
 
 	@Test
 	public void merchantJourney() throws Exception {
-		try{
-		System.out.println(pRowCount);
-		
-		checkForMerchants();
-		for(int scenario=1; scenario<=pRowCount;){
-			prow=profileSheet.getRow(scenario);
-			currentScenario=prow.getCell(0).toString();
-			
-			if(currentScenario!=null ){
-				
-				System.out.println(currentScenario);
-				//System.out.println(merchantSheet.getLastRowNum());
-				if(merchanRowNum<=count){
-					
-					Row row = merchantSheet.getRow(merchanRowNum);
-					usedCell = row.getCell(1);
-					used = usedCell.getStringCellValue().toUpperCase();
-					while(used.equals("YES")){
-						merchanRowNum++;
-						row = merchantSheet.getRow(merchanRowNum);
+		try {
+			System.out.println(pRowCount);
+
+			checkForMerchants();
+			for (int scenario = 1; scenario <= pRowCount;) {
+				prow = profileSheet.getRow(scenario);
+				currentScenario = prow.getCell(0).toString();
+
+				if (currentScenario != null) {
+
+					System.out.println(currentScenario);
+					// System.out.println(merchantSheet.getLastRowNum());
+					if (merchanRowNum <= count) {
+
+						Row row = merchantSheet.getRow(merchanRowNum);
 						usedCell = row.getCell(1);
 						used = usedCell.getStringCellValue().toUpperCase();
-					}
-					System.out.println(used);
-					//WaitSeconds.TimeDelay(driver, clientProps);
-					merchantCell = row.getCell(0);
-					saqCell = row.getCell(2);
-					completeCell = row.getCell(3);
-					attestedCell = row.getCell(4);
-					scenariocell= row.getCell(5);
-					usernameCell=row.getCell(6);
-					
+						while (used.equals("YES")) {
+							merchanRowNum++;
+							row = merchantSheet.getRow(merchanRowNum);
+							usedCell = row.getCell(1);
+							used = usedCell.getStringCellValue().toUpperCase();
+						}
+						System.out.println(used);
+						// WaitSeconds.TimeDelay(driver, clientProps);
+						merchantCell = row.getCell(0);
+						saqCell = row.getCell(2);
+						completeCell = row.getCell(3);
+						attestedCell = row.getCell(4);
+						scenariocell = row.getCell(5);
+						usernameCell = row.getCell(6);
+
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						LoginPage login = new LoginPage(driver, clientProps);
-						login.LoginUser((String)merchantCell.getStringCellValue(), "Sysnet12");
-						
-						//Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+						login.LoginUser(
+								(String) merchantCell.getStringCellValue(),
+								"Sysnet12");
+
+						// Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						System.out.println("sucessfull");
-						String mid=merchantCell.getStringCellValue();
-						
-						username="Test"+mid;
-						PersonalisePage pp = new PersonalisePage(driver, clientProps);
+						String mid = merchantCell.getStringCellValue();
+
+						username = "Test" + mid;
+						PersonalisePage pp = new PersonalisePage(driver,
+								clientProps);
 						pp.personaliseMerchant(username);
-						
-						
+
 						Thread.sleep(3000);
-						 starProfileButton=By.cssSelector(clientProps.getProperty("profile.button.starsprofile.css"));
-						 
-						
-							driver.findElement(starProfileButton).click();
+						starProfileButton = By.cssSelector(clientProps.getProperty("profile.button.starsprofile.css"));
+
+						driver.findElement(starProfileButton).click();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
-						log.info("Merchant profile initiated for "+saqSheet+ " "+currentScenario);
+						log.info("Merchant profile initiated for " + saqSheet
+								+ " " + currentScenario);
 						System.out.println(prow.getLastCellNum());
 						for (int screenNumber = 1; screenNumber < prow.getLastCellNum(); screenNumber++) {
-							
-							if(prow.getCell(screenNumber)!=null && (prow.getCell(screenNumber).getCellType()==Cell.CELL_TYPE_STRING)){
+
+							if (prow.getCell(screenNumber) != null && (prow.getCell(screenNumber).getCellType() == Cell.CELL_TYPE_STRING)) {
 								System.out.println(screenNumber);
 								System.out.println(prow.getCell(screenNumber).getStringCellValue());
-								ProfileQuestion.answer(prow.getCell(screenNumber).getStringCellValue(), driver, clientProps);
-								
+								ProfileQuestion.answer(
+										prow.getCell(screenNumber).getStringCellValue(), driver,
+										clientProps);
+
 								Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 								NextButton.click(driver, clientProps);
 								Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
-								
+
 							}
 						}
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
-						skiptutorials=By.cssSelector(clientProps.getProperty("tutorials.button.skip.css"));
+						skiptutorials = By.cssSelector(clientProps.getProperty("tutorials.button.skip.css"));
 						driver.findElement(skiptutorials).click();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
-						//saqType=driver.findElement(By.cssSelector(clientProps.getProperty("dashboard.saqtype.test.css"))).getText();
-						OnlineSaqAttest osa= new OnlineSaqAttest(driver, clientProps);
+						// saqType=driver.findElement(By.cssSelector(clientProps.getProperty("dashboard.saqtype.test.css"))).getText();
+						OnlineSaqAttest osa = new OnlineSaqAttest(driver,clientProps);
 						osa.saqCompliant();
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
 						Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
@@ -186,53 +193,51 @@ public class SAQCVTProfile {
 						lop.userLogout();
 						merchanRowNum++;
 						scenario++;
-						log.info("Merchant "+username+" is sucessfully Attested");
+						log.info("Merchant " + username
+								+ " is sucessfully Attested");
 					}
-					
-				
+
+				}
+				usernameCell.setCellValue(username);
+				usedCell.setCellValue("YES");
+				Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+				Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+
+				Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
+				FileOutputStream out = new FileOutputStream(merchantfilepath);
+				wrkBook1.write(out);
+				out.close();
+
+				in = new FileInputStream(merchantfilepath);
+				wrkBook1 = (Workbook) WorkbookFactory.create(in);
+				merchantSheet = wrkBook1.getSheet("SAQCVT");
+				Thread.sleep(Integer.parseInt(clientProps
+						.getProperty("delay.waitsecond.timeunits.seconds")));
+
 			}
-			usernameCell.setCellValue(username);
-			usedCell.setCellValue("YES");
-			Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
-			Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
-			
-			Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
-			FileOutputStream out = new FileOutputStream(merchantfilepath);
-			wrkBook1.write(out);
-			out.close();
-			
-			
-			in = new FileInputStream(merchantfilepath);
-			wrkBook1 = (Workbook)WorkbookFactory.create(in);
-			merchantSheet= wrkBook1.getSheet("SAQCVT");
-			Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));
-			
+
+		} catch (Exception e) {
+			log.error("Merchant journey for merchant:" + username
+					+ "and SAQ type" + saqSheet.toString()
+					+ " intrupted by an exception", e);
 		}
 
-	}catch(Exception e){
-		log.error("Merchant journey for merchant:"+username+"and SAQ type"+saqSheet.toString()+" intrupted by an exception", e);
 	}
-
-
-		
-	}
-
-
 
 	@After
-	 public void close() {
-	  driver.close();
-	 }
-	
-	 private void checkForMerchants() throws Exception {
+	public void close() {
+		driver.close();
+	}
+
+	private void checkForMerchants() throws Exception {
 		// TODO Auto-generated method stub
-		 merchantCount=merchantSheet.getLastRowNum();
-		 if(pRowCount>merchantCount){
-				String warning="This script needs sufficient number of Merchants";
-				JOptionPane.showMessageDialog(null,warning);
-				Thread.sleep(100);
-				
-				driver.quit();
-			}
+		merchantCount = merchantSheet.getLastRowNum();
+		if (pRowCount > merchantCount) {
+			String warning = "This script needs sufficient number of Merchants";
+			JOptionPane.showMessageDialog(null, warning);
+			Thread.sleep(100);
+
+			driver.quit();
+		}
 	}
 }

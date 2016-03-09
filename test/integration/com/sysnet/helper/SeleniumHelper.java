@@ -3,11 +3,9 @@ package com.sysnet.helper;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -18,8 +16,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
@@ -28,9 +24,8 @@ public class SeleniumHelper {
 	private WebDriver driver;
 	
 
-	private List<WebElement> noOfColumns;
 	private WebElement dateWidget;
-	private List<WebElement> rows;
+
 	private List<WebElement> columns;
 
 	
@@ -38,6 +33,9 @@ public class SeleniumHelper {
 	
 	
 	public  final Logger logger = Logger.getLogger(SeleniumHelper.class);
+
+
+	private List<WebElement> rows;
 	public SeleniumHelper(WebDriver driver, Properties props){
 		this.driver = driver;
 	}

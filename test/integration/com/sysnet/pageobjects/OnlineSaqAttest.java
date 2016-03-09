@@ -3,11 +3,13 @@ package com.sysnet.pageobjects;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.internal.Coordinates;
+import org.openqa.selenium.internal.Locatable; 
+
 
 import com.sysnet.helper.SeleniumHelper;
 import com.thoughtworks.selenium.webdriven.JavascriptLibrary;
@@ -15,30 +17,27 @@ import com.thoughtworks.selenium.webdriven.JavascriptLibrary;
 public class OnlineSaqAttest {
 	private final Logger log = Logger.getLogger(OnlineSaqAttest.class.getClass());
 	private WebDriver driver;
-	private Properties locators;
-	private By onlineSaq;
 	private By saqAnswer;
 	private By saqNextButton;
 	private By confirmButton;
-	private By reProfileButton;
 	private By manageButton;
 	private By yesButton;
-	private By nextButton;
 	private Properties props;
 	private By finishButton ;
-	private By completesecuritybutton;
-	private By attestButton;
-	private By onlineSaqyes;
 	private By turnOffHelpTextLocator;
 	private By finalNextButton;
 	private By questionnaireTextLocator;
 	private String questionnaireText;
 
+	private By onlineSaqyes;
+	private By attestButton;
+	private By reProfileButton;
+
 	
 	public OnlineSaqAttest(WebDriver driver, Properties locators) {
 		//PropertyConfigurator.configure("log4j.properties");
 		this.driver = driver;
-		this.locators = locators;
+		
 		
 	    this.manageButton = By.cssSelector(locators.getProperty("saq.dashboard.button.manage.css"));
 		this.onlineSaqyes = By.cssSelector(locators.getProperty("saq.button.yes.css"));
@@ -60,7 +59,7 @@ public class OnlineSaqAttest {
 		driver.findElement(manageButton).click();
 		//driver.findElement(By.linkText("wdgt__btn--second")).click();
 		Thread.sleep(3000);
-		log.info("manageButton clicked");
+		//log.info("manageButton clicked");
 		return this;
 	}
 	
@@ -89,14 +88,18 @@ public class OnlineSaqAttest {
 			{
 			while(selh.isElementPresent(yesButton))
 			{
+				
 				questionnaireText=driver.findElement(questionnaireTextLocator).getText();
-				driver.findElement(yesButton).click();		
-				log.info("yesButton clicked");
+				 WebElement yes= driver.findElement(yesButton);
+				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", yes);
+				
+				 yes.click();
+				//log.info("yesButton clicked");
 				Thread.sleep(1000);
 				
 				log.info(" Question: \""+questionnaireText+"\" is answered as Yes");
-				JavascriptExecutor js = (JavascriptExecutor) driver;
-			        js.executeScript("javascript:window.scrollBy(250,350)");
+				/*JavascriptExecutor js = (JavascriptExecutor) driver;
+			        js.executeScript("javascript:window.scrollBy(250,350)");*/
 			        while(selh.isElementPresent(finishButton))
 					{
 			        	
@@ -148,7 +151,7 @@ public class OnlineSaqAttest {
 		log.info("clicked on answer button sucessufully");
 		Thread.sleep(1000);
 		yesButton();
-		log.info(" clicked on yes button sucessufully");
+		//log.info(" clicked on yes button sucessufully");
 		Thread.sleep(1000);
 //		onlineSaq();
 //		log.info("clicked on onlinesaq sucessufully");

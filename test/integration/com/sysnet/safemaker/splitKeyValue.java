@@ -6,7 +6,6 @@ import java.util.Properties;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
-import org.grails.datastore.mapping.query.Query.IsEmpty;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -15,8 +14,7 @@ import com.sysnet.helper.SeleniumHelper;
 
 public class splitKeyValue {
 	
-	private static String profileKey;
-	private static String keyValue;
+
 	private WebDriver driver;
 	private String propertyfilepath;
 	private Properties clientProps;

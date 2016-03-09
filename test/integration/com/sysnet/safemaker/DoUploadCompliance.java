@@ -13,7 +13,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.sysnet.helper.SeleniumHelper;
 import com.sysnet.pageobjects.LoginPage;
-import com.sysnet.pageobjects.PersonalisePage;
 import com.sysnet.pageobjects.UploadCompliance;
 
 public class DoUploadCompliance {
@@ -29,10 +28,6 @@ public class DoUploadCompliance {
 	private Row midRow;
 	private String username;
 	private String password;
-	private Object log;
-	private String expPassword;
-	private String expUsername;
-	private Properties props;
 	private final Logger logs = Logger.getLogger(DoLogin.class.getClass());
 	private SeleniumHelper sh;
 	@Before
@@ -94,20 +89,6 @@ public class DoUploadCompliance {
 
 	}
 
-	private void passwordlocator() {
-
-		PersonalisePage Per = new PersonalisePage(driver, props);
-		Per.personaliseMerchant(expPassword);
-		Per.submitForm();
-		
-	}
-
-	private void usernamelocator() {
-
-		PersonalisePage Per = new PersonalisePage(driver, props);
-		Per.personaliseMerchant(expUsername);
-		Per.submitForm();
-		
-	}
+	
 
 }

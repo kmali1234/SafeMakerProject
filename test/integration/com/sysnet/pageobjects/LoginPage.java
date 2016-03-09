@@ -59,22 +59,23 @@ public class LoginPage {
 		TypeUserName(username);
 		TypePassword(password);
 		SubmitLogin();
-		log.info("Merchant Logged in with Username: "+username);
+		//log.info("Merchant Logged in with Username: "+username);
 		Thread.sleep(5000);
-		
+		IsSucessfull(username);
 		
 				
 	}
 	
       
 	
-	public LoginPage IsSucessfull(String Username){
+	public LoginPage IsSucessfull(String username){
 		String CurrentUrl = driver.getCurrentUrl();
 		
 		String ExpectedURl= locators.getProperty("baseUrl")+locators.getProperty("personalise.url.suffix");
 		
 		if(CurrentUrl.equals(ExpectedURl))
 		{
+			
 			log.info("Merchant is logged in");
 		}
 		else

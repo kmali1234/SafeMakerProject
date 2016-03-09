@@ -4,14 +4,11 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.sysnet.helper.SeleniumHelper;
@@ -32,12 +29,6 @@ public class DoSAQAttest {
 	public final Logger log = Logger.getLogger(DoSAQAttest.class.getClass());
 	private String username;
 	private String password;
-	private Properties locators;
-	
-	private By usernamelocator;
-	private By passwordlocator;
-	private By loginbuttonlocator;
-	private Sheet merchantSheet;
 	private SeleniumHelper sh;
 
 	
@@ -73,23 +64,8 @@ public class DoSAQAttest {
 			lpage.LoginUser(username, password);
 			Thread.sleep(500);
 			OnlineSaqAttest olp = new OnlineSaqAttest(driver, clientProps);
-			olp.manageButton();
-			log.info("clicked on manage sucessufully");
-			Thread.sleep(1000);
-			olp.saqAnswer();
-			log.info("clicked on answer button sucessufully");
-			Thread.sleep(1000);
-			olp.yesButton();
-			log.info(" clicked on yes button sucessufully");
-			Thread.sleep(1000);
-			//olp.onlineSaq();
-			log.info("clicked on onlinesaq sucessufully");
-			olp.saqNextButton();
-			log.info("clicked on saqnextbutton sucessufully");
-			Thread.sleep(1000);
-			log.info("clicked on confirmbutton sucessufully");
-			olp.confirmButton();
-			Thread.sleep(1000);
+			olp.saqCompliant();
+			
 			
 		}
 

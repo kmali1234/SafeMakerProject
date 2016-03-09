@@ -66,6 +66,7 @@ public class SAQBIPProfile {
 	private String saqSheet;
 
 	private final  Logger log = Logger.getLogger(SAQBIPProfile.class.getName());
+	private String profilePath;
 
 	@Before
 	public void setup() throws Exception {
@@ -90,7 +91,8 @@ public class SAQBIPProfile {
 		merchantSheet= wrkBook1.getSheet("SAQBIP"); 
 		count = merchantSheet.getLastRowNum();
 		saqSheet="SAQ type B-IP";
-		profileSheet = sh.readExcelFile("test/integration/aibms/Profile.xlsx", saqSheet );
+		profilePath="test/integration/"+client+"/Profile.xlsx";
+		profileSheet = sh.readExcelFile(profilePath,saqSheet);
 		
 		pRowCount = profileSheet.getLastRowNum();
 

@@ -4,10 +4,11 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Browser {
@@ -28,7 +29,7 @@ public class Browser {
 		case "CHROME": {
 			System.setProperty("webdriver.chrome.driver", "C:\\seleniumdrivers\\chromedriver.exe");
 
-			ChromeOptions options = new ChromeOptions();
+			//ChromeOptions options = new ChromeOptions();
 			//options.addArguments("--start-maximized");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
@@ -44,13 +45,17 @@ public class Browser {
 			break;
 		}
 		case "PHANTHOMJS": {
-			dCaps = new DesiredCapabilities();
-			dCaps.setJavascriptEnabled(true);
-			dCaps.setCapability("takesScreenshot", false);
+			 DesiredCapabilities dcaps = new DesiredCapabilities();
+			 dcaps.setJavascriptEnabled(true); // not really needed: JS enabled by default
+			 dcaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "C:\\seleniumdrivers\\phantomjs.exe");
 
-			driver = new PhantomJSDriver(dCaps);
+			driver = new PhantomJSDriver(dcaps);
 			break;
 
+		}
+		case "HEADLESSBROWSER": {
+			driver = new HtmlUnitDriver();
+			break;
 		}
 		}
 		Thread.sleep(Integer.parseInt(clientProps.getProperty("delay.waitsecond.timeunits.seconds")));

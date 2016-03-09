@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="SYSIND0024" name="com.sysnet.safemaker.SAQCProfile" tests="1" time="221.692" timestamp="2016-01-29T05:40:54">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="ant.file.SafeMakerProject" value="F:\SafeMakerWorkspace\SafeMakerProject\testbuild.xml" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="os.name" value="Windows 7" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_80\jre\classes" />
+    <property name="env.COMPUTERNAME" value="SYSIND0024" />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="C:\ant" />
+    <property name="java.runtime.version" value="1.7.0_80-b15" />
+    <property name="env.HOMEPATH" value="\Users\davuluris" />
+    <property name="user.name" value="davuluris" />
+    <property name="env.OJDEPLOY" value="C:\seleniumdrivers" />
+    <property name="user.language" value="en" />
+    <property name="env.windows_tracing_flags" value="3" />
+    <property name="env.SafeMakerProject" value="F:\SafeMakerWorkspace\SafeMakerProject" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_80\jre\bin" />
+    <property name="env.MYSQL_HOME" value="C:\Program Files (x86)\MySQL\MySQL Server 5.6" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="SafeMakerProject" />
+    <property name="ant.file.type.SafeMakerProject" value="file" />
+    <property name="java.version" value="1.7.0_80" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 58 Stepping 9, GenuineIntel" />
+    <property name="user.timezone" value="" />
+    <property name="env.TEMP" value="C:\Users\DAVULU~1\AppData\Local\Temp" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_80\jre\lib\endorsed" />
+    <property name="env._JAVACMD" value="C:\Program Files\Java\jdk1.7.0_80\bin\java.exe" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ECLIPSE_HOME" value="D:/Installs/springsource/ggts-3.4.0.RELEASE" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="env.GROOVY_HOME" value="D:\Installs\Groovy\Groovy-2.2.2" />
+    <property name="java.class.version" value="51.0" />
+    <property name="user.country" value="US" />
+    <property name="env.BUILD_NUMBER" value="50" />
+    <property name="env.GRADLE_HOME" value="D:\Installs\gradle-1.12" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_80\jre" />
+    <property name="env.PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\;C:\Program Files (x86)\AutoIt3\AutoItX" />
+    <property name="env.APPDATA" value="C:\Users\davuluris\AppData\Roaming" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="env.windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="ant.file" value="F:\SafeMakerWorkspace\SafeMakerProject\testbuild.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="env.=ExitCode" value="00000001" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="env._USE_CLASSPATH" value="no" />
+    <property name="env.HUDSON_COOKIE" value="bad3a017-76bd-415d-b736-1a2531687ee7" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="24.80-b11" />
+    <property name="user.variant" value="" />
+    <property name="env.USERPROFILE" value="C:\Users\davuluris" />
+    <property name="ant.library.dir" value="C:\ant\lib" />
+    <property name="env.=F:" value="F:\SafeMakerWorkspace\SafeMakerProject" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.JOB_NAME" value="SafeMakerProject" />
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.7.0_80" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="env.TMP" value="C:\Users\DAVULU~1\AppData\Local\Temp" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="user.script" value="" />
+    <property name="env.BUILD_TAG" value="hudson-SafeMakerProject-50" />
+    <property name="user.home" value="C:\Users\davuluris" />
+    <property name="target" value="1.7" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.NUMBER_OF_PROCESSORS" value="4" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Installs\Groovy\Groovy-2.2.2\bin;D:\Installs\Git\cmdp;C:\Program Files\Java\jdk1.7.0\bin;D:\seleniumdrivers;D:\Installs\gradle-1.12\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.6\bin;.;D:\Installs\QuickTime\QTSystem\;MAVEN_HOME;C:\Windows\Microsoft.NET\Framework;C:\Program Files\nodejs\;%JMETER_BIN%;C:\Program Files (x86)\Skype\Phone\;ANT_HOME\bin;C:\Users\davuluris\AppData\Roaming\npm;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="env.USERDNSDOMAIN" value="SYSNET.IE" />
+    <property name="env.HUDSON_HOME" value="C:\Users\davuluris\.hudson" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="env.HUDSON_SERVER_COOKIE" value="5cf728e115475cb188492143a75380dd" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="F:\SafeMakerWorkspace\SafeMakerProject\target-eclipse\classes;C:\Users\davuluris\.groovy\greclipse\global_dsld_support;D:\Installs\springsource\ggts-3.4.0.RELEASE\plugins\org.codehaus.groovy_2.0.7.xx-20130828-1400-e43-RELEASE\plugin_dsld_support;C:\Users\davuluris\Documents\My Received Files\org.apache.logging.log4j-1.2.17.jar.zip;C:\Users\davuluris\.grails\ivy-cache\org.springframework.uaa\org.springframework.uaa.client\bundles\org.springframework.uaa.client-1.0.1.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\com.google.protobuf\protobuf-java\jars\protobuf-java-2.4.1.jar;C:\Users\davuluris\.grails\ivy-cache\com.googlecode.json-simple\json-simple\jars\json-simple-1.1.jar;C:\Users\davuluris\.grails\ivy-cache\org.bouncycastle\bcpg-jdk15\jars\bcpg-jdk15-1.45.jar;C:\Users\davuluris\.grails\ivy-cache\org.bouncycastle\bcprov-jdk15\jars\bcprov-jdk15-1.45.jar;C:\Users\davuluris\.grails\ivy-cache\jline\jline\jars\jline-1.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.ivy\ivy\jars\ivy-2.2.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.fusesource.jansi\jansi\jars\jansi-1.2.1.jar;C:\Users\davuluris\.grails\ivy-cache\net.java.dev.jna\jna\jars\jna-3.2.3.jar;C:\Users\davuluris\.grails\ivy-cache\xalan\serializer\jars\serializer-2.7.1.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-docs\jars\grails-docs-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-bootstrap\jars\grails-bootstrap-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-scripts\jars\grails-scripts-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.slf4j\slf4j-api\jars\slf4j-api-1.6.2.jar;C:\Users\davuluris\.grails\ivy-cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.6.2.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.ant\ant\jars\ant-1.8.2.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.ant\ant-launcher\jars\ant-launcher-1.8.2.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.ant\ant-junit\jars\ant-junit-1.8.2.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.ant\ant-trax\jars\ant-trax-1.7.1.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.tomcat.embed\tomcat-embed-core\jars\tomcat-embed-core-7.0.42.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-tomcat\jars\grails-plugin-tomcat-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.tomcat.embed\tomcat-embed-logging-log4j\jars\tomcat-embed-logging-log4j-7.0.42.jar;C:\Users\davuluris\.grails\ivy-cache\org.eclipse.jdt.core.compiler\ecj\jars\ecj-3.7.2.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.tomcat\tomcat-catalina-ant\jars\tomcat-catalina-ant-7.0.42.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.tomcat.embed\tomcat-embed-logging-juli\jars\tomcat-embed-logging-juli-7.0.42.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.tomcat.embed\tomcat-embed-jasper\jars\tomcat-embed-jasper-7.0.42.jar;C:\Users\davuluris\.grails\ivy-cache\org.codehaus.groovy\groovy-all\jars\groovy-all-2.0.8.jar;C:\Users\davuluris\.grails\ivy-cache\commons-beanutils\commons-beanutils\jars\commons-beanutils-1.8.3.jar;C:\Users\davuluris\.grails\ivy-cache\commons-el\commons-el\jars\commons-el-1.0.jar;C:\Users\davuluris\.grails\ivy-cache\commons-validator\commons-validator\jars\commons-validator-1.3.1.jar;C:\Users\davuluris\.grails\ivy-cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\davuluris\.grails\ivy-cache\com.googlecode.concurrentlinkedhashmap\concurrentlinkedhashmap-lru\jars\concurrentlinkedhashmap-lru-1.3.1.jar;C:\Users\davuluris\.grails\ivy-cache\commons-lang\commons-lang\jars\commons-lang-2.6.jar;C:\Users\davuluris\.grails\ivy-cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\davuluris\.grails\ivy-cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\davuluris\.grails\ivy-cache\opensymphony\sitemesh\jars\sitemesh-2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-core\jars\grails-core-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-crud\jars\grails-crud-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-hibernate\jars\grails-hibernate-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-resources\jars\grails-resources-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-spring\jars\grails-spring-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-web\jars\grails-web-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-logging\jars\grails-logging-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-codecs\jars\grails-plugin-codecs-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-controllers\jars\grails-plugin-controllers-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-domain-class\jars\grails-plugin-domain-class-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-converters\jars\grails-plugin-converters-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-datasource\jars\grails-plugin-datasource-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-filters\jars\grails-plugin-filters-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-gsp\jars\grails-plugin-gsp-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-i18n\jars\grails-plugin-i18n-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-log4j\jars\grails-plugin-log4j-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-scaffolding\jars\grails-plugin-scaffolding-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-services\jars\grails-plugin-services-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-servlets\jars\grails-plugin-servlets-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-mimetypes\jars\grails-plugin-mimetypes-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-url-mappings\jars\grails-plugin-url-mappings-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-validation\jars\grails-plugin-validation-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-core\jars\spring-core-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-aop\jars\spring-aop-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-aspects\jars\spring-aspects-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-asm\jars\spring-asm-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-beans\jars\spring-beans-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-context\jars\spring-context-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-context-support\jars\spring-context-support-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-expression\jars\spring-expression-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-jdbc\jars\spring-jdbc-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-jms\jars\spring-jms-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-orm\jars\spring-orm-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-tx\jars\spring-tx-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-web\jars\spring-web-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-webmvc\jars\spring-webmvc-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-datastore-gorm\jars\grails-datastore-gorm-1.1.8.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-datastore-core\jars\grails-datastore-core-1.1.8.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-datastore-simple\jars\grails-datastore-simple-1.1.8.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\com.codeborne\phantomjsdriver\jars\phantomjsdriver-1.2.1.jar;C:\Users\davuluris\.grails\ivy-cache\cglib\cglib-nodep\jars\cglib-nodep-2.1_3.jar;C:\Users\davuluris\.grails\ivy-cache\net.sourceforge.jexcelapi\jxl\jars\jxl-2.6.12.jar;C:\Users\davuluris\.grails\ivy-cache\org.jdom\jdom\jars\jdom-1.1.jar;C:\Users\davuluris\.grails\ivy-cache\org.aspectj\aspectjweaver\jars\aspectjweaver-1.6.10.jar;C:\Users\davuluris\.grails\ivy-cache\org.aspectj\aspectjrt\jars\aspectjrt-1.6.10.jar;C:\Users\davuluris\.grails\ivy-cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\davuluris\.grails\ivy-cache\asm\asm\jars\asm-3.1.jar;C:\Users\davuluris\.grails\ivy-cache\commons-fileupload\commons-fileupload\jars\commons-fileupload-1.2.2.jar;C:\Users\davuluris\.grails\ivy-cache\oro\oro\jars\oro-2.0.8.jar;C:\Users\davuluris\.grails\ivy-cache\commons-dbcp\commons-dbcp\jars\commons-dbcp-1.4.jar;C:\Users\davuluris\.grails\ivy-cache\commons-pool\commons-pool\jars\commons-pool-1.5.6.jar;C:\Users\davuluris\.grails\ivy-cache\com.h2database\h2\jars\h2-1.3.164.jar;C:\Users\davuluris\.grails\ivy-cache\javax.servlet\jstl\jars\jstl-1.1.2.jar;C:\Users\davuluris\.grails\ivy-cache\xpp3\xpp3_min\jars\xpp3_min-1.1.4c.jar;C:\Users\davuluris\.grails\ivy-cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.4.6.jar;C:\Users\davuluris\.grails\ivy-cache\log4j\log4j\bundles\log4j-1.2.16.jar;C:\Users\davuluris\.grails\ivy-cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.6.2.jar;C:\Users\davuluris\.grails\ivy-cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.22.jar;C:\Users\davuluris\.grails\ivy-cache\org.hibernate\hibernate-validator\jars\hibernate-validator-4.1.0.Final.jar;C:\Users\davuluris\.grails\ivy-cache\javax.validation\validation-api\jars\validation-api-1.0.0.GA.jar;C:\Users\davuluris\.grails\ivy-cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\davuluris\.grails\ivy-cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.10.Final.jar;C:\Users\davuluris\.grails\ivy-cache\org.javassist\javassist\jars\javassist-3.16.1-GA.jar;C:\Users\davuluris\.grails\ivy-cache\antlr\antlr\jars\antlr-2.7.7.jar;C:\Users\davuluris\.grails\ivy-cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\davuluris\.grails\ivy-cache\org.hibernate\hibernate-ehcache\jars\hibernate-ehcache-3.6.10.Final.jar;C:\Users\davuluris\.grails\ivy-cache\org.liquibase\liquibase-core\jars\liquibase-core-2.0.5.jar;C:\Users\davuluris\.grails\ivy-cache\junit\junit\jars\junit-4.10.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-plugin-testing\jars\grails-plugin-testing-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.grails\grails-test\jars\grails-test-2.2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.springframework\spring-test\jars\spring-test-3.1.4.RELEASE.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-java\jars\selenium-java-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-chrome-driver\jars\selenium-chrome-driver-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-remote-driver\jars\selenium-remote-driver-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\com.google.code.gson\gson\jars\gson-2.3.1.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-api\jars\selenium-api-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\com.google.guava\guava\bundles\guava-19.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.5.1.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.4.3.jar;C:\Users\davuluris\.grails\ivy-cache\commons-logging\commons-logging\jars\commons-logging-1.2.jar;C:\Users\davuluris\.grails\ivy-cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.commons\commons-exec\jars\commons-exec-1.3.jar;C:\Users\davuluris\.grails\ivy-cache\net.java.dev.jna\jna\jars\jna-4.1.0.jar;C:\Users\davuluris\.grails\ivy-cache\net.java.dev.jna\jna-platform\jars\jna-platform-4.1.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-edge-driver\jars\selenium-edge-driver-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\commons-io\commons-io\jars\commons-io-2.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-htmlunit-driver\jars\selenium-htmlunit-driver-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-support\jars\selenium-support-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\net.sourceforge.htmlunit\htmlunit\jars\htmlunit-2.18.jar;C:\Users\davuluris\.grails\ivy-cache\xalan\xalan\jars\xalan-2.7.2.jar;C:\Users\davuluris\.grails\ivy-cache\xalan\serializer\jars\serializer-2.7.2.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.httpcomponents\httpmime\jars\httpmime-4.5.jar;C:\Users\davuluris\.grails\ivy-cache\net.sourceforge.htmlunit\htmlunit-core-js\jars\htmlunit-core-js-2.17.jar;C:\Users\davuluris\.grails\ivy-cache\net.sourceforge.nekohtml\nekohtml\jars\nekohtml-1.9.22.jar;C:\Users\davuluris\.grails\ivy-cache\net.sourceforge.cssparser\cssparser\jars\cssparser-0.9.16.jar;C:\Users\davuluris\.grails\ivy-cache\org.w3c.css\sac\jars\sac-1.3.jar;C:\Users\davuluris\.grails\ivy-cache\org.eclipse.jetty.websocket\websocket-client\jars\websocket-client-9.2.12.v20150709.jar;C:\Users\davuluris\.grails\ivy-cache\org.eclipse.jetty\jetty-util\jars\jetty-util-9.2.12.v20150709.jar;C:\Users\davuluris\.grails\ivy-cache\org.eclipse.jetty\jetty-io\jars\jetty-io-9.2.12.v20150709.jar;C:\Users\davuluris\.grails\ivy-cache\org.eclipse.jetty.websocket\websocket-common\jars\websocket-common-9.2.12.v20150709.jar;C:\Users\davuluris\.grails\ivy-cache\org.eclipse.jetty.websocket\websocket-api\jars\websocket-api-9.2.12.v20150709.jar;C:\Users\davuluris\.grails\ivy-cache\commons-collections\commons-collections\jars\commons-collections-3.2.2.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-firefox-driver\jars\selenium-firefox-driver-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-ie-driver\jars\selenium-ie-driver-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-safari-driver\jars\selenium-safari-driver-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.webbitserver\webbit\jars\webbit-0.4.14.jar;C:\Users\davuluris\.grails\ivy-cache\io.netty\netty\bundles\netty-3.5.2.Final.jar;C:\Users\davuluris\.grails\ivy-cache\org.seleniumhq.selenium\selenium-leg-rc\jars\selenium-leg-rc-2.49.0.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.poi\poi-ooxml\jars\poi-ooxml-3.9.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.poi\poi\jars\poi-3.9.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.poi\poi-ooxml-schemas\jars\poi-ooxml-schemas-3.9.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.xmlbeans\xmlbeans\jars\xmlbeans-2.3.0.jar;C:\Users\davuluris\.grails\ivy-cache\stax\stax-api\jars\stax-api-1.0.1.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.logging.log4j\log4j-jcl\jars\log4j-jcl-2.4.1.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.tomcat.embed\tomcat-embed-core\jars\tomcat-embed-core-7.0.39.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.tomcat.embed\tomcat-embed-jasper\jars\tomcat-embed-jasper-7.0.39.jar;C:\Users\davuluris\.grails\ivy-cache\org.apache.tomcat.embed\tomcat-embed-logging-log4j\jars\tomcat-embed-logging-log4j-7.0.39.jar;C:\Users\davuluris\.grails\2.2.4\projects\SafeMakerProject\plugin-classes;D:\Installs\springsource\ggts-3.4.0.RELEASE\plugins\org.grails.ide.eclipse.resources_3.4.0.201310051518-RELEASE\dsl-support;C:\ant\lib\ant-launcher.jar;C:\ant\lib\ant.jar;C:\ant\lib\ant-junit.jar;C:\ant\lib\ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.sysnet.safemaker.SAQCProfile skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,F:\SafeMakerWorkspace\SafeMakerProject\junit\TEST-com.sysnet.safemaker.SAQCProfile.xml crashfile=F:\SafeMakerWorkspace\SafeMakerProject\junitvmwatcher1268308667945837626.properties propsfile=F:\SafeMakerWorkspace\SafeMakerProject\junit796732322980918045.properties" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+    <property name="env.EXECUTOR_NUMBER" value="0" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="env.windir" value="C:\Windows" />
+    <property name="env.LOGONSERVER" value="\\SYSNETEX03-SRV" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.ANT_HOME" value="C:\ant" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="env.PROCESSOR_REVISION" value="3a09" />
+    <property name="java.io.tmpdir" value="C:\Users\DAVULU~1\AppData\Local\Temp\" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SystemRoot" value="C:\Windows" />
+    <property name="os.arch" value="amd64" />
+    <property name="env.ANT_CMD_LINE_ARGS" value=" -file testbuild.xml SAQCProfile" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="env.BUILD_ID" value="2016-01-29_11-10-51" />
+    <property name="env.MAVEN_HOME" value="C:\apache-maven-3.3.3" />
+    <property name="user.dir" value="F:\SafeMakerWorkspace\SafeMakerProject" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\davuluris\AppData\Local" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.groovy;.gy" />
+    <property name="env.Path" value="C:\Program Files\Java\jdk1.7.0/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Installs\Groovy\Groovy-2.2.2\bin;D:\Installs\Git\cmdp;C:\Program Files\Java\jdk1.7.0\bin;D:\seleniumdrivers;D:\Installs\gradle-1.12\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.6\bin;.;D:\Installs\QuickTime\QTSystem\;MAVEN_HOME;C:\Windows\Microsoft.NET\Framework;C:\Program Files\nodejs\;%JMETER_BIN%;C:\Program Files (x86)\Skype\Phone\;ANT_HOME\bin;C:\Users\davuluris\AppData\Roaming\npm" />
+    <property name="basedir" value="F:\SafeMakerWorkspace\SafeMakerProject" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="C:\ant\lib\ant.jar" />
+    <property name="env.USERNAME" value="davuluris" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="source" value="1.7" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="env.WORKSPACE" value="F:\SafeMakerWorkspace\SafeMakerProject" />
+    <property name="env.USERDOMAIN" value="SYSNET" />
+    <property name="env.JMETER_BIN" value="C:\apache-jmeter-2.12\apache-jmeter-2.12\bin\" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="ant.project.invoked-targets" value="SAQCProfile" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+    <property name="env.NODE_LABELS" value="master" />
+    <property name="env.VBOX_MSI_INSTALL_PATH" value="D:\VMs\" />
+  </properties>
+  <testcase classname="com.sysnet.safemaker.SAQCProfile" name="merchantJourney" time="221.444" />
+  <system-out><![CDATA[https://qaint-54.sysnet.ie/safemaker/login
+Firefox is uesd to run script
+Firefox browser is selected
+2
+Scenario1
+10
+NO
+ INFO [main] (LoginPage.java:62) - Merchant Logged in with Username: 20160127055
+sucessfull
+ INFO [main] (PersonalisePage.java:50) - Merchant is personalised and the username is: Test20160127055
+ INFO [main] (SAQCProfile.java:156) - Merchant profile initiated for SAQ type C Scenario1
+64
+1
+existingData:yes
+span input#existingData0
+ INFO [main] (ProfileQuestion.java:90) - existingData answer is yes
+proflileKey: existingData
+KeyValue: yes
+ INFO [main] (ProfileQuestion.java:37) - existingData question is answered as: yes
+5
+pacF2f:check
+span.sgs-form__checkbox input#pacF2f
+ INFO [main] (ProfileQuestion.java:90) - pacF2f answer is check
+proflileKey: pacF2f
+KeyValue: check
+ INFO [main] (ProfileQuestion.java:37) - pacF2f question is answered as: check
+26
+smartphonePosUsed:check
+span.sgs-form__checkbox input#smartphonePosUsed
+ INFO [main] (ProfileQuestion.java:90) - smartphonePosUsed answer is check
+proflileKey: smartphonePosUsed
+KeyValue: check
+ INFO [main] (ProfileQuestion.java:37) - smartphonePosUsed question is answered as: check
+43
+mobileMerchantSetup_swipe:no
+mobileMerchantSetup_app:yes
+mobileMerchantSetup_vt:no
+span input#mobileMerchantSetup_swipe1
+ INFO [main] (ProfileQuestion.java:90) - mobileMerchantSetup_swipe answer is no
+proflileKey: mobileMerchantSetup_swipe
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - mobileMerchantSetup_swipe question is answered as: no
+span input#mobileMerchantSetup_app0
+ INFO [main] (ProfileQuestion.java:90) - mobileMerchantSetup_app answer is yes
+proflileKey: mobileMerchantSetup_app
+KeyValue: yes
+ INFO [main] (ProfileQuestion.java:37) - mobileMerchantSetup_app question is answered as: yes
+span input#mobileMerchantSetup_vt1
+ INFO [main] (ProfileQuestion.java:90) - mobileMerchantSetup_vt answer is no
+proflileKey: mobileMerchantSetup_vt
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - mobileMerchantSetup_vt question is answered as: no
+44
+mobileMerchantOnly:yes
+span input#mobileMerchantOnly0
+ INFO [main] (ProfileQuestion.java:90) - mobileMerchantOnly answer is yes
+proflileKey: mobileMerchantOnly
+KeyValue: yes
+ INFO [main] (ProfileQuestion.java:37) - mobileMerchantOnly question is answered as: yes
+53
+emailCardData:no
+otherUse:no
+span input#emailCardData1
+ INFO [main] (ProfileQuestion.java:90) - emailCardData answer is no
+proflileKey: emailCardData
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - emailCardData question is answered as: no
+span input#otherUse1
+ INFO [main] (ProfileQuestion.java:90) - otherUse answer is no
+proflileKey: otherUse
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - otherUse question is answered as: no
+55
+securityPolicySaqC:yes
+span input#securityPolicySaqC0
+ INFO [main] (ProfileQuestion.java:90) - securityPolicySaqC answer is yes
+proflileKey: securityPolicySaqC
+KeyValue: yes
+ INFO [main] (ProfileQuestion.java:37) - securityPolicySaqC question is answered as: yes
+56
+internetConnected:no
+span input#internetConnected1
+ INFO [main] (ProfileQuestion.java:90) - internetConnected answer is no
+proflileKey: internetConnected
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - internetConnected question is answered as: no
+57
+wirelessNetworksUsed:no
+span input#wirelessNetworksUsed1
+ INFO [main] (ProfileQuestion.java:90) - wirelessNetworksUsed answer is no
+proflileKey: wirelessNetworksUsed
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - wirelessNetworksUsed question is answered as: no
+59
+otherAcquirerRelationship:no
+span input#otherAcquirerRelationship1
+ INFO [main] (ProfileQuestion.java:90) - otherAcquirerRelationship answer is no
+proflileKey: otherAcquirerRelationship
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - otherAcquirerRelationship question is answered as: no
+61
+isa_has:no
+span input#isa_has1
+ INFO [main] (ProfileQuestion.java:90) - isa_has answer is no
+proflileKey: isa_has
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - isa_has question is answered as: no
+62
+qsaUsed:no
+span input#qsaUsed1
+ INFO [main] (ProfileQuestion.java:90) - qsaUsed answer is no
+proflileKey: qsaUsed
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - qsaUsed question is answered as: no
+63
+scopeFacilitiesAndLocations:text
+scopeChdCapacity:text
+scopeDescription:text
+div textarea#scopeFacilitiesAndLocations
+proflileKey: scopeFacilitiesAndLocations
+KeyValue: text
+ INFO [main] (ProfileQuestion.java:37) - scopeFacilitiesAndLocations question is answered as: text
+div textarea#scopeChdCapacity
+proflileKey: scopeChdCapacity
+KeyValue: text
+ INFO [main] (ProfileQuestion.java:37) - scopeChdCapacity question is answered as: text
+div textarea#scopeDescription
+proflileKey: scopeDescription
+KeyValue: text
+ INFO [main] (ProfileQuestion.java:37) - scopeDescription question is answered as: text
+Scenario2
+10
+NO
+ INFO [main] (LoginPage.java:62) - Merchant Logged in with Username: 20160127056
+sucessfull
+ INFO [main] (PersonalisePage.java:50) - Merchant is personalised and the username is: Test20160127056
+ INFO [main] (SAQCProfile.java:156) - Merchant profile initiated for SAQ type C Scenario2
+64
+1
+existingData:yes
+span input#existingData0
+ INFO [main] (ProfileQuestion.java:90) - existingData answer is yes
+proflileKey: existingData
+KeyValue: yes
+ INFO [main] (ProfileQuestion.java:37) - existingData question is answered as: yes
+5
+pacF2f:check
+span.sgs-form__checkbox input#pacF2f
+ INFO [main] (ProfileQuestion.java:90) - pacF2f answer is check
+proflileKey: pacF2f
+KeyValue: check
+ INFO [main] (ProfileQuestion.java:37) - pacF2f question is answered as: check
+26
+ePosUsed:check
+span.sgs-form__checkbox input#ePosUsed
+ INFO [main] (ProfileQuestion.java:90) - ePosUsed answer is check
+proflileKey: ePosUsed
+KeyValue: check
+ INFO [main] (ProfileQuestion.java:37) - ePosUsed question is answered as: check
+30
+p2peSolutionInUse:no
+span input#p2peSolutionInUse1
+ INFO [main] (ProfileQuestion.java:90) - p2peSolutionInUse answer is no
+proflileKey: p2peSolutionInUse
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - p2peSolutionInUse question is answered as: no
+40
+paymentApplication:yes
+span input#paymentApplication0
+ INFO [main] (ProfileQuestion.java:90) - paymentApplication answer is yes
+proflileKey: paymentApplication
+KeyValue: yes
+ INFO [main] (ProfileQuestion.java:37) - paymentApplication question is answered as: yes
+41
+paDssCertified:yes
+span input#paDssCertified0
+ INFO [main] (ProfileQuestion.java:90) - paDssCertified answer is yes
+proflileKey: paDssCertified
+KeyValue: yes
+ INFO [main] (ProfileQuestion.java:37) - paDssCertified question is answered as: yes
+42
+pciSscValidatedPaymentApplications_list:INFO
+proflileKey: pciSscValidatedPaymentApplications_list
+KeyValue: INFO
+ INFO [main] (ProfileQuestion.java:37) - pciSscValidatedPaymentApplications_list question is answered as: INFO
+46
+batchSettlementFilesUsed:no
+span input#batchSettlementFilesUsed1
+ INFO [main] (ProfileQuestion.java:90) - batchSettlementFilesUsed answer is no
+proflileKey: batchSettlementFilesUsed
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - batchSettlementFilesUsed question is answered as: no
+47
+remoteAccessToPos:no
+span input#remoteAccessToPos1
+ INFO [main] (ProfileQuestion.java:90) - remoteAccessToPos answer is no
+proflileKey: remoteAccessToPos
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - remoteAccessToPos question is answered as: no
+49
+physicalCardDataUsed:no
+span input#physicalCardDataUsed1
+ INFO [main] (ProfileQuestion.java:90) - physicalCardDataUsed answer is no
+proflileKey: physicalCardDataUsed
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - physicalCardDataUsed question is answered as: no
+53
+emailCardData:no
+otherUse:no
+span input#emailCardData1
+ INFO [main] (ProfileQuestion.java:90) - emailCardData answer is no
+proflileKey: emailCardData
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - emailCardData question is answered as: no
+span input#otherUse1
+ INFO [main] (ProfileQuestion.java:90) - otherUse answer is no
+proflileKey: otherUse
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - otherUse question is answered as: no
+55
+securityPolicySaqC:yes
+span input#securityPolicySaqC0
+ INFO [main] (ProfileQuestion.java:90) - securityPolicySaqC answer is yes
+proflileKey: securityPolicySaqC
+KeyValue: yes
+ INFO [main] (ProfileQuestion.java:37) - securityPolicySaqC question is answered as: yes
+56
+internetConnected:no
+span input#internetConnected1
+ INFO [main] (ProfileQuestion.java:90) - internetConnected answer is no
+proflileKey: internetConnected
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - internetConnected question is answered as: no
+57
+wirelessNetworksUsed:no
+span input#wirelessNetworksUsed1
+ INFO [main] (ProfileQuestion.java:90) - wirelessNetworksUsed answer is no
+proflileKey: wirelessNetworksUsed
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - wirelessNetworksUsed question is answered as: no
+59
+otherAcquirerRelationship:no
+span input#otherAcquirerRelationship1
+ INFO [main] (ProfileQuestion.java:90) - otherAcquirerRelationship answer is no
+proflileKey: otherAcquirerRelationship
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - otherAcquirerRelationship question is answered as: no
+61
+isa_has:no
+span input#isa_has1
+ INFO [main] (ProfileQuestion.java:90) - isa_has answer is no
+proflileKey: isa_has
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - isa_has question is answered as: no
+62
+qsaUsed:no
+span input#qsaUsed1
+ INFO [main] (ProfileQuestion.java:90) - qsaUsed answer is no
+proflileKey: qsaUsed
+KeyValue: no
+ INFO [main] (ProfileQuestion.java:37) - qsaUsed question is answered as: no
+63
+scopeFacilitiesAndLocations:text
+scopeChdCapacity:text
+scopeDescription:text
+div textarea#scopeFacilitiesAndLocations
+proflileKey: scopeFacilitiesAndLocations
+KeyValue: text
+ INFO [main] (ProfileQuestion.java:37) - scopeFacilitiesAndLocations question is answered as: text
+div textarea#scopeChdCapacity
+proflileKey: scopeChdCapacity
+KeyValue: text
+ INFO [main] (ProfileQuestion.java:37) - scopeChdCapacity question is answered as: text
+div textarea#scopeDescription
+proflileKey: scopeDescription
+KeyValue: text
+ INFO [main] (ProfileQuestion.java:37) - scopeDescription question is answered as: text
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
